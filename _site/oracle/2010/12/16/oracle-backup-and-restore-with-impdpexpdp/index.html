@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Oracle backup and restore with IMPDp/EXPDp &middot; Mark's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Mark's Blog</a>
+          <small>Why not</small>
+        </h3>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Oracle backup and restore with IMPDp/EXPDp</h1>
+  <span class="post-date">16 Dec 2010</span>
+  <p>The word on the street is that all of these types of operations should be done from the SYSTEM user. </p>
+
+<h2>EXPDp</h2>
+
+<p>EXPDP SYSTEM/Password1@HQ1DBDEV4 SCHEMAS=PMCompassDemo DIRECTORY=BACKUP_DIR DUMPFILE=PMCompassDemo.dmp </p>
+
+<p>This can be run from any machine with Oracle tools installed. The @HQ1DBDEV4 specifies a different machine to connect to when not local. This will create a PMCompassDemo.dmp on e:\Backups on HQ1DBDEV4. </p>
+
+<h2>IMPDp</h2>
+
+<p>IMPDP SYSTEM/Password1@HQ1DBDEV4 REMAP<em>SCHEMA=PMCompassDemo:PMCompassDemoMark DIRECTORY=BACKUP</em>DIR DUMPFILE=PMCompassDemo.dmp LOGFILE=dmp.log </p>
+
+<p>This includes the REMAP_SCHEMA to restore the PMCompassDemo schema into the PMCompassDemoMark schema. </p>
+
+<p>If any warnings or errors appear, open SQLDeveloper and recompile any views/procedures that threw warnings. Also, the DeltekPackage is unique per user in Oracle. Since we have many dbs/users on the same server you will need to re-create the DeltekPackage. Open FW<em>Procedures</em>Oracle.sql and run the FW_Deltekpackage portion. </p>
+
+<h2>DIRECTORY</h2>
+
+<p>Oracle needs to know where to put the dump (.dmp) file. By default 10g and higher ship with a directory &#39;DATA<em>PUMP</em>DIR&#39;. </p>
+
+<p>SELECT directory<em>path
+            FROM
+            dba</em>directories
+            WHERE
+            directory<em>name = &#39;DATA</em>PUMP_DIR&#39;; </p>
+
+<p>Alternatively, you can set up additional directories. Here&#39;s how: </p>
+
+<p>CREATE directory TEMP_DIR AS &#39;c:\users\MARKNA~1\AppData\Local\Temp&#39;; <br>
+GRANT READ, WRITE ON directory dmpdir TO PMCompassDemo;  </p>
+
+<p>Note: SYSTEM does not need explicit permission to the folder. </p>
+
+<p> 
+ </p>
+
+<p>Here&#39;s the whole process, creating a local copy of PMCompassDemo from HQ1DBDEV4. </p>
+
+<ol>
+<li><p>From local command pompt run:<br>
+EXPDP SYSTEM/Password1@HQ1DBDEV4 SCHEMAS=PMCompassDemo DIRECTORY=BACKUP_DIR DUMPFILE=PMCompassDemo.dmp</p></li>
+<li><p>Zip e:\backups\PMCompassDemo.dmp from HQ1DBDEV4 </p></li>
+<li><p>Copy zip to local %TEMP% folder and extract. This assumes the TEMP_DIR directory has been set up. </p></li>
+<li><p>From SQLDeveloper logged into local SYSTEM<br>
+DROP TABLESPACE PMCompassDemo INCLUDING CONTENTS AND DATAFILES;<br>
+/   </p></li>
+</ol>
+
+<p>CREATE TABLESPACE PMCompassDemo<br>
+DATAFILE &#39;C:\ORACLEXE\ORADATA\XE\PMCompassDemo.dbf&#39;<br>
+SIZE 32m<br>
+AUTOEXTEND ON<br>
+NEXT 32m<br>
+MAXSIZE 2048m;<br>
+/   </p>
+
+<p>DROP USER PMCompassDemo CASCADE;<br>
+/<br>
+CREATE USER PMCompassDemo IDENTIFIED BY PMCompassDemo<br>
+DEFAULT TABLESPACE PMCompassDemo<br>
+QUOTA UNLIMITED ON PMCompassDemo<br>
+TEMPORARY TABLESPACE Temp;<br>
+GRANT CONNECT, RESOURCE, CREATE SESSION TO PMCompassDemo;<br>
+GRANT CREATE VIEW TO PMCompassDemo;<br>
+GRANT CREATE TRIGGER TO PMCompassDemo;<br>
+GRANT CREATE ANY CONTEXT TO PMCompassDemo;<br>
+/</p>
+
+<ol>
+<li><p>From local command prompt run:<br>
+IMPDP SYSTEM/Password1 REMAP<em>SCHEMA=PMCompassDemo:PMCompassDemo DIRECTORY=TEMP</em>DIR DUMPFILE=PMCompassDemo.dmp LOGFILE=dmp.log</p></li>
+<li><p>From SQLDeveloper connect to local PMCompassDemo and run FW<em>DeltekPackage. Open Procedures and recompile CAM</em>INSERTWSTDCTVIEW, CAM<em>SETCONTEXTINFO, CAM</em>UNROTATECOLUMN. </p></li>
+</ol>
+
+<h2>FW_DeltekPackage</h2>
+
+<p>Note: For reference only, please pull latest from FW<em>Procedures</em>Oracle.sql TFS. </p>
+
+<p>CREATE OR replace PACKAGE deltekpackage</p>
+
+<p>AS</p>
+
+<p>  PROCEDURE setsessionvalue(</p>
+
+<p>    varname  IN <em>VARCHAR2</em>,</p>
+
+<p>    varvalue IN <em>VARCHAR2</em>);</p>
+
+<p>END deltekpackage;</p>
+
+<p>/</p>
+
+<p>DECLARE</p>
+
+<p>    v<em>contextname </em>VARCHAR2_(50);</p>
+
+<p>    v<em>sqlstr      </em>LONG_;</p>
+
+<p>BEGIN</p>
+
+<p>    SELECT dbms<em>random.<strong>String</strong>(&#39;A&#39;, 5)
+            INTO
+            v</em>contextname
+            FROM   dual;</p>
+
+<p>    v_sqlstr := &#39;create or replace package body DeltekPackage as&#39; ||<br>
+    &#39; procedure SetSessionValue(varName in varchar2,varValue in varchar2) is&#39;</p>
+
+<p>                || &#39; begin dbms<em>session.set</em>context(&#39;&#39;DeltekContext_&#39;</p>
+
+<p>                || v_contextname</p>
+
+<p>                || &#39;&#39;&#39;, varName, varValue);&#39;</p>
+
+<p>                || &#39; end SetSessionValue; end DeltekPackage;&#39;;</p>
+
+<p>    EXECUTE IMMEDIATE v_sqlstr;</p>
+
+<p>    v<em>sqlstr := &#39;create or replace context DeltekContext</em>&#39;</p>
+
+<p>                || v_contextname</p>
+
+<p>                || &#39; using DeltekPackage&#39;;</p>
+
+<p>    EXECUTE IMMEDIATE v_sqlstr;</p>
+
+<p>END;</p>
+
+<p>/ </p>
+
+<p><strong>Category:</strong> Oracle</p>
+
+<p><strong>Published:</strong> 12/16/2010 12:23 PM</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="//2014/03/31/building-your-first-gem/">
+            Building your first gem
+            <small>31 Mar 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="//zsh/2014/01/28/zsh-no-matches-found/">
+            zsh: no matches found:...
+            <small>28 Jan 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="//2014/01/17/osx-terminal-tips/">
+            OSX Terminal Tips
+            <small>17 Jan 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'marknadig';
+
+  // disqus uses disqus_identifier by default, but  will use disqus_url if not defined
+  
+    var disqus_url = 'http://blog.nadigs.net/mark/oracle/2010/12/16/oracle-backup-and-restore-with-impdpexpdp/';
+  
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<!--<script type="text/javascript">-->
+  <!--var disqus_shortname = 'marknadig';-->
+  <!---->
+    <!---->
+    <!--// var disqus_developer = 1;-->
+    <!---->
+      <!--var disqus_identifier = 'http://blog.nadigs.net/mark/oracle/2010/12/16/oracle-backup-and-restore-with-impdpexpdp/';-->
+    <!---->
+    <!--var disqus_url = 'http://mark.nadigs.net/oracle/2010/12/16/oracle-backup-and-restore-with-impdpexpdp/';-->
+    <!--var disqus_script = 'embed.js';-->
+    <!---->
+    <!--(function () {-->
+      <!---->
+        <!--var embedScript = document.createElement('script');-->
+        <!--embedScript.type = 'text/javascript';-->
+        <!--embedScript.async = true;-->
+        <!--embedScript.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';-->
+        <!--(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(embedScript);-->
+        <!---->
+        <!--var countScript = document.createElement('script');-->
+        <!--countScript.type = 'text/javascript';-->
+        <!--countScript.async = true;-->
+        <!--countScript.src = 'http://' + disqus_shortname + '.disqus.com/count.js';-->
+        <!--(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(countScript);-->
+      <!--}());-->
+<!--</script>-->
+
+
+      <div class="footer">
+        <p>
+          &copy; 2014. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

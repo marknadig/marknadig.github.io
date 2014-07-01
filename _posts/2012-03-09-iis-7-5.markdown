@@ -1,0 +1,33 @@
+---
+author: marknadig
+comments: true
+date: 2012-03-09 18:12:00+00:00
+layout: post
+slug: iis-7-5
+title: IIS 7.5 - redirect
+wordpress_id: 99
+categories:
+- IIS
+---
+
+Just set up 'blog.nadigs.net' and I'm already anticipating people getting it wrong as "blogs.nadigs.net". I haven't ever set this up before, but it was easy-peasy.
+
+
+
+	
+  1. Add A record in DNS for blogs.nadigs.net going to my same IP.
+
+	
+  2. Update my dynamic dns updater script. I really need to open source that vb.net service program - but this is a good example why I haven't yet : it's full of hard coded config options.
+
+	
+  3. Enable Http Redirect (CP-> Turn Windows Features on/off -> IIS -> WWW svc -> Common HTTP -> HTTP redirection).
+
+	
+  4. Add a site in IIS for blogs.nadigs.net pointing to an empty folder.
+
+	
+  5. Followed directions from [here](http://www.iis.net/ConfigReference/system.webServer/httpRedirect) to HTTP Redirect -> add entry for blogs.nadigs.net to redirect to blog.nadigs.net w/ 301.
+
+
+that was easy.

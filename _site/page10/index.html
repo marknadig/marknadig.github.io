@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Mark's Blog &middot; Why not
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Mark's Blog</a>
+          <small>Why not</small>
+        </h3>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/chrome/os%20x/2012/10/03/how-to-disable-chromes-cross-site-origin-policy-for-dev/">
+        How to disable Chrome's cross site origin policy (for dev)
+      </a>
+    </h1>
+
+    <span class="post-date">03 Oct 2012</span>
+
+    <p>Running yeoman on port :3031 trying to hit my local test server on :3000 and am stopped due to same origin policy. Here&#39;s how circumvent (for local dev only)</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">open -a Google\ Chrome --args --disable-web-security
+</code></pre></div>
+<p><a href="http://stackoverflow.com/questions/3102819/chrome-disable-same-origin-policy">http://stackoverflow.com/questions/3102819/chrome-disable-same-origin-policy</a></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/os%20x/ruby%20on%20rails/2012/08/29/rails-library-not-loaded-libmysqlclient-18-dylib/">
+        Rails - Library not loaded: libmysqlclient.18.dylib
+      </a>
+    </h1>
+
+    <span class="post-date">29 Aug 2012</span>
+
+    <p>After <a href="http://blog.nadigs.net/mark/2012/08/29/going-from-macports-to-homebrew/">switching</a> from MacPorts to Homebrew (and re-isntalling mysql) I was getting an error running my rails server:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.../gems/mysql2-0.3.11/lib/mysql2/mysql2.bundle, 9): Library not loaded: libmysqlclient.18.dylib (LoadError)
+</code></pre></div>
+<p>Per <a href="http://stackoverflow.com/questions/4546698/library-not-loaded-libmysqlclient-16-dylib-error-when-trying-to-run-rails-serv">StackOverflow</a> was a simple fix:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
+</code></pre></div>
+<p>Oh, also had to update database.yml to point to /tmp/mysql.sock from /opt/local.var/run/mysql5/mysqld.sock</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/os%20x/2012/08/29/going-from-macports-to-homebrew/">
+        Going from MacPorts to Homebrew
+      </a>
+    </h1>
+
+    <span class="post-date">29 Aug 2012</span>
+
+    <p>Many blogs out there outline the process (1), (2), (3). Having upgraded to Ruby 1.9.3 and running into a segfault issue resolved by brew (<a href="https://github.com/capistrano/capistrano/issues/250">https://github.com/capistrano/capistrano/issues/250</a>) (<a href="http://bugs.ruby-lang.org/issues/5559">http://bugs.ruby-lang.org/issues/5559</a>), I thought it was time. So, I&#39;m on the bandwagon.</p>
+
+<p>First, following the <a href="http://guide.macports.org/chunked/installing.macports.uninstalling.html">official instructions</a>, remove macports. <strong>Note</strong>: Macports installed mysql puts your db in /opt/local/var/db so back them up if you care. Also, check the official site for updates to these steps.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"># Remove all installed ports
+sudo port -fp uninstall installed
+
+# cleanup remnants
+sudo rm -rf \
+/opt/local \
+/Applications/DarwinPorts \
+/Applications/MacPorts \
+/Library/LaunchDaemons/org.macports.* \
+/Library/Receipts/DarwinPorts*.pkg \
+/Library/Receipts/MacPorts*.pkg \
+/Library/StartupItems/DarwinPortsStartup \
+/Library/Tcl/darwinports1.0 \
+/Library/Tcl/macports1.0 \
+~/.macports
+</code></pre></div>
+<p>Now install Homebrew as outlined on the <a href="http://mxcl.github.com/homebrew/">official site</a>. Note: Check the website before running this script as it may change.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;code id=&quot;selectable&quot;&gt;ruby &lt;(curl -fsSkL raw.github.com/mxcl/homebrew/go)&lt;/code&gt;
+</code></pre></div>
+<p>Then follow the prompts.</p>
+
+<p>Now, ready to install the rest of the stuff.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">brew install imagemagick
+</code></pre></div>
+<p>I did opt to install mysql directly from oracle: <a href="http://www.mysql.com/downloads/mysql/">http://www.mysql.com/downloads/mysql/</a> following (4).</p>
+
+<p>In order to rebuild my rvm gemsets, I could have done it the &#39;easy way&#39;, but I preferred slash and burn:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"># Completely remove RVM
+rvm implode
+# re-install rvm
+bash &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer) 
+# reinstall ruby
+rvm install ruby1.9.2-p290
+</code></pre></div>
+<p>Here, rvm informed me that Ruby needs gcc to compile and xcode 4.4.1 doens&#39;t come with it and to do the following in another terminal window:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">brew update
+brew tap homebrew/dupes
+brew install autoconf automake apple-gcc42
+rvm pkg install openssl
+</code></pre></div>
+<p>Now it is ready to continue to install ruby</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">Refs:
+</code></pre></div>
+<p>(1) <a href="http://orange-pants.com/databases/homebrew-on-mac-osx-lion/">http://orange-pants.com/databases/homebrew-on-mac-osx-lion/</a></p>
+
+<p>(2) <a href="http://bitboxer.de/2010/06/03/moving-from-macports-to-homebrew/">http://bitboxer.de/2010/06/03/moving-from-macports-to-homebrew/</a></p>
+
+<p>(3) <a href="http://osxastrotricks.wordpress.com/2012/03/19/switch-from-macports-to-homebrew/">http://osxastrotricks.wordpress.com/2012/03/19/switch-from-macports-to-homebrew/</a></p>
+
+<p>(4) <a href="http://astonj.com/tech/how-to-install-mysql-on-lion-mac-os-x/">http://astonj.com/tech/how-to-install-mysql-on-lion-mac-os-x/</a></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/os%20x/2012/08/21/osx-where-is-that-program-run-from/">
+        OSx Where is that program run from?
+      </a>
+    </h1>
+
+    <span class="post-date">21 Aug 2012</span>
+
+    <p>from bash</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">which &lt;program&gt;
+
+
+
+
+e.g.
+
+
+
+
+which git
+</code></pre></div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/git/2012/07/12/diffmerge-as-git-mergetool/">
+        DiffMerge as git mergetool
+      </a>
+    </h1>
+
+    <span class="post-date">12 Jul 2012</span>
+
+    <p>In my other <a href="http://blog.nadigs.net/mark/2012/05/02/osx-file-compare/">post</a> discussed various file compare options for OSx.  Currently I&#39;m trying to configure git to use diffmerge as its merge tool. First step is to add diffmerge to the path. Download dmg and run this from that (from the diffmerge readme):</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">sudo cp Extras/diffmerge.sh /usr/bin/diffmerge
+ sudo chmod 755 /usr/bin/diffmerge
+ sudo cp Extras/diffmerge.1 /usr/share/man/man1/diffmerge.1
+ sudo chmod 644 /usr/share/man/man1/diffmerge.1
+</code></pre></div>
+<p>Next</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git config --global merge.tool diffmerge
+git config --global mergetool.diffmerge.cmd &quot;diffmerge --merge --result=\$MERGED \$LOCAL \$BASE \$REMOTE&quot;
+git config --global mergetool.diffmerge.trustExitCode true
+</code></pre></div>
+<p>Source: <a href="http://adventuresincoding.com/2010/04/how-to-setup-git-to-use-diffmerge/">http://adventuresincoding.com/2010/04/how-to-setup-git-to-use-diffmerge/</a></p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page11">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page9">Newer</a>
+    
+  
+</div>
+
+
+      
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'marknadig';
+
+  // disqus uses disqus_identifier by default, but  will use disqus_url if not defined
+  
+    // var disqus_identifier = 'http://mark.nadigs.net/page10/';
+    var disqus_url = 'http://mark.nadigs.net/page10/';
+  
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<!--<script type="text/javascript">-->
+  <!--var disqus_shortname = 'marknadig';-->
+  <!---->
+    <!--(function () {-->
+      <!---->
+        <!--var countScript = document.createElement('script');-->
+        <!--countScript.type = 'text/javascript';-->
+        <!--countScript.async = true;-->
+        <!--countScript.src = 'http://' + disqus_shortname + '.disqus.com/count.js';-->
+        <!--(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(countScript);-->
+      <!--}());-->
+<!--</script>-->
+
+
+      <div class="footer">
+        <p>
+          &copy; 2014. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,2889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Mark's Blog</title>
+ <link href="http://mark.nadigs.net/atom.xml" rel="self"/>
+ <link href="http://mark.nadigs.net/"/>
+ <updated>2014-07-01T09:37:24-06:00</updated>
+ <id>http://mark.nadigs.net</id>
+ <author>
+   <name>Mark Nadig</name>
+   <email>mark@nadigs.net</email>
+ </author>
+
+ 
+ <entry>
+   <title>Building your first gem</title>
+   <link href="http://mark.nadigs.net//2014/03/31/building-your-first-gem/"/>
+   <updated>2014-03-31T11:08:30-06:00</updated>
+   <id>http://mark.nadigs.net/2014/03/31/building-your-first-gem</id>
+   <content type="html">&lt;p&gt;Great writeup on building your first gem, including starting with tests.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://quickleft.com/blog/step-by-step-guide-to-building-your-first-ruby-gem&quot;&gt;http://quickleft.com/blog/step-by-step-guide-to-building-your-first-ruby-gem&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>zsh: no matches found:...</title>
+   <link href="http://mark.nadigs.net//zsh/2014/01/28/zsh-no-matches-found/"/>
+   <updated>2014-01-28T17:01:22-07:00</updated>
+   <id>http://mark.nadigs.net/zsh/2014/01/28/zsh-no-matches-found</id>
+   <content type="html">&lt;p&gt;I&amp;#39;ve been on zshell (via oh-my-zsh) for some time and have loved most of it. One of my nits was &amp;#39;no matches found&amp;#39; when running various rake tasks; e.g.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;$ rake parallel:spec[4]
+&amp;gt; zsh: no matches found: parallel:spec[4]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I was a bit fuddled on the root cause, but today I found the solution and the cause. The root cause was zshell&amp;#39;s substitutions http://zsh.sourceforge.net/Guide/zshguide05.html and the solution was to add&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;alias rake=&amp;quot;noglob rake&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;to my ~/.zshrc&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OSX Terminal Tips</title>
+   <link href="http://mark.nadigs.net//2014/01/17/osx-terminal-tips/"/>
+   <updated>2014-01-17T17:06:04-07:00</updated>
+   <id>http://mark.nadigs.net/2014/01/17/osx-terminal-tips</id>
+   <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;pipe to &lt;code&gt;pbcopy&lt;/code&gt; and &lt;code&gt;pbpaste&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;opensnoop&lt;/code&gt; or &lt;code&gt;lsof&lt;/code&gt; to list files open by process&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;simple http server  &lt;code&gt;python -m SimpleHTTPServer 8000&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sources:&lt;/p&gt;
+
+&lt;p&gt;http://apple.stackexchange.com/questions/5435/got-any-tips-or-tricks-for-terminal-in-mac-os-x
+http://serverfault.com/questions/7346/what-are-useful-command-line-commands-on-mac-os-x&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>FFmpeg essentials</title>
+   <link href="http://mark.nadigs.net//dvd/2014/01/13/ffmpeg-essentials/"/>
+   <updated>2014-01-13T21:22:05-07:00</updated>
+   <id>http://mark.nadigs.net/dvd/2014/01/13/ffmpeg-essentials</id>
+   <content type="html">&lt;p&gt;General guide: &lt;a href=&quot;https://evilsoup.wordpress.com/2013/02/10/general-ffmpeg-encoding-guide-2/&quot;&gt;https://evilsoup.wordpress.com/2013/02/10/general-ffmpeg-encoding-guide-2/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Wiki &lt;a href=&quot;https://trac.ffmpeg.org/wiki#Encoding&quot;&gt;https://trac.ffmpeg.org/wiki#Encoding&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TIL how to customize an icon for a folder in OS X</title>
+   <link href="http://mark.nadigs.net//os%20x/2014/01/08/til-how-to-customize-an-icon-for-a-folder-in-os-x/"/>
+   <updated>2014-01-08T09:50:53-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2014/01/08/til-how-to-customize-an-icon-for-a-folder-in-os-x</id>
+   <content type="html">&lt;p&gt;I recently downloaded a number of ebooks that to my desktop and threw them all in a folder &amp;#39;books&amp;#39;. I wondered how hard it would be customize the icon. Turns out it is super simple.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Copy image (using preview)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open folder&amp;#39;s info, click on image at the top of the info view and select Edit -&amp;gt; Paste.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;2014-01-08-til-how-to-customize-an-icon-for-a-folder-in-os-x.png&quot;&gt;&lt;img src=&quot;/images/2014-01-08-til-how-to-customize-an-icon-for-a-folder-in-os-x.png&quot; alt=&quot;Screen Shot 2014-01-08 at 9.21.03 AM&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;http://support.apple.com/kb/PH10847&quot;&gt;http://support.apple.com/kb/PH10847&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Transfer iBook to Nook</title>
+   <link href="http://mark.nadigs.net//2014/01/02/transfer-ibook-to-nook/"/>
+   <updated>2014-01-02T10:09:34-07:00</updated>
+   <id>http://mark.nadigs.net/2014/01/02/transfer-ibook-to-nook</id>
+   <content type="html">&lt;p&gt;Both of my daughters have Nooks and we wanted to see if it were possible to transfer books downloaded from iBook to the Nook. I found a few old articles, but the most recent information I found for Mavericks was here &lt;a href=&quot;http://ebookconverter.blogspot.com/2013/11/where-to-find-epub-file-in-ibooks-for.html&quot;&gt;http://ebookconverter.blogspot.com/2013/11/where-to-find-epub-file-in-ibooks-for.html&lt;/a&gt;. The salient points:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;books are under ~/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks/Books&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;epub &lt;em&gt;folder&lt;/em&gt; can be converted to a epub file by zipping up the contents and changing the extension from zip to epub. Don&amp;#39;t zip up the folder; e.g.  &amp;quot;43345345.epub&amp;quot;,  rather, open that folder and select all the files and compress those.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Ripping DVDs</title>
+   <link href="http://mark.nadigs.net//dvd/2013/12/27/ripping-dvds/"/>
+   <updated>2013-12-27T09:59:42-07:00</updated>
+   <id>http://mark.nadigs.net/dvd/2013/12/27/ripping-dvds</id>
+   <content type="html">&lt;p&gt;Over Christmas break I wanted to rip some DVDs I received so I can stream to my xbox. Previously I would use DVDFab to decrypt DVDs to VOB and then Auto Gordian Knot (AutoGK) to transcode the VOB to AVI. The entire process took quite a while for each DVD. To mitigate the time involved, I would decode all the VOBs and then queue up many transcode jobs w/ AutoGK and let it run overnight. Nice, but slow.&lt;/p&gt;
+
+&lt;p&gt;I found a better way. I used &lt;a href=&quot;http://makemkv.com/&quot;&gt;MakeMKV&lt;/a&gt;, which support both windows and mac, to decode and create a MKV from a DVD. This took maybe 10 minutes for a DVD. Xbox/windows media center won&amp;#39;t play MKV directly, so I still needed to transcode. Here I used ffmpeg to transcode video from mpeg2 to mpeg4 and audio from either pcm or aac to mp3 with:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ffmpeg -i &amp;quot;input.mkv&amp;quot; -f avi -c:v mpeg4 -b:v 4000k -c:a libmp3lame -b:a 320k &amp;quot;converted.avi&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;or in a batch (windows)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;for %a in (*.mkv) do ffmpeg -i &amp;quot;%~na.mkv&amp;quot; -f avi -c:v mpeg4 -b:v 4000k -c:a libmp3lame -b:a 320k &amp;quot;%~na.avi&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: To just change container; e.g. mkv to mp4:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ffmpeg -i &amp;quot;input.mkv&amp;quot; -vcodec copy -acodec copy &amp;quot;output.mp4&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: Some posts indicate using &amp;quot;-absf aac_adtstoasc&amp;quot; also.&lt;/p&gt;
+
+&lt;p&gt;Found from &lt;a href=&quot;http://superuser.com/questions/227338/how-to-convert-an-mkv-to-avi-with-minimal-loss/467980#467980&quot;&gt;http://superuser.com/questions/227338/how-to-convert-an-mkv-to-avi-with-minimal-loss/467980#467980&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Git cherry pick from remote branch</title>
+   <link href="http://mark.nadigs.net//git/2013/12/16/git-cherry-pick-from-remote-branch/"/>
+   <updated>2013-12-16T18:17:20-07:00</updated>
+   <id>http://mark.nadigs.net/git/2013/12/16/git-cherry-pick-from-remote-branch</id>
+   <content type="html">&lt;p&gt;I wanted to pull in a specific &lt;a href=&quot;https://github.com/dustacio/ri_cal/commit/c25430e3defbf100529335cbc25a20a762327717&quot;&gt;PR&lt;/a&gt; from a repo that is no longer maintained into my fork.&lt;/p&gt;
+
+&lt;p&gt;Local repo is KonaTeam/ri&lt;em&gt;cal and PR was https://github.com/dustacio/ri&lt;/em&gt;cal/.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ git remote add dustacio https://github.com/dustacio/ri_cal/
+$ git fetch dustacio
+$ git cherry-pick -c c25430e3defbf1005
+$ # resolve any conflicts and commit
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;source:&lt;a href=&quot;http://www.miek.nl/blog/archives/2011/12/13/cherry-picking_remote_branches/index.html&quot;&gt; http://www.miek.nl/blog/archives/2011/12/13/cherry-picking&lt;em&gt;remote&lt;/em&gt;branches/index.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to change default printer settings OS X</title>
+   <link href="http://mark.nadigs.net//os%20x/2013/12/14/how-to-change-default-printer-settings-os-x/"/>
+   <updated>2013-12-14T21:37:17-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2013/12/14/how-to-change-default-printer-settings-os-x</id>
+   <content type="html">&lt;p&gt;Just open  &lt;a href=&quot;http://localhost:631/printers&quot;&gt;http://localhost:631/printers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s all detailed here:&lt;/p&gt;
+
+&lt;p&gt;http://lavagoat.wordpress.com/2011/03/23/change-default-printer-settings-on-mac-os-x/&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Ubuntu 13 on VirtualBox 4.2 slow</title>
+   <link href="http://mark.nadigs.net//ubuntu/virtualization/2013/11/26/ubuntu-13-on-virtualbox-4-2-slow/"/>
+   <updated>2013-11-26T19:15:31-07:00</updated>
+   <id>http://mark.nadigs.net/ubuntu/virtualization/2013/11/26/ubuntu-13-on-virtualbox-4-2-slow</id>
+   <content type="html">&lt;p&gt;Installed lastest Ubuntu on a VirtualBox VM and things were crawling. Internets had many variations on the same theme. I found this to be the best:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.typicaltips.com/2013/02/ubuntu-lags-in-virtualbox-solution.html&quot;&gt;http://www.typicaltips.com/2013/02/ubuntu-lags-in-virtualbox-solution.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: Parallels didn&amp;#39;t have the same issue. But, I gotta tell you ... I&amp;#39;m not in love with Parallels.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Audio won't over airplay</title>
+   <link href="http://mark.nadigs.net//os%20x/2013/11/15/audio-wont-over-airplay/"/>
+   <updated>2013-11-15T13:46:01-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2013/11/15/audio-wont-over-airplay</id>
+   <content type="html">&lt;p&gt;TIL how to fix audio not working over airplay
+&lt;code&gt;
+$ sudo killall coreaudiod
+&lt;/code&gt;
+&lt;a href=&quot;https://discussions.apple.com/thread/4354099&quot;&gt;https://discussions.apple.com/thread/4354099&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>batch rename files in OS X</title>
+   <link href="http://mark.nadigs.net//os%20x/2013/10/19/batch-rename-files-in-os-x/"/>
+   <updated>2013-10-19T10:00:59-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2013/10/19/batch-rename-files-in-os-x</id>
+   <content type="html">&lt;p&gt;I had ripped a bunch of MP3s in iTunes for my daughter only to find it took too much space for her player. I transcoded the MP3s to 96kbps in iTunes which resulted in two files:
+&lt;code&gt;original.mp3
+original 1.mp3&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I now wanted to delete all the originals, and rename the sequenced versions by dropping the numeric sequence:&lt;/p&gt;
+
+&lt;p&gt;`&lt;/p&gt;
+
+&lt;h1&gt;copy off the keepers&lt;/h1&gt;
+
+&lt;p&gt;mv &lt;em&gt;1.mp3 tmp
+rm *.mp3
+mv tmp/&lt;/em&gt;.mp3 .
+rm tmp&lt;/p&gt;
+
+&lt;h1&gt;rename, removing &amp;#39; 1&amp;#39; sufffix&lt;/h1&gt;
+
+&lt;p&gt;for n in *.mp3
+do
+mv &amp;quot;$n&amp;quot; &amp;quot;$(echo $n | sed -e &amp;#39;s/ 1.mp3/.mp3/&amp;#39;)&amp;quot;
+done`&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>chkdsk /R wouldn't on reboot</title>
+   <link href="http://mark.nadigs.net//windows%207/2013/10/15/chkdsk-r-wouldnt-on-reboot/"/>
+   <updated>2013-10-15T15:40:17-06:00</updated>
+   <id>http://mark.nadigs.net/windows%207/2013/10/15/chkdsk-r-wouldnt-on-reboot</id>
+   <content type="html">&lt;p&gt;When I would try to run chkdsk /R on my my Windows 7 laptop, it would, of course, say the volume is locked and asked if I wanted to run on reboot. &amp;quot;Yes, of course.&amp;quot;, reboot ... nothing. I found this thread helpful:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://forum.notebookreview.com/windows-os-software/172250-scheduled-chkdsk-wont-run-reboot.html&quot;&gt;http://forum.notebookreview.com/windows-os-software/172250-scheduled-chkdsk-wont-run-reboot.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I was not able to run chkdsk from a command prompt from safe mode. I was able to create a recovery DVD, boot to that and run chkdsk from a command prompt.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Chromecast and Cisco E3000 problem fix</title>
+   <link href="http://mark.nadigs.net//chrome/2013/10/09/chromecast-and-cisco-e3000-problem-fix/"/>
+   <updated>2013-10-09T09:56:57-06:00</updated>
+   <id>http://mark.nadigs.net/chrome/2013/10/09/chromecast-and-cisco-e3000-problem-fix</id>
+   <content type="html">&lt;p&gt;I finally got around to setting up my shiny new Chromecast. The instructions indicate &amp;quot;3 easy steps&amp;quot;: 1. plug it in, 2. switch input, 3. set it up. The last part of setup, the Chromecast tries to connect to the wireless network. It failed and I was directed to a KB that no longer exists, but found in cache:&lt;/p&gt;
+
+&lt;p&gt;https://support.google.com/chromecast/answer/3213084&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+&gt; 
+&gt; # Learn More: AP Isolation is enabled
+&gt; 
+&gt; 
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;Your Wi-Fi network configuration prevents devices from communicating with Chromecast. In order to resolve this issue, you will need to disable AP (access point) isolation, also known as client isolation, on your router. Please refer to your router documentation to learn how to disable AP isolation.
+
+If you do not have access to your router settings, or if you are attempting to connect through a guest, hotel or public network with AP/client isolation, you will be unable to set up your Chromecast.
+
+If you are attempting to connect through a Wi-Fi extender, please check your extender settings. You will need to disable AP isolation on your Wi-Fi extender before setting up Chromecast to work with your Wi-Fi network.&lt;/blockquote&gt;
+
+&lt;p&gt;I confirmed that AP Isolation was diabled on the router. I searched around and found &lt;a href=&quot;http://mattstard.com/google-chromecast-cisco-e3000-router-fix/&quot;&gt;another user had run into this&lt;/a&gt; and his solution was to install ddwrt on the e3000. I was reluctant to potentially take down my home network, so reached out to Google support. Their response identified the root cause which is the e3000 is a dual band router and Chromecast only works with the 2.4GHz band.  So, giving each band a unique SSID solved my issue. Interestingly, I found the Google has already updated their docs w/ this possible cause: &lt;a href=&quot;https://support.google.com/chromecast/answer/3228330?hl=en&quot;&gt; https://support.google.com/chromecast/answer/3228330?hl=en&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Squashing commits using rebase</title>
+   <link href="http://mark.nadigs.net//git/2013/08/09/squashing-commits-using-rebase/"/>
+   <updated>2013-08-09T09:35:09-06:00</updated>
+   <id>http://mark.nadigs.net/git/2013/08/09/squashing-commits-using-rebase</id>
+   <content type="html">&lt;p&gt;When I work, I tend to be very verbose with my commits - save often, if you will. So, however, I usually don&amp;#39;t want to push all of that chatter up, rather I want to consolidate all the changes as one. Enter git rebase; aka squash the commits. There are many articles outlining the process. I&amp;#39;ve bookmarked this &lt;a href=&quot;http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html&quot;&gt;post&lt;/a&gt; for reference.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Ruby regex end of line character different depending on platform</title>
+   <link href="http://mark.nadigs.net//regex/ruby/2013/08/09/ruby-regex-end-of-line-character-different-depending-on-platform/"/>
+   <updated>2013-08-09T09:29:45-06:00</updated>
+   <id>http://mark.nadigs.net/regex/ruby/2013/08/09/ruby-regex-end-of-line-character-different-depending-on-platform</id>
+   <content type="html">&lt;p&gt;Ruby&amp;#39;s IO.puts will use the appropriate separator based on the platform; e.g. &amp;quot;\n&amp;quot; for *nix and &amp;quot;\r\n&amp;quot; for windows, which makes sense to me. However, ran into an issue today where the end line character for regex wasn&amp;#39;t matching as demonstrated here (tested on OSX)&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;    &amp;gt; s = &amp;quot;test\r\nhere&amp;quot;
+    &amp;gt; s.match(/test$/)
+     =&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I found this SO article helpful:
+&lt;a href=&quot;http://stackoverflow.com/questions/5148359/ruby-on-a-mac-regular-expression-spanning-two-lines-of-text&quot;&gt;http://stackoverflow.com/questions/5148359/ruby-on-a-mac-regular-expression-spanning-two-lines-of-text&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I ran into this because I had to change the Ri_Cal gem to export using DOS style \r\n always per &lt;a href=&quot;http://tools.ietf.org/html/rfc2445#section-4.1&quot;&gt;http://tools.ietf.org/html/rfc2445#section-4.1&lt;/a&gt;. The spec tests were failing because they were just using &amp;quot;$&amp;#39; to match the end of line, which now was an &amp;quot;\r&amp;quot;. In my case, I just added the &amp;quot;\r&amp;quot; so that someone coming behind me would be clear on the intent. Another approach would be to strip before I tested (let that image sink in).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mountain Lion - git “Command Not Found” </title>
+   <link href="http://mark.nadigs.net//git/os%20x/2013/07/26/mountain-lion-git-command-not-found/"/>
+   <updated>2013-07-26T11:10:10-06:00</updated>
+   <id>http://mark.nadigs.net/git/os%20x/2013/07/26/mountain-lion-git-command-not-found</id>
+   <content type="html">&lt;p&gt;Upgraded to OSx 10.8.4 (Mountain Lion) this morning and after the 2 reboots, started up terminal to get to work and&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;    $ git checkout -b workingbranch
+    -bash: git: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;bah!  Thankfully, internets to the rescue and this &lt;a href=&quot;http://www.hongkiat.com/blog/mountain-lion-git-fix/&quot;&gt;post&lt;/a&gt; pointed me to 1. install XCode (already installed) and 2. install command line tools from XCode (FTW).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails 3.2.13 and default scopes fail </title>
+   <link href="http://mark.nadigs.net//ruby%20on%20rails/2013/05/23/rails-3-2-13-and-chaining-scopes-default-scopes-can-fail/"/>
+   <updated>2013-05-23T16:25:41-06:00</updated>
+   <id>http://mark.nadigs.net/ruby%20on%20rails/2013/05/23/rails-3-2-13-and-chaining-scopes-default-scopes-can-fail</id>
+   <content type="html">&lt;p&gt;Rails upgrade SOP - created a branch, upgraded from 3.2.12 to 3.2.13, ran tests and... WAT?... a number of failures. My controller tests were telling me they are getting data they shouldn&amp;#39;t. Root cause was identified as this issue: &lt;a href=&quot;https://github.com/rails/rails/issues/9813&quot;&gt;https://github.com/rails/rails/issues/9813&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Bottom line is if you have default scopes on your model, subsequent scoping appears to ignore it.; e.g.
+[code language=&amp;quot;ruby&amp;quot;]
+    class Book &amp;lt; ActiveRecord::Base
+      default_scope where(:id =&amp;gt; [1,2])
+    end&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;bs = Book.all #  SELECT &amp;quot;books&amp;quot;.* FROM &amp;quot;books&amp;quot; WHERE &amp;quot;books&amp;quot;.&amp;quot;id&amp;quot; IN (1, 2)
+bs.find(3) # SELECT &amp;quot;books&amp;quot;.* FROM &amp;quot;books&amp;quot; WHERE &amp;quot;books&amp;quot;.&amp;quot;id&amp;quot; = ? LIMIT 1  [[&amp;quot;id&amp;quot;, 3]]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;[/code]&lt;/p&gt;
+
+&lt;p&gt;In 3.2.12 would raise RecordNotFound, 3.2.13 happily finds it. So, waiting on a fix for that. Seems not an easy fix :/&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Kona Mobile</title>
+   <link href="http://mark.nadigs.net//ios/mobile/2013/04/22/kona-mobile/"/>
+   <updated>2013-04-22T08:44:39-06:00</updated>
+   <id>http://mark.nadigs.net/ios/mobile/2013/04/22/kona-mobile</id>
+   <content type="html">&lt;p&gt;Just read a nice review of Kona mobile, what I&amp;#39;ve been working on most recently with a couple of other great guys.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://tabtimes.com/feature/ittech-apps/2013/04/19/best-new-ipad-apps-share-articles-edit-office-documents-annotate-pdfs&quot;&gt;http://tabtimes.com/feature/ittech-apps/2013/04/19/best-new-ipad-apps-share-articles-edit-office-documents-annotate-pdfs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Very excited to see Kona&amp;#39;s recognition in the market . Check it out at &lt;a href=&quot;www.kona.com&quot;&gt;kona.com &lt;/a&gt;. Sign up for a free account and start social collaboration for youth soccer, volunteer groups and SMBs.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AngularJS directives</title>
+   <link href="http://mark.nadigs.net//angularjs/2013/04/12/angularjs-directives/"/>
+   <updated>2013-04-12T09:56:26-06:00</updated>
+   <id>http://mark.nadigs.net/angularjs/2013/04/12/angularjs-directives</id>
+   <content type="html">&lt;p&gt;Just bookmarking a good overview of AngularJS directives &lt;a href=&quot;http://statelessprime.blogspot.be/2013/04/angularjs-directive-overview.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Transfer photos from Nexus 4 to iPhoto</title>
+   <link href="http://mark.nadigs.net//android/mobile/2013/03/23/transfer-photos-from-nexus-4-to-iphoto/"/>
+   <updated>2013-03-23T12:05:10-06:00</updated>
+   <id>http://mark.nadigs.net/android/mobile/2013/03/23/transfer-photos-from-nexus-4-to-iphoto</id>
+   <content type="html">&lt;p&gt;To get iPhoto to recognize my Nexus 4, I found I had to change the USB storage settings:&lt;/p&gt;
+
+&lt;p&gt;On the Nexus 4, go to &lt;strong&gt;SETTINGS&lt;/strong&gt;. Bring up the &lt;strong&gt;STORAGE&lt;/strong&gt;settings. Tap the little three square dots icon in the top right corner. Select “&lt;strong&gt;USB computer connection&lt;/strong&gt;“. This will bring up two connection options.&lt;/p&gt;
+
+&lt;p&gt;You can select “&lt;strong&gt;Media Device (&lt;a href=&quot;http://en.wikipedia.org/wiki/Media_Transfer_Protocol&quot;&gt;MTP&lt;/a&gt;)&lt;/strong&gt;” which is the default setting and will NOT allow you to import you photos. The other option is to select “&lt;strong&gt;Camera (&lt;a href=&quot;http://en.wikipedia.org/wiki/Picture_Transfer_Protocol&quot;&gt;PTP&lt;/a&gt;)&lt;/strong&gt;“. This mode will allow you to import you photos. In Lightroom, for instance, the device immediately appears as “Nexus” in the photo importer.&lt;/p&gt;
+
+&lt;p&gt;Source:  &lt;a href=&quot;http://best-mac-tips.com/2013/02/27/transfer-photos-nexus-android-mac-lightroom/&quot;&gt;http://best-mac-tips.com/2013/02/27/transfer-photos-nexus-android-mac-lightroom/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Handbrake 0.9.5 and VLC 2.x</title>
+   <link href="http://mark.nadigs.net//os%20x/2013/03/16/handbrake-0-9-5-and-vlc-2-x/"/>
+   <updated>2013-03-16T10:55:52-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2013/03/16/handbrake-0-9-5-and-vlc-2-x</id>
+   <content type="html">&lt;p&gt;Plenty of posts out there detailing the problem with VLC 2.0 and higher w/ handbrake. However, many of the solutions took me to broken links.  I went to the source and found the correct information there. See &lt;a href=&quot;https://forum.handbrake.fr/viewtopic.php?f=5&amp;amp;t=23301&quot;&gt;https://forum.handbrake.fr/viewtopic.php?f=5&amp;amp;t=23301&lt;/a&gt; for a good link to the libdvdcss package.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>DRYing up RSpec</title>
+   <link href="http://mark.nadigs.net//ruby%20on%20rails/testing/2013/03/11/drying-up-rspec/"/>
+   <updated>2013-03-11T10:44:30-06:00</updated>
+   <id>http://mark.nadigs.net/ruby%20on%20rails/testing/2013/03/11/drying-up-rspec</id>
+   <content type="html">&lt;p&gt;Today I had the need to run the same set of tests with just one or two variable changes, specifically testing our RESTful routes with a different platform key (web, api, mobile). It didn&amp;#39;t feel right to make this a shared example (&amp;quot;it behaves like...&amp;quot;). I came across this &lt;a href=&quot;http://testdrivenwebsites.com/2011/08/17/different-ways-of-code-reuse-in-rspec/&quot;&gt;blog post&lt;/a&gt; and found the suggestion under &amp;quot;Constructing RSpec examples programmatically&amp;quot; to be exactly what I need&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;describe myController, :type =&amp;gt; :controller do
+  [:api, :mobile, :web].each do |platform|
+
+...
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Global .gitignore for IDE specific exclusions</title>
+   <link href="http://mark.nadigs.net//git/2013/03/01/global-gitignore-for-ide-specific-ignores/"/>
+   <updated>2013-03-01T09:23:34-07:00</updated>
+   <id>http://mark.nadigs.net/git/2013/03/01/global-gitignore-for-ide-specific-ignores</id>
+   <content type="html">&lt;p&gt;I work in a team with disperate IDEs. So, when we start a new project, each of us ends up adding our IDE specifics to the project&amp;#39;s .gitignore; e.g. for WebStorm, RubyMine:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;.idea/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For sublime text 2:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;/*.sublime-project
+*.sublime-workspace
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Not a big deal, but a bit tiresome. I also found myself adding these as step 1 of submitting a PR to an OSS project. This is bad because it muddies the .gitignore. Thankfully, on a  recent PR a maintainer clued me into global gitignore. Read up on them on &lt;a href=&quot;https://help.github.com/articles/ignoring-files&quot;&gt;github&lt;/a&gt;. But it works just like you&amp;#39;d imagine, I can add my IDE specific excludes to &lt;em&gt;my&lt;/em&gt; global gitignore and never have to muddy another project&amp;#39;s .gitignore again.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Nexus 4 - Android debugging, USB file transfer</title>
+   <link href="http://mark.nadigs.net//android/2013/02/28/nexus-4-android-debugging-usb-file-transfer/"/>
+   <updated>2013-02-28T11:10:26-07:00</updated>
+   <id>http://mark.nadigs.net/android/2013/02/28/nexus-4-android-debugging-usb-file-transfer</id>
+   <content type="html">&lt;p&gt;Trying to do a little debugging on my new Nexus 4. Step 1. enable USB debugging. Where&amp;#39;d it go!? Well, it is hidden now:  &lt;a href=&quot;http://developer.android.com/tools/device.html&quot;&gt;http://developer.android.com/tools/device.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;&lt;strong&gt;Note:&lt;/strong&gt; On Android 4.2 and newer, &lt;strong&gt;Developer options&lt;/strong&gt; is hidden by default. To make it available, go to &lt;strong&gt;Settings &amp;gt; About phone&lt;/strong&gt; and tap &lt;strong&gt;Build number&lt;/strong&gt; seven times. Return to the previous screen to find &lt;strong&gt;Developer options&lt;/strong&gt;.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Second, where can I enable just USB disk? By default it is shared as a media device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Settings -&amp;gt; Storage -&amp;gt; options -&amp;gt; USB computer connection -&amp;gt; Connect as&lt;/strong&gt; ... check &lt;strong&gt;Camera (PTP)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;[update]&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Turns out that didn&amp;#39;t let me transfer files either on my Mac :/ Had to download the Android file transfer app.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://support.google.com/nexus/bin/answer.py?hl=en&amp;amp;answer=2812526&quot;&gt;http://support.google.com/nexus/bin/answer.py?hl=en&amp;amp;answer=2812526&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.android.com/filetransfer/&quot;&gt;http://www.android.com/filetransfer/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AngularJS resources</title>
+   <link href="http://mark.nadigs.net//angularjs/2013/02/01/angularjs-resources/"/>
+   <updated>2013-02-01T10:09:26-07:00</updated>
+   <id>http://mark.nadigs.net/angularjs/2013/02/01/angularjs-resources</id>
+   <content type="html">&lt;p&gt;Great set of screencasts &lt;a href=&quot;http://egghead.io/&quot;&gt;http://egghead.io/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Git fetch upstream changes</title>
+   <link href="http://mark.nadigs.net//git/oss/2013/01/09/git-fetch-upstream-changes/"/>
+   <updated>2013-01-09T15:31:01-07:00</updated>
+   <id>http://mark.nadigs.net/git/oss/2013/01/09/git-fetch-upstream-changes</id>
+   <content type="html">&lt;p&gt;I have been trying to contribute where I can w/ the AngularJS project. The workflow is very well documented &lt;a href=&quot;http://docs.angularjs.org/misc/contribute&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As documented in this &lt;a href=&quot;http://gitready.com/intermediate/2009/02/12/easily-fetching-upstream-changes.html&quot;&gt;post&lt;/a&gt;, you first need to create a remote known as &amp;#39;upstream&amp;#39;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git remote add upstream git://github.com/user/repo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then run these commands to get the latest for master and upstream and merge into the current branch:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git fetch origin -v; 
+git fetch upstream -v; 
+git merge upstream/master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The original post has a handy tip to put this in an alias.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Test if date ranges overlap</title>
+   <link href="http://mark.nadigs.net//coding/2012/12/21/test-if-date-ranges-overlap/"/>
+   <updated>2012-12-21T09:38:35-07:00</updated>
+   <id>http://mark.nadigs.net/coding/2012/12/21/test-if-date-ranges-overlap</id>
+   <content type="html">&lt;p&gt;Every time I need to test to see if two date ranges overlap, I reference this &lt;a href=&quot;http://c2.com/cgi/wiki?TestIfDateRangesOverlap&quot;&gt;post&lt;/a&gt;. Since I haven&amp;#39;t really internalized it yet, I thought I&amp;#39;d better bookmark it here and just in case the link ever goes away, here&amp;#39;s the text&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Given two date ranges, each with start and end dates (and possibly times), how do you determine if the ranges overlap?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Testing the range &amp;quot;start1 to end1&amp;quot; against the range &amp;quot;start2 to end2&amp;quot; is done by testing if...&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;    &amp;lt;strong&amp;gt;( start1 &amp;lt;= end2 and start2 &amp;lt;= end1 )&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If TRUE, then the ranges overlap. If the ranges do not include the &amp;quot;end&amp;quot; value itself, then use &amp;quot;&amp;lt;&amp;quot; instead of &amp;quot;&amp;lt;=&amp;quot; in the comparisons.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Important Assumption:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This assumes that start date &amp;lt;= end date in each range. This can also be stated as...&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;    &amp;lt;strong&amp;gt;( start1 &amp;lt;= end1 and start2 &amp;lt;= end2 )&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For discussion of what to do if this is not true, see below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Applicability:&lt;/strong&gt; Is not limited to date/time comparisons; can also be used for ranges of numbers, names, and any other data type where ranges are meaningful.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Alternate Expression:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;    &amp;lt;strong&amp;gt;not (end1 &amp;lt; start2 or end2 &amp;lt; start1)&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The expression in brackets is true when one range is entirely to the left or right of the other. This condition is pretty easy to visualize. The ranges overlap if and only if it is false.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Error: EMFILE... error running grunt task</title>
+   <link href="http://mark.nadigs.net//2012/12/20/error-emfile-error-running-grunt-task/"/>
+   <updated>2012-12-20T09:22:23-07:00</updated>
+   <id>http://mark.nadigs.net/2012/12/20/error-emfile-error-running-grunt-task</id>
+   <content type="html">&lt;p&gt;I was running into EMFILE errors running my grunt task for Angular dev. Seems the root cause was a limit on the maximum # of files open. &lt;a href=&quot;http://superuser.com/questions/302754/increase-the-maximum-number-of-open-file-descriptors-in-snow-leopard&quot;&gt;SuperUser&lt;/a&gt; for the win.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Wordpress 3.5 breaking change on IIS 7.5 - download failed...</title>
+   <link href="http://mark.nadigs.net//wordpress/2012/12/14/wordpress-3-5-breaking-change-on-iis-7-5/"/>
+   <updated>2012-12-14T10:27:12-07:00</updated>
+   <id>http://mark.nadigs.net/wordpress/2012/12/14/wordpress-3-5-breaking-change-on-iis-7-5</id>
+   <content type="html">&lt;p&gt;I recently upgrade this blog to WP 3.5 and all looked fine. However, when I tried to update the akismet plugin, it would fail with &amp;quot;Download failed. Destination directory for file streaming does not exist or is not writable..&amp;quot;  Most search results indicated a permissions issue, but I hadn&amp;#39;t changed any permissions.  Thankfully I found a &lt;a href=&quot;http://infinitewp.com/forum/issues/download-failed-destination-directory-for-file-streaming-does-not-exist-or-is-not-writable/&quot;&gt;post&lt;/a&gt; related which pointed me to this &lt;a href=&quot;http://core.trac.wordpress.org/ticket/22900&quot;&gt;defect&lt;/a&gt; with the appropriate workaround. Basically, there was a regression in 3.5 related to what temp folder was used - and even though there&amp;#39;s a fix in 3.5.1, it&amp;#39;s a chicken and egg problem since downloading 3.5.1 would fail due since pointing to the wrong temp folder.&lt;/p&gt;
+
+&lt;p&gt;I added this to my wp-config.php and was able to update the plugin just fine.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;define( &amp;#39;WP_TEMP_DIR&amp;#39;, ABSPATH . &amp;#39;wp-content/&amp;#39; );
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>WinDirStat for OSx</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/12/13/windirstat-for-osx/"/>
+   <updated>2012-12-13T16:15:10-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/12/13/windirstat-for-osx</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://sourceforge.net/projects/grandperspectiv/&quot;&gt;GrandPerspective&lt;/a&gt; on SourceForge provides similar functionality as &lt;a href=&quot;http://windirstat.info/&quot;&gt;WinDirStat&lt;/a&gt; does for Windows.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Share Windows 7 printer w/ OSx</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/12/03/share-windows-7-printer-w-osx/"/>
+   <updated>2012-12-03T14:39:00-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/12/03/share-windows-7-printer-w-osx</id>
+   <content type="html">&lt;p&gt;&lt;strong&gt;Mac OS X v10.5 or later&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Choose &lt;strong&gt;System Preferences&lt;/strong&gt; from the &lt;strong&gt;Apple&lt;/strong&gt; menu.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Choose &lt;strong&gt;Print &amp;amp; Fax&lt;/strong&gt; from the &lt;strong&gt;View&lt;/strong&gt; menu.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click the &lt;strong&gt;+&lt;/strong&gt; button to add a printer.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Press the Control key while clicking the &amp;quot;Default&amp;quot; icon (or any other icon on the toolbar), then choose Customize Toolbar from the contextual menu that appears.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Drag the Advanced (gear) icon to the toolbar.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click Done.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click the Advanced icon that was added to the toolbar.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Choose Windows from the Type pop-up menu.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the URL field, type the printer&amp;#39;s address in one of the following formats:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;smb://workgroup/server/sharename
+smb://server/sharename&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: &amp;quot;workgroup&amp;quot; is the name of the Windows workgroup that the computer sharing the printer belongs to. &amp;quot;server&amp;quot; is the name of the computer sharing the printer (or its IP address). &amp;quot;sharename&amp;quot; is the shared Windows printer&amp;#39;s share name. If the share name contains spaces, replace each space with &amp;quot;%20&amp;quot; (without quotation marks).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt;: You don&amp;#39;t need a &amp;quot;workgroup&amp;quot; when specifying the IP address of the computer (such as when the printer is on a different subnet), or if your Mac belongs to the same Windows (SMB) workgroup.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;In the Name field, type the name you would like to use for this printer in Mac OS X.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Choose the appropriate PPD or printer driver from the &amp;quot;Print Using&amp;quot; pop-up menu.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click Add.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Source &lt;a href=&quot;http://support.apple.com/kb/HT3049&quot;&gt;http://support.apple.com/kb/HT3049&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Ruby 1.9 and SSL error</title>
+   <link href="http://mark.nadigs.net//ruby%20on%20rails/2012/11/29/ruby-1-9-and-ssl-error/"/>
+   <updated>2012-11-29T14:49:13-07:00</updated>
+   <id>http://mark.nadigs.net/ruby%20on%20rails/2012/11/29/ruby-1-9-and-ssl-error</id>
+   <content type="html">&lt;p&gt;Got this error today w/ my rails app locally hitting S3&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (OpenSSL::SSL::SSLError)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Thankfully found a great explanation and discussion on this &lt;a href=&quot;http://martinottenwaelter.fr/2010/12/ruby19-and-the-ssl-error/&quot;&gt;blog&lt;/a&gt; and ultimately Tom Gallagher&amp;#39;s comment on how to fix this w/ homebrew:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;rvm pkg install openssl
+rvm install 1.9.3 –with-openssl-dir=$rvm_path/usr
+cd $rvm_path/usr/ssl
+curl -O &amp;lt;a href=&amp;quot;http://curl.haxx.se/ca/cacert.pem&amp;quot; rel=&amp;quot;nofollow&amp;quot;&amp;gt;http://curl.haxx.se/ca/cacert.pem&amp;lt;/a&amp;gt;
+mv cacert.pem cert.pem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>OSx and DNS</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/11/27/osx-and-dns/"/>
+   <updated>2012-11-27T13:23:27-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/11/27/osx-and-dns</id>
+   <content type="html">&lt;p&gt;A few ways I found to find out your dns server in OSx&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;# Open preferences, select Network pane.
+# or
+nslookup www.kona.com
+
+# or 
+# list network services, &amp;#39;Ethernet&amp;#39; may be one
+networksetup listallnetworkservices
+# Show DNS for specific service. Note: May show &amp;#39;none&amp;#39; - see next
+networksetup -getdnsservers Ethernet
+
+# or
+cat /etc/resolv.conf | grep nameserver
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and how to change the dns server (to google&amp;#39;s public DNS):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See &lt;a href=&quot;http://serverfault.com/questions/170591/how-to-append-new-dns-server-via-command-line&quot;&gt;ServerFault&lt;/a&gt; and this &lt;a href=&quot;http://www.electrictoolbox.com/mac-osx-change-dns-servers-command-line/&quot;&gt;blog&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OSx find file in subdirectory</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/11/27/osx-find-file-in-subdirectory/"/>
+   <updated>2012-11-27T11:42:43-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/11/27/osx-find-file-in-subdirectory</id>
+   <content type="html">&lt;p&gt;Love SO/superuser - writing the answer down here... How in OSx can you find files in sub-folders based on filename; e.g. for DOS&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;DIR *.mp3 /s
+DIR \path\to\search\*.mp3 /s
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;OSx terminal (bash):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;find . -name *.mp3 
+find /path/to/search -name *.mp3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;man page &lt;a href=&quot;http://ss64.com/osx/find.html&quot;&gt;here&lt;/a&gt; and on &lt;a href=&quot;https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/find.1.html&quot;&gt;Apple developer&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Debugging webview for iOS</title>
+   <link href="http://mark.nadigs.net//ios/mobile/2012/11/21/debugging-webview-for-ios/"/>
+   <updated>2012-11-21T14:53:42-07:00</updated>
+   <id>http://mark.nadigs.net/ios/mobile/2012/11/21/debugging-webview-for-ios</id>
+   <content type="html">&lt;p&gt;Everything you wanted to know about attaching to webview in iOS to debug is right &lt;a href=&quot;http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/DebuggingSafarioniPhoneContent/DebuggingSafarioniPhoneContent.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>clip all the coupons</title>
+   <link href="http://mark.nadigs.net//2012/11/17/clip-all-the-coupons/"/>
+   <updated>2012-11-17T08:43:52-07:00</updated>
+   <id>http://mark.nadigs.net/2012/11/17/clip-all-the-coupons</id>
+   <content type="html">&lt;p&gt;Local grocer has a page with special offers. It is a pain to go through and click each one to &amp;#39;add&amp;#39;, so came up with this to automate:&lt;/p&gt;
+
+&lt;p&gt;First, no jquery, so add it to the page:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;var script = document.createElement(&amp;quot;script&amp;quot;);
+script.type = &amp;quot;text/javascript&amp;quot;;
+script.src = &amp;#39;http://code.jquery.com/jquery-1.8.3.min.js&amp;#39;;
+script.text = &amp;quot;alert(&amp;#39;voila!&amp;#39;);&amp;quot; // use this for inline script
+document.body.appendChild(script);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, find all the items (not already clipped) and clip&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;$(&amp;quot;.lt-offer&amp;quot;).not(&amp;quot;.lt-clipped&amp;quot;).find(&amp;quot;.lt-add-offer-link&amp;quot;).each(function(one, two) { two.click()})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Alternate selector:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;$(&amp;quot;.lt-offer-list-item&amp;quot;).not(&amp;quot;.lt-clipped&amp;quot;).find(&amp;quot;.lt-add-offer-link&amp;quot;).each(function(one, two) { two.click()})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>LEFT OUTER JOIN with ARel</title>
+   <link href="http://mark.nadigs.net//ruby%20on%20rails/2012/11/14/left-outer-join-with-arel/"/>
+   <updated>2012-11-14T17:10:40-07:00</updated>
+   <id>http://mark.nadigs.net/ruby%20on%20rails/2012/11/14/left-outer-join-with-arel</id>
+   <content type="html">&lt;p&gt;Found &lt;a href=&quot;http://ruby.ryanbigg.com/post/1468788928/left-outer-join-with-arel&quot;&gt;this post&lt;/a&gt; very helpful, so bookmarking here on my blog.&lt;/p&gt;
+
+&lt;p&gt;Basic idea is to use .includes(:assoc) instead of joins. &lt;a href=&quot;https://github.com/ernie/squeel&quot;&gt;Squeel&lt;/a&gt; supports a little cleaner DSL so you can do .join(:assoc.outer)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>SMS from gmail</title>
+   <link href="http://mark.nadigs.net//mobile/2012/11/13/sms-from-gmail/"/>
+   <updated>2012-11-13T09:50:50-07:00</updated>
+   <id>http://mark.nadigs.net/mobile/2012/11/13/sms-from-gmail</id>
+   <content type="html">&lt;p&gt;Got a new security system set up that can shoot me an email when something of note happens. However, I want to get SMS as well. Gmail allows sms reminders from events, but not from an email filter :/  My second go-to was IFTTT, however they can call, but not SMS. Thankfully I came across a &lt;a href=&quot;http://www.tech-recipes.com/rx/939/sms_email_cingular_nextel_sprint_tmobile_verizon_virgin/&quot;&gt;blog post&lt;/a&gt; that details how to email-&amp;gt;SMS for specific providers, which is all I needed. Now I have a rule in gmail that forwards all security emails to my cell provder-specific email.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>bookmark this great css layout resource</title>
+   <link href="http://mark.nadigs.net//2012/11/08/bookmark-this-great-css-layout-resource/"/>
+   <updated>2012-11-08T10:21:58-07:00</updated>
+   <id>http://mark.nadigs.net/2012/11/08/bookmark-this-great-css-layout-resource</id>
+   <content type="html">&lt;p&gt;This is a very helpful site for common css layout patterns&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.html.it/layoutgala/&quot;&gt;http://blog.html.it/layoutgala/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Simple web server on ubuntu</title>
+   <link href="http://mark.nadigs.net//ubuntu/2012/11/05/simple-web-server-on-ubuntu/"/>
+   <updated>2012-11-05T13:34:21-07:00</updated>
+   <id>http://mark.nadigs.net/ubuntu/2012/11/05/simple-web-server-on-ubuntu</id>
+   <content type="html">&lt;p&gt;Thankfully the same SimpleHTTPServer that I &lt;a href=&quot;http://blog.nadigs.net/mark/2012/05/01/simple-web-server-on-osx/&quot;&gt;wrote about&lt;/a&gt; in OSx works in ubuntu as well.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;code&amp;gt;python -m SimpleHTTPServer&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Try this out later &lt;a href=&quot;http://manpages.ubuntu.com/manpages/lucid/man1/webfsd.1.html&quot;&gt;http://manpages.ubuntu.com/manpages/lucid/man1/webfsd.1.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Ubuntu - getting up and running</title>
+   <link href="http://mark.nadigs.net//ubuntu/2012/11/03/ubuntu-getting-up-and-running/"/>
+   <updated>2012-11-03T09:07:43-06:00</updated>
+   <id>http://mark.nadigs.net/ubuntu/2012/11/03/ubuntu-getting-up-and-running</id>
+   <content type="html">&lt;h3&gt;&lt;strong&gt;Chrome&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Downloaded and installed chrome from google and got:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;Lintian check results for /home/mark/Downloads/google-chrome-stable_current_i386.deb: E: google-chrome-stable: file-in-etc-not-marked-as-conffile etc/cron.daily/google-chrome
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The root problem was described here &lt;a href=&quot;http://code.google.com/p/chromium/issues/detail?id=73422&quot;&gt;http://code.google.com/p/chromium/issue/d&lt;/a&gt;&lt;a href=&quot;http://code.google.com/p/chromium/issues/detail?id=73422&quot;&gt;s&lt;/a&gt;&lt;a href=&quot;http://code.google.com/p/chromium/issues/detail?id=73422&quot;&gt;etail?id=73422&lt;/a&gt;, which basically describes there were dependencies that weren&amp;#39;t being auto installed. So, running package installer from terminal show which packages are missing and then you can just install them.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;$ sudo dpkg -i google-chrome-stable_current_i386.deb
+$ sudo apt-get install libcurl3   # or whatever is missing
+$ sudo apt-get -f install  # will resume installing the rest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;strong&gt;Dropbox&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;**** Initially I tried to install from ubuntu software center, but after I launched it said “dropbox is in the wrong folder”. So, downloaded from &lt;a href=&quot;http://www.dropbox.com/&quot;&gt;www.dropbox.com&lt;/a&gt; and installed .deb from there.&lt;/p&gt;
+
+&lt;h3&gt;&lt;strong&gt;Passwordsafe&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;**** I installed from &lt;a href=&quot;http://sourceforge.net/projects/passwordsafe/&quot;&gt;http://sourceforge.net/projects/passwordsafe/&lt;/a&gt; and ran into a similar problem as chrome:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;Lintian check results for /home/mark/Downloads/passwordsafe-ubuntu-0.8BETA.i686.deb:
+E: passwordsafe: control-file-has-bad-permissions postinst 0775 != 0755
+E: passwordsafe: control-file-has-bad-permissions prerm 0775 != 0755
+E: passwordsafe: dir-or-file-in-tmp tmp/pwsafe.desktop
+E: passwordsafe: dir-or-file-in-tmp tmp/pwsafe.png
+
+
+
+
+So, running from terminal revealed what dependencies were missing and installed from thre.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;strong&gt;Skype&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Initially I downloaded from ubuntu software center, but it wouldn&amp;#39;t install. So I downloaded directly from skype.com and it worked, but it&amp;#39;s a bit clunky.&lt;/p&gt;
+
+&lt;h3&gt;&lt;strong&gt;WebStorm/RubyMine&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;There&amp;#39;s no real installer for RM/WS - just download a zip. What is missing is the JDK which no longer is included in ubuntu by default. Thankfully found thise posts &lt;a href=&quot;http://www.webupd8.org/2011/09/how-to-install-oracle-java-7-jdk-in.html&quot;&gt;http://www.webupd8.org/2011/09/how-to-install-oracle-java-7-jdk-in.html&lt;/a&gt; and am golden.&lt;/p&gt;
+
+&lt;h3&gt;git&lt;/h3&gt;
+
+&lt;p&gt;from terminal&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;sudo apt-get install git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://mattslay.com/installing-rubymine-4-on-ubuntu-12-04/&quot;&gt;
+&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Windows 8 - first impressions</title>
+   <link href="http://mark.nadigs.net//2012/11/02/windows-8-first-impressions/"/>
+   <updated>2012-11-02T20:24:02-06:00</updated>
+   <id>http://mark.nadigs.net/2012/11/02/windows-8-first-impressions</id>
+   <content type="html">&lt;p&gt;First impressions... it is fast. I installed it on my lenovo t410 (i5 w/ 8gb ram) and it really is about 50% faster than Windows 7 running on that same box. I just finished &lt;a href=&quot;http://blog.nadigs.net/mark/2012/11/03/first-time-installing-ubuntu/&quot;&gt;installing ubuntu 12.10&lt;/a&gt; on the same box and here&amp;#39;s a comparison of boot times :&lt;/p&gt;
+
+&lt;h4&gt;ubuntu 12.10&lt;/h4&gt;
+
+&lt;p&gt;21s to login
+35s to desktop&lt;/p&gt;
+
+&lt;h4&gt;Win7 enterprise&lt;/h4&gt;
+
+&lt;p&gt;42s to login
+1&amp;quot;25s to desktop.&lt;/p&gt;
+
+&lt;h4&gt;Win8 pro&lt;/h4&gt;
+
+&lt;p&gt;29s to login
+43s to desktop&lt;/p&gt;
+
+&lt;h2&gt;Touch&lt;/h2&gt;
+
+&lt;p&gt;Even though it is clear that this was designed for &amp;quot;touch&amp;quot; I found the mouse interactions to be pretty intuitive. Even the somewhat jarring switch to classic desktop isn&amp;#39;t as bad as I had anticipated.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>First time installing ubuntu</title>
+   <link href="http://mark.nadigs.net//ubuntu/2012/11/02/first-time-installing-ubuntu/"/>
+   <updated>2012-11-02T20:19:35-06:00</updated>
+   <id>http://mark.nadigs.net/ubuntu/2012/11/02/first-time-installing-ubuntu</id>
+   <content type="html">&lt;p&gt;I decided to install ubuntu on a my lenovo t410 that already has Win7 and 8. Easy peasy, right?&lt;/p&gt;
+
+&lt;h2&gt;Installing&lt;/h2&gt;
+
+&lt;p&gt;Well, first clean up and defrag the windows partition so I can shrink it. ~30gb allocated now.&lt;/p&gt;
+
+&lt;p&gt;I then downloaded 12.10 from &lt;a href=&quot;http://www.ubuntu.com/download/help/create-a-usb-stick-on-windows&quot;&gt;unbuntu.com&lt;/a&gt; and put it on my thumb drive and booted off that. The installation steps were pretty straight forward. I selected the newly created partition (thankfully keyed of the partition size since I couldn&amp;#39;t easily map the /dev/sda1 that ubuntu was showing me to windows drive letters).&lt;/p&gt;
+
+&lt;p&gt;When prompted for a mount point &lt;a href=&quot;http://superuser.com/questions/423524/what-is-the-correct-mount-point-for-installing-ubuntu-in-its-own-partition-alon&quot;&gt;stack exchange&lt;/a&gt; to the rescue. &amp;quot;/&amp;quot; root.&lt;/p&gt;
+
+&lt;p&gt;Once it was installed it hijacked the windows boot loader w/ grub. Reverting that was pretty easy - again &lt;a href=&quot;http://askubuntu.com/questions/124627/wiped-ubuntu-files-bootloader-still-there-how-can-i-remove-it-and-restore-wind&quot;&gt;stack exchange&lt;/a&gt; to the recue with &amp;quot;boot-repair&amp;quot; for ubuntu.&lt;/p&gt;
+
+&lt;p&gt;Now on the windows side, just needed to install &lt;a href=&quot;http://neosmart.net/EasyBCD/&quot;&gt;EasyBCD&lt;/a&gt; to configure the windows boot loader to recognize the ubuntu partition. This is great, I now have my windows boot loader... but when I select ubuntu, I get the grub menu with its own list and 10s countdown :/   This &lt;a href=&quot;http://www.ubuntugeek.com/use-the-windows-bootloader-to-dual-boot-windows-vista-and-ubuntu.html&quot;&gt;walkthrough&lt;/a&gt; helped me edit grub to just go right into ubuntu.&lt;/p&gt;
+
+&lt;h2&gt;Now What&lt;/h2&gt;
+
+&lt;p&gt;All in all it was very straight forward. It helped a lot to have my mac nearby to google as problems arose. Now that it is installed, I need to run through the &amp;quot;&lt;a href=&quot;http://www.noobslab.com/2012/10/important-thingstweaks-to-do-after.html&quot;&gt;important things to tweak&lt;/a&gt;&amp;quot; list and I should be golden. Then, webstorm, LAMP and we&amp;#39;ll see from there.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails and cross origin resource sharing (CORS)</title>
+   <link href="http://mark.nadigs.net//ruby%20on%20rails/2012/10/16/rails-and-cross-origin-resource-sharing-cors/"/>
+   <updated>2012-10-16T15:42:33-06:00</updated>
+   <id>http://mark.nadigs.net/ruby%20on%20rails/2012/10/16/rails-and-cross-origin-resource-sharing-cors</id>
+   <content type="html">&lt;p&gt;There are a number of posts out there on how to enable CORS requests in your rails apps. For information on CORS here&amp;#39;s a good &lt;a href=&quot;http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/&quot;&gt;writeup&lt;/a&gt; . I followed &lt;a href=&quot;http://www.tsheffler.com/blog/?p=428&quot;&gt;Tom&amp;#39;s blog&lt;/a&gt; and made the appropriate changes to routes, and my application controller. All was well in the world &lt;em&gt;except&lt;/em&gt; with Devise. When a user would fail to authenticate, I&amp;#39;d get the 401 back but no other response data as described in this &lt;a href=&quot;http://stackoverflow.com/questions/11177079/how-to-send-cors-headers-with-devise-if-user-not-authorized-401-response&quot;&gt;SO article&lt;/a&gt;. Basically, Warden was sending back the response before my CORS headers could be set. Then I found the wonderful Rack CORS middleware gem by Calvin Yu &lt;a href=&quot;https://github.com/cyu/rack-cors&quot;&gt;https://github.com/cyu/rack-cors&lt;/a&gt; which made is super-simple to configure CORS and be intercepted before Warden. Note, if you have trouble with the order the middleware are loaded, see this ticket from Jean Mertz https://github.com/nov/rack-oauth2/issues/18 where he specified the load order with&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;config.middleware.insert_before Warden::Manager, Rack::Cors
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;OSS is such a great place to work :)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to disable Chrome's cross site origin policy (for dev)</title>
+   <link href="http://mark.nadigs.net//chrome/os%20x/2012/10/03/how-to-disable-chromes-cross-site-origin-policy-for-dev/"/>
+   <updated>2012-10-03T19:03:30-06:00</updated>
+   <id>http://mark.nadigs.net/chrome/os%20x/2012/10/03/how-to-disable-chromes-cross-site-origin-policy-for-dev</id>
+   <content type="html">&lt;p&gt;Running yeoman on port :3031 trying to hit my local test server on :3000 and am stopped due to same origin policy. Here&amp;#39;s how circumvent (for local dev only)&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;open -a Google\ Chrome --args --disable-web-security
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/3102819/chrome-disable-same-origin-policy&quot;&gt;http://stackoverflow.com/questions/3102819/chrome-disable-same-origin-policy&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails - Library not loaded: libmysqlclient.18.dylib</title>
+   <link href="http://mark.nadigs.net//os%20x/ruby%20on%20rails/2012/08/29/rails-library-not-loaded-libmysqlclient-18-dylib/"/>
+   <updated>2012-08-29T21:02:58-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/ruby%20on%20rails/2012/08/29/rails-library-not-loaded-libmysqlclient-18-dylib</id>
+   <content type="html">&lt;p&gt;After &lt;a href=&quot;http://blog.nadigs.net/mark/2012/08/29/going-from-macports-to-homebrew/&quot;&gt;switching&lt;/a&gt; from MacPorts to Homebrew (and re-isntalling mysql) I was getting an error running my rails server:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;.../gems/mysql2-0.3.11/lib/mysql2/mysql2.bundle, 9): Library not loaded: libmysqlclient.18.dylib (LoadError)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Per &lt;a href=&quot;http://stackoverflow.com/questions/4546698/library-not-loaded-libmysqlclient-16-dylib-error-when-trying-to-run-rails-serv&quot;&gt;StackOverflow&lt;/a&gt; was a simple fix:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Oh, also had to update database.yml to point to /tmp/mysql.sock from /opt/local.var/run/mysql5/mysqld.sock&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Going from MacPorts to Homebrew</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/08/29/going-from-macports-to-homebrew/"/>
+   <updated>2012-08-29T17:02:07-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/08/29/going-from-macports-to-homebrew</id>
+   <content type="html">&lt;p&gt;Many blogs out there outline the process (1), (2), (3). Having upgraded to Ruby 1.9.3 and running into a segfault issue resolved by brew (&lt;a href=&quot;https://github.com/capistrano/capistrano/issues/250&quot;&gt;https://github.com/capistrano/capistrano/issues/250&lt;/a&gt;) (&lt;a href=&quot;http://bugs.ruby-lang.org/issues/5559&quot;&gt;http://bugs.ruby-lang.org/issues/5559&lt;/a&gt;), I thought it was time. So, I&amp;#39;m on the bandwagon.&lt;/p&gt;
+
+&lt;p&gt;First, following the &lt;a href=&quot;http://guide.macports.org/chunked/installing.macports.uninstalling.html&quot;&gt;official instructions&lt;/a&gt;, remove macports. &lt;strong&gt;Note&lt;/strong&gt;: Macports installed mysql puts your db in /opt/local/var/db so back them up if you care. Also, check the official site for updates to these steps.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;# Remove all installed ports
+sudo port -fp uninstall installed
+
+# cleanup remnants
+sudo rm -rf \
+/opt/local \
+/Applications/DarwinPorts \
+/Applications/MacPorts \
+/Library/LaunchDaemons/org.macports.* \
+/Library/Receipts/DarwinPorts*.pkg \
+/Library/Receipts/MacPorts*.pkg \
+/Library/StartupItems/DarwinPortsStartup \
+/Library/Tcl/darwinports1.0 \
+/Library/Tcl/macports1.0 \
+~/.macports
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now install Homebrew as outlined on the &lt;a href=&quot;http://mxcl.github.com/homebrew/&quot;&gt;official site&lt;/a&gt;. Note: Check the website before running this script as it may change.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;code id=&amp;quot;selectable&amp;quot;&amp;gt;ruby &amp;lt;(curl -fsSkL raw.github.com/mxcl/homebrew/go)&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then follow the prompts.&lt;/p&gt;
+
+&lt;p&gt;Now, ready to install the rest of the stuff.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;brew install imagemagick
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I did opt to install mysql directly from oracle: &lt;a href=&quot;http://www.mysql.com/downloads/mysql/&quot;&gt;http://www.mysql.com/downloads/mysql/&lt;/a&gt; following (4).&lt;/p&gt;
+
+&lt;p&gt;In order to rebuild my rvm gemsets, I could have done it the &amp;#39;easy way&amp;#39;, but I preferred slash and burn:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;# Completely remove RVM
+rvm implode
+# re-install rvm
+bash &amp;lt; &amp;lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer) 
+# reinstall ruby
+rvm install ruby1.9.2-p290
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here, rvm informed me that Ruby needs gcc to compile and xcode 4.4.1 doens&amp;#39;t come with it and to do the following in another terminal window:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;brew update
+brew tap homebrew/dupes
+brew install autoconf automake apple-gcc42
+rvm pkg install openssl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now it is ready to continue to install ruby&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;Refs:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;(1) &lt;a href=&quot;http://orange-pants.com/databases/homebrew-on-mac-osx-lion/&quot;&gt;http://orange-pants.com/databases/homebrew-on-mac-osx-lion/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(2) &lt;a href=&quot;http://bitboxer.de/2010/06/03/moving-from-macports-to-homebrew/&quot;&gt;http://bitboxer.de/2010/06/03/moving-from-macports-to-homebrew/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(3) &lt;a href=&quot;http://osxastrotricks.wordpress.com/2012/03/19/switch-from-macports-to-homebrew/&quot;&gt;http://osxastrotricks.wordpress.com/2012/03/19/switch-from-macports-to-homebrew/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(4) &lt;a href=&quot;http://astonj.com/tech/how-to-install-mysql-on-lion-mac-os-x/&quot;&gt;http://astonj.com/tech/how-to-install-mysql-on-lion-mac-os-x/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OSx Where is that program run from?</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/08/21/osx-where-is-that-program-run-from/"/>
+   <updated>2012-08-21T20:57:41-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/08/21/osx-where-is-that-program-run-from</id>
+   <content type="html">&lt;p&gt;from bash&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;which &amp;lt;program&amp;gt;
+
+
+
+
+e.g.
+
+
+
+
+which git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>DiffMerge as git mergetool</title>
+   <link href="http://mark.nadigs.net//git/2012/07/12/diffmerge-as-git-mergetool/"/>
+   <updated>2012-07-12T10:18:22-06:00</updated>
+   <id>http://mark.nadigs.net/git/2012/07/12/diffmerge-as-git-mergetool</id>
+   <content type="html">&lt;p&gt;In my other &lt;a href=&quot;http://blog.nadigs.net/mark/2012/05/02/osx-file-compare/&quot;&gt;post&lt;/a&gt; discussed various file compare options for OSx.  Currently I&amp;#39;m trying to configure git to use diffmerge as its merge tool. First step is to add diffmerge to the path. Download dmg and run this from that (from the diffmerge readme):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;sudo cp Extras/diffmerge.sh /usr/bin/diffmerge
+ sudo chmod 755 /usr/bin/diffmerge
+ sudo cp Extras/diffmerge.1 /usr/share/man/man1/diffmerge.1
+ sudo chmod 644 /usr/share/man/man1/diffmerge.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git config --global merge.tool diffmerge
+git config --global mergetool.diffmerge.cmd &amp;quot;diffmerge --merge --result=\$MERGED \$LOCAL \$BASE \$REMOTE&amp;quot;
+git config --global mergetool.diffmerge.trustExitCode true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Source: &lt;a href=&quot;http://adventuresincoding.com/2010/04/how-to-setup-git-to-use-diffmerge/&quot;&gt;http://adventuresincoding.com/2010/04/how-to-setup-git-to-use-diffmerge/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>git add remote</title>
+   <link href="http://mark.nadigs.net//git/2012/07/10/git-add-remote/"/>
+   <updated>2012-07-10T15:01:43-06:00</updated>
+   <id>http://mark.nadigs.net/git/2012/07/10/git-add-remote</id>
+   <content type="html">&lt;p&gt;A few times I&amp;#39;ve cloned a github repo and while local started tinkering. Now, I want to save my changes, but I can&amp;#39;t push them up to origin. So, first I fork the repo and add my fork as a remote. I can now push my changes up there.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git remote add [name] [uri]
+e.g.
+ git remote add github git@github.com:digger69/pusher-phonegap-android.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then do this to pull down the branches from the new remote&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git fetch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And you can now push here&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git push github master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Visualize GIT repo history</title>
+   <link href="http://mark.nadigs.net//git/2012/07/09/visualize-git-repo-history/"/>
+   <updated>2012-07-09T18:31:02-06:00</updated>
+   <id>http://mark.nadigs.net/git/2012/07/09/visualize-git-repo-history</id>
+   <content type="html">&lt;p&gt;Very cool OSS  that will create a slick visualization of the history of your git repo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://code.google.com/p/gource/&quot;&gt;http://code.google.com/p/gource/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Create/update SD card for Android AVD</title>
+   <link href="http://mark.nadigs.net//android/2012/07/09/createupdate-sd-card-for-android-avd/"/>
+   <updated>2012-07-09T16:19:55-06:00</updated>
+   <id>http://mark.nadigs.net/android/2012/07/09/createupdate-sd-card-for-android-avd</id>
+   <content type="html">&lt;p&gt;In an earlier &lt;a href=&quot;http://blog.nadigs.net/mark/2012/06/25/getting-photos-into-the-gallery-on-android-avd/&quot;&gt;post&lt;/a&gt; I described how to create and copy files to a virtual SD card. I found another good article on how to easily create and copy files to a virtual SD card for Android AVDs. &lt;a href=&quot;http://www.tylerfrankenstein.com/create-android-emulator-sd-card-and-write-data-to-it&quot;&gt;http://www.tylerfrankenstein.com/create-android-emulator-sd-card-and-write-data-to-it&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Skinny:&lt;/p&gt;
+
+&lt;p&gt;Create SD card&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;tools/mksdcard 100MB mysdcard.iso
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Attach SD card to an AVD and launch tools/ddms and the AVD. From DDMS select Device -&amp;gt; File Explorer.&lt;/p&gt;
+
+&lt;p&gt;DDMS is also the handy tool I blogged about for &lt;a href=&quot;http://blog.nadigs.net/mark/2012/05/05/grabbing-an-android-screenshot/&quot;&gt;grabbing a screenshot from Android&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sublime Text 2 preferences</title>
+   <link href="http://mark.nadigs.net//coding/2012/06/27/sublime-text-2-preferences/"/>
+   <updated>2012-06-27T10:33:29-06:00</updated>
+   <id>http://mark.nadigs.net/coding/2012/06/27/sublime-text-2-preferences</id>
+   <content type="html">&lt;p&gt;Preferences.sublime-settings&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;{
+ &amp;quot;save_on_focus_lost&amp;quot;: true,
+ &amp;quot;tab_size&amp;quot;: 2,
+ &amp;quot;translate_tabs_to_spaces&amp;quot;: true
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Default (OSX).sublime-keymap&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;[
+// open anything
+{ &amp;quot;keys&amp;quot;: [&amp;quot;super+shift+n&amp;quot;], &amp;quot;command&amp;quot;: &amp;quot;show_overlay&amp;quot;, &amp;quot;args&amp;quot;: {&amp;quot;overlay&amp;quot;: &amp;quot;goto&amp;quot;, &amp;quot;show_files&amp;quot;: true}}, 
+// reveal in sidebar
+{ &amp;quot;keys&amp;quot;: [&amp;quot;alt+f1&amp;quot;], &amp;quot;command&amp;quot;: &amp;quot;reveal_in_side_bar&amp;quot; }, 
+// goto line
+{ &amp;quot;keys&amp;quot;: [&amp;quot;super+l&amp;quot;], &amp;quot;command&amp;quot;: &amp;quot;show_overlay&amp;quot;, &amp;quot;args&amp;quot;: {&amp;quot;overlay&amp;quot;: &amp;quot;goto&amp;quot;, &amp;quot;text&amp;quot;: &amp;quot;:&amp;quot;} }
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;more&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Getting photos into the gallery on Android AVD</title>
+   <link href="http://mark.nadigs.net//android/2012/06/25/getting-photos-into-the-gallery-on-android-avd/"/>
+   <updated>2012-06-25T17:59:38-06:00</updated>
+   <id>http://mark.nadigs.net/android/2012/06/25/getting-photos-into-the-gallery-on-android-avd</id>
+   <content type="html">&lt;p&gt;From android sdk&amp;#39;s tools folder run:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;android
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From Tools menu, Manage AVDs. Select the AVD and click Edit the AVD. to include a 100mb sd card image.&lt;/p&gt;
+
+&lt;p&gt;[caption id=&amp;quot;attachment_195&amp;quot; align=&amp;quot;alignnone&amp;quot; width=&amp;quot;199&amp;quot; caption=&amp;quot;AVD Edit&amp;quot;]&lt;a href=&quot;http://blog.nadigs.net/mark/files/2012/06/Screen-Shot-2012-06-25-at-5.50.10-PM.png&quot;&gt;&lt;img src=&quot;http://blog.nadigs.net/mark/files/2012/06/Screen-Shot-2012-06-25-at-5.50.10-PM-199x300.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;[/caption]&lt;/p&gt;
+
+&lt;p&gt;Note: Go ahead and bump RAM up to 1gb while you&amp;#39;re in here.&lt;/p&gt;
+
+&lt;p&gt;Launch the emulator and run this AVD&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;emulator @myavd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now there are a couple ways to mount the SD card once the emulator is running. &lt;a href=&quot;http://androidforums.com/developer-101/463412-how-access-files-avd-sd-card.html&quot;&gt;http://androidforums.com/developer-101/463412-how-access-files-avd-sd-card.html&lt;/a&gt;, however I found that the SDK allowed me to :
+1. shell into the AVD using adb (which is in platform-tools, not tools).&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;adb shell
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Make the appropriate folder&lt;/p&gt;
+
+&lt;p&gt;mkdir sdcard/Pictures
+exit&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Copy a picture from my local file sytem over.&lt;/p&gt;
+
+&lt;p&gt;./adb push ~/Pictures/IMAG0381.jpg sdcard/Pictures&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There may have been a way to copy the file over w/ shelling in, but this is another helpful tidbit.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Access localhost from Android emulator</title>
+   <link href="http://mark.nadigs.net//android/2012/05/22/access-localhost-from-android-emulator/"/>
+   <updated>2012-05-22T11:10:18-06:00</updated>
+   <id>http://mark.nadigs.net/android/2012/05/22/access-localhost-from-android-emulator</id>
+   <content type="html">&lt;p&gt;Hit 10.0.2.2; e.g&lt;/p&gt;
+
+&lt;p&gt;http://10.0.2.2:3000 to hit my local rails server.&lt;/p&gt;
+
+&lt;p&gt;Sourced from  &lt;a href=&quot;http://blog.js-development.com/2009/10/accessing-host-machine-from-your.html&quot;&gt;http://blog.js-development.com/2009/10/accessing-host-machine-from-your.html&lt;/a&gt; and found many many SO articles.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Running the iOS simulator</title>
+   <link href="http://mark.nadigs.net//ios/2012/05/22/running-the-ios-simulator/"/>
+   <updated>2012-05-22T09:31:49-06:00</updated>
+   <id>http://mark.nadigs.net/ios/2012/05/22/running-the-ios-simulator</id>
+   <content type="html">&lt;p&gt;Just run iOS Simulator from&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/25-Using_iOS_Simulator/ios_simulator_application.html&quot;&gt;https://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios&lt;em&gt;development&lt;/em&gt;workflow/25-Using&lt;em&gt;iOS&lt;/em&gt;Simulator/ios&lt;em&gt;simulator&lt;/em&gt;application.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android emulator on OSx (Lion)</title>
+   <link href="http://mark.nadigs.net//android/2012/05/17/android-emulator-on-osx-lion/"/>
+   <updated>2012-05-17T16:06:07-06:00</updated>
+   <id>http://mark.nadigs.net/android/2012/05/17/android-emulator-on-osx-lion</id>
+   <content type="html">&lt;p&gt;Install SDK as described in my &lt;a href=&quot;http://blog.nadigs.net/mark/2012/05/05/grabbing-an-android-screenshot/&quot;&gt;prior post&lt;/a&gt;. Open terminal and go to the tools folder beneath you extracted the sdk (~/Code/android-sdk-macosx/tools)&lt;/p&gt;
+
+&lt;p&gt;To create a virtual device:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;./android create avd -n &amp;lt;em&amp;gt;NAME&amp;lt;/em&amp;gt; -t 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;NAME&lt;/em&gt;&lt;/strong&gt; - the vm name.
+&lt;strong&gt;&lt;em&gt;-t #&lt;/em&gt;&lt;/strong&gt; - the target level.  (1 = 2.1, 2 = 2.2, 3 = 2.3.3 ...)&lt;/p&gt;
+
+&lt;p&gt;To list available targets:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;./android list targets
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Launch emulator for given &lt;strong&gt;&lt;em&gt;NAME&lt;/em&gt;&lt;/strong&gt; device:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;./emulator @&amp;lt;em&amp;gt;NAME
+&amp;lt;/em&amp;gt;  # or&amp;lt;em&amp;gt; 
+&amp;lt;/em&amp;gt;./emulator -avd&amp;lt;em&amp;gt; NAME &amp;lt;/em&amp;gt;
+List devices:
+./android list avd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Start ddms before you launch the emulator to attach.&lt;/p&gt;
+
+&lt;p&gt;thanks to &lt;a href=&quot;http://blog.brightpointuk.co.uk/running-google-android-emulator-macos&quot;&gt;http://blog.brightpointuk.co.uk/running-google-android-emulator-macos&lt;/a&gt; for starter for this&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Regex greedy expressions</title>
+   <link href="http://mark.nadigs.net//2012/05/15/regex-greedy-expressions/"/>
+   <updated>2012-05-15T21:51:22-06:00</updated>
+   <id>http://mark.nadigs.net/2012/05/15/regex-greedy-expressions</id>
+   <content type="html">&lt;p&gt;Great explanation of greedy expressions in regex, see &amp;quot;Watch Out for The Greediness!&amp;quot; in&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.regular-expressions.info/repeat.html&quot;&gt;http://www.regular-expressions.info/repeat.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Clear html5 application cache</title>
+   <link href="http://mark.nadigs.net//chrome/2012/05/15/clear-html5-application-cache/"/>
+   <updated>2012-05-15T11:11:37-06:00</updated>
+   <id>http://mark.nadigs.net/chrome/2012/05/15/clear-html5-application-cache</id>
+   <content type="html">&lt;p&gt;In chrome, you can manage via:
+chrome://appcache-internals/&lt;/p&gt;
+
+&lt;p&gt;There&amp;#39;s an issue on making this more in front of the user:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://code.google.com/p/chromium/issues/detail?id=115405&quot;&gt;http://code.google.com/p/chromium/issues/detail?id=115405&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Configure git editor to use TextMate or SublimeText</title>
+   <link href="http://mark.nadigs.net//git/2012/05/12/configure-git-editor-to-use-textmate-or-sublimetext/"/>
+   <updated>2012-05-12T12:39:36-06:00</updated>
+   <id>http://mark.nadigs.net/git/2012/05/12/configure-git-editor-to-use-textmate-or-sublimetext</id>
+   <content type="html">&lt;p&gt;To configure either of these for git commit message windows&lt;/p&gt;
+
+&lt;p&gt;SublimeText&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git config --global core.editor &amp;quot;subl -w -n&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;TextMate&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git config --global core.editor &amp;quot;mate -w&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Debugging in android browser - view uncaught javascript errors</title>
+   <link href="http://mark.nadigs.net//android/2012/05/12/debugging-in-android-browser-view-uncaught-javascript-errors/"/>
+   <updated>2012-05-12T11:06:39-06:00</updated>
+   <id>http://mark.nadigs.net/android/2012/05/12/debugging-in-android-browser-view-uncaught-javascript-errors</id>
+   <content type="html">&lt;p&gt;I was struggling to see why my site wasn&amp;#39;t loading on my android browser. Running ddms from the console wasn&amp;#39;t helping. Most blog posts suggested littering console.log() throughout the app that would show up in ddms log. Thankfully found this tip on:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2314886/how-can-i-debug-javascript-on-android&quot;&gt;http://stackoverflow.com/questions/2314886/how-can-i-debug-javascript-on-android&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;navigate to about:debug on the browser which enables more javascript setting. This threw me a bit since it didn&amp;#39;t really show me anything. However, what it does do is enable additional settings for javascript. Now, when a page is loaded with script errors, &amp;quot;show javascript console&amp;quot; appears:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.nadigs.net/mark/files/2012/05/android.png&quot;&gt;&lt;img src=&quot;http://blog.nadigs.net/mark/files/2012/05/android-300x136.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;More helpful details here: &lt;a href=&quot;http://android.stackexchange.com/questions/5999/android-browsers-aboutdebug-what-do-those-settings-do&quot;&gt;http://android.stackexchange.com/questions/5999/android-browsers-aboutdebug-what-do-those-settings-do&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(Note: see &lt;a href=&quot;http://blog.nadigs.net/mark/2012/05/05/grabbing-an-android-screenshot/&quot;&gt;prior post&lt;/a&gt; on how to grab screen from android)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>git submodules</title>
+   <link href="http://mark.nadigs.net//git/2012/05/08/git-submodules/"/>
+   <updated>2012-05-08T09:32:50-06:00</updated>
+   <id>http://mark.nadigs.net/git/2012/05/08/git-submodules</id>
+   <content type="html">&lt;p&gt;Found &lt;a href=&quot;http://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/&quot;&gt;this post&lt;/a&gt; very helpful on git submodules.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git submodule init
+git submodule update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Copy pages out of PDF</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/05/07/copy-pages-out-of-pdf/"/>
+   <updated>2012-05-07T15:37:02-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/05/07/copy-pages-out-of-pdf</id>
+   <content type="html">&lt;p&gt;Here&amp;#39;s interesting way to discrete pages out of a PDF: Drag the PDF into chrome window, select Googles print to PDF and select page range.&lt;/p&gt;
+
+&lt;p&gt;EDIT: turns out even this is more than I needed to do. Using Preview in Lion, I can select the text I want and select Crop and export just the remaining text.&lt;/p&gt;
+
+&lt;p&gt;More options:
+&lt;a href=&quot;http://www.pdfescape.com/open/&quot;&gt;http://www.pdfescape.com/open/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Oracle&amp;#39;s OpenOffice PDF import/export extension
+&lt;a href=&quot;http://extensions.services.openoffice.org/project/pdfimport&quot;&gt;http://extensions.services.openoffice.org/project/pdfimport&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Grabbing an Android screenshot</title>
+   <link href="http://mark.nadigs.net//android/2012/05/04/grabbing-an-android-screenshot/"/>
+   <updated>2012-05-04T18:05:17-06:00</updated>
+   <id>http://mark.nadigs.net/android/2012/05/04/grabbing-an-android-screenshot</id>
+   <content type="html">&lt;p&gt;Salient points:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Download &lt;a href=&quot;http://developer.android.com/index.html&quot;&gt;SDK&lt;/a&gt;, unzip install platforms.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Go into tools and run ddms.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;On device: Settings -&amp;gt; Applications -&amp;gt; Development, turn on USB Debugging. Connect the device.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Back in ddms you should see your device listed, select Device -&amp;gt; Screen Capture. FTW!&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;source: &lt;a href=&quot;http://www.pcworld.com/article/208566/how_to_take_screenshots_on_an_android_phone.html&quot;&gt;http://www.pcworld.com/article/208566/how&lt;em&gt;to&lt;/em&gt;take&lt;em&gt;screenshots&lt;/em&gt;on&lt;em&gt;an&lt;/em&gt;android_phone.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>IIS URL rewriting</title>
+   <link href="http://mark.nadigs.net//iis/2012/05/03/iis-url-rewriting/"/>
+   <updated>2012-05-03T10:50:32-06:00</updated>
+   <id>http://mark.nadigs.net/iis/2012/05/03/iis-url-rewriting</id>
+   <content type="html">&lt;p&gt;A friend pointed out paged navigation was busted on my blog. Found that if you came in to the sub-blog w/ no trailing slash, the nav links were incorrectly re-nesting; e.g. /mark/mark/page2. Updating the url rewriting was pretty straightforward&lt;/p&gt;
+
+&lt;p&gt;rule: ^mark$
+redirect: {R:0}/&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://learn.iis.net/page.aspx/460/using-the-url-rewrite-module/&quot;&gt;http://learn.iis.net/page.aspx/460/using-the-url-rewrite-module/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sencha </title>
+   <link href="http://mark.nadigs.net//mobile/2012/05/02/sencha/"/>
+   <updated>2012-05-02T10:11:30-06:00</updated>
+   <id>http://mark.nadigs.net/mobile/2012/05/02/sencha</id>
+   <content type="html">&lt;p&gt;Built my first Sencha app by following the &lt;a href=&quot;http://vimeo.com/37974749&quot;&gt;video&lt;/a&gt; and online &lt;a href=&quot;http://docs.sencha.com/touch/2-0/#!/guide/first_app&quot;&gt;tutorial&lt;/a&gt;. The app lists my recent blog posts and allows clicking to view. Sencha allows this html 5 app to run int he browser as well as package natively for IOS and Android.&lt;/p&gt;
+
+&lt;p&gt;Source available: &lt;a href=&quot;https://github.com/digger69/SenchaGS&quot;&gt;https://github.com/digger69/SenchaGS&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5&gt;Building&lt;/h5&gt;
+
+&lt;p&gt;&lt;em&gt;Build production 26&amp;#39;23&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt; sencha app build production
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note: Web app should have &amp;#39;add to home&amp;#39; when browsed.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Build native 29&amp;#39;00&amp;quot;&lt;/em&gt;
+see packager.json for applicationName, version,&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt; sencha app build native
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;since the packager.json has platform: &amp;quot;IOSSimulator&amp;quot; will open for that. Changing that to &amp;quot;IOS&amp;quot; will build native IOS app.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Android 32&amp;#39;54&amp;quot;&lt;/em&gt;
+First download &lt;a href=&quot;http://developer.android.com/sdk/installing.html&quot;&gt;Android SDK&lt;/a&gt;. Unzip and run &amp;#39;android&amp;#39; from folder to download additional SDK dependencies.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OSx file compare</title>
+   <link href="http://mark.nadigs.net//coding/os%20x/2012/05/02/osx-file-compare/"/>
+   <updated>2012-05-02T09:52:52-06:00</updated>
+   <id>http://mark.nadigs.net/coding/os%20x/2012/05/02/osx-file-compare</id>
+   <content type="html">&lt;p&gt;I leaned heavily on WinMerge on Windows and today went looking for a Mac equivalent. OSx had built in FileMerge which is reasonable. Opendiff can be used from terminal. However, I downloaded DiffMerge from &lt;a href=&quot;http://www.sourcegear.com/diffmerge/&quot;&gt;http://www.sourcegear.com/diffmerge/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Another one I will try soon is Meld from &lt;a href=&quot;http://meldmerge.org/&quot;&gt;http://meldmerge.org/ &lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Simple web server on OSx</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/05/01/simple-web-server-on-osx/"/>
+   <updated>2012-05-01T14:42:06-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/05/01/simple-web-server-on-osx</id>
+   <content type="html">&lt;p&gt;Today, needed to spin up a simple web server to test out a demo for a js microframework  (nod &lt;a href=&quot;http://collectiveidea.com/blog/archives/2012/04/01/walken-on-rails/&quot;&gt;http://collectiveidea.com/blog/archives/2012/04/01/walken-on-rails/&lt;/a&gt;). OSx comes w/ Apache, but that seemed  a bit overkill. Found this &lt;a href=&quot;http://www.macworld.com/article/1140370/pythonserver.html&quot;&gt;http://www.macworld.com/article/1140370/pythonserver.html&lt;/a&gt; today.&lt;/p&gt;
+
+&lt;p&gt;python -m SimpleHTTPServer&lt;/p&gt;
+
+&lt;p&gt;Will spin up a... simple http server :)... default port is 8000 and can be overridden by adding a parameter to the end.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s a write up on configuring apache on Osx. &lt;a href=&quot;http://en.wikibooks.org/wiki/Mac_OS_X_Tiger/Using_your_Mac_as_a_Web_Server&quot;&gt;http://en.wikibooks.org/wiki/Mac&lt;em&gt;OS&lt;/em&gt;X&lt;em&gt;Tiger/Using&lt;/em&gt;your&lt;em&gt;Mac&lt;/em&gt;as&lt;em&gt;a&lt;/em&gt;Web_Server&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Taming the tongue</title>
+   <link href="http://mark.nadigs.net//bible/2012/04/04/taming-the-tongue/"/>
+   <updated>2012-04-04T22:40:41-06:00</updated>
+   <id>http://mark.nadigs.net/bible/2012/04/04/taming-the-tongue</id>
+   <content type="html">&lt;p&gt;Found this looking up a quote on &amp;quot;&lt;em&gt;If all that we say in a single day...&amp;quot;&lt;/em&gt; after listening to a message from A. Begg on Luke 6 &lt;a href=&quot;http://www.truthforlife.org/resources/sermon/the-golden-rule/&quot;&gt;http://www.truthforlife.org/resources/sermon/the-golden-rule/&lt;/a&gt; and stumbled across this great page&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://freshlyground.wordpress.com/2011/03/10/watch-your-mouth/&quot;&gt;http://freshlyground.wordpress.com/2011/03/10/watch-your-mouth/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ended up using it as a family study. Good stuff.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Stop terminal from opening in last folder - OSx Lion </title>
+   <link href="http://mark.nadigs.net//os%20x/2012/03/26/stop-terminal-from-opening-in-last-folder-osx-lion/"/>
+   <updated>2012-03-26T08:55:15-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/03/26/stop-terminal-from-opening-in-last-folder-osx-lion</id>
+   <content type="html">&lt;p&gt;Lion has a new &amp;#39;resume&amp;#39; feature that will open applications in the same state they were in. I found this particularly annoying w/ Terminal as cd&amp;#39;ing into my source folder was bypassing my rvm hooks. Initially I turned off the resume feature system-wide: &lt;a href=&quot;http://www.macrumors.com/2011/07/20/how-to-disable-lions-resume-feature/&quot;&gt;http://www.macrumors.com/2011/07/20/how-to-disable-lions-resume-feature/&lt;/a&gt;. However, it still would open in the last folder :/... This morning I found the way to disable resume on a per-application basis &lt;a href=&quot;http://osxdaily.com/2011/08/01/turn-off-resume-per-app-in-mac-os-x-lion/&quot;&gt;http://osxdaily.com/2011/08/01/turn-off-resume-per-app-in-mac-os-x-lion/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;defaults write com.apple.Terminal NSQuitAlwaysKeepsWindows -bool false&lt;/code&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OSx pipe output to clipboard</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/03/14/osx-pipe-output-to-clipboard/"/>
+   <updated>2012-03-14T07:43:15-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/03/14/osx-pipe-output-to-clipboard</id>
+   <content type="html">&lt;p&gt;Here&amp;#39;s a handy way to pipe the output of a command right into the clipboard in terminal&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;blockquote&gt;`git log --author &#39;Mark Nadig&#39; --since &#39;1 day ago&#39; | pbcopy`&lt;/blockquote&gt;
+
+&lt;p&gt;source: &lt;a href=&quot;http://www.norwinter.com/2009/07/27/pipe-into-the-clipboard-on-os-x-pbcopy/&quot;&gt;http://www.norwinter.com/2009/07/27/pipe-into-the-clipboard-on-os-x-pbcopy/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ZoneEdit Service goes OSS</title>
+   <link href="http://mark.nadigs.net//coding/2012/03/09/zoneedit-service-goes-oss/"/>
+   <updated>2012-03-09T21:15:39-07:00</updated>
+   <id>http://mark.nadigs.net/coding/2012/03/09/zoneedit-service-goes-oss</id>
+   <content type="html">&lt;p&gt;As I meantioned in my last post, &lt;a href=&quot;http://blog.nadigs.net/mark/2012/03/09/iis-7-5/&quot;&gt;http://blog.nadigs.net/mark/2012/03/09/iis-7-5/&lt;/a&gt; I&amp;#39;ve been meaning to make my Windows Service that updates ZoneEdit for Dynamic DNS available. So, on my day off... Dusted off the PC and did a little vb.net coding to bring it up to vs2010, extract the config into config and published it on codeplex.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://zoneeditservice.codeplex.com/&quot;&gt;http://zoneeditservice.codeplex.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I literally haven&amp;#39;t done any pc programming in over a year. The slowness of VS2010 and TFS were very noticable compared what I&amp;#39;ve been doing lately (RubyMine, git).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>IIS 7.5 - redirect</title>
+   <link href="http://mark.nadigs.net//iis/2012/03/09/iis-7-5/"/>
+   <updated>2012-03-09T11:12:00-07:00</updated>
+   <id>http://mark.nadigs.net/iis/2012/03/09/iis-7-5</id>
+   <content type="html">&lt;p&gt;Just set up &amp;#39;blog.nadigs.net&amp;#39; and I&amp;#39;m already anticipating people getting it wrong as &amp;quot;blogs.nadigs.net&amp;quot;. I haven&amp;#39;t ever set this up before, but it was easy-peasy.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Add A record in DNS for blogs.nadigs.net going to my same IP.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Update my dynamic dns updater script. I really need to open source that vb.net service program - but this is a good example why I haven&amp;#39;t yet : it&amp;#39;s full of hard coded config options.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Enable Http Redirect (CP-&amp;gt; Turn Windows Features on/off -&amp;gt; IIS -&amp;gt; WWW svc -&amp;gt; Common HTTP -&amp;gt; HTTP redirection).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add a site in IIS for blogs.nadigs.net pointing to an empty folder.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Followed directions from &lt;a href=&quot;http://www.iis.net/ConfigReference/system.webServer/httpRedirect&quot;&gt;here&lt;/a&gt; to HTTP Redirect -&amp;gt; add entry for blogs.nadigs.net to redirect to blog.nadigs.net w/ 301.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;that was easy.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>git branching rocks</title>
+   <link href="http://mark.nadigs.net//git/2012/03/06/git-branching-rocks/"/>
+   <updated>2012-03-06T12:54:38-07:00</updated>
+   <id>http://mark.nadigs.net/git/2012/03/06/git-branching-rocks</id>
+   <content type="html">&lt;h1&gt;Why Git Rocks&lt;/h1&gt;
+
+&lt;p&gt;Today, I&amp;#39;m 4 hours into a feature &amp;#39;myfeat&amp;#39; for the current iteration when &amp;quot;the phone rings&amp;quot; (skype). PM has a customer reporting an issue on latest production code.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git stash
+git checkout production
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now I&amp;#39;m looking at the production codez, can run and repro the issue. Create a topic branch off of production to hold my fix (so I can merge into both production and master):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git checkout -b myfix
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now I write a failing test for the feature (TDD!). Fix the code and confirm the test passes. Time to make this available for deploy.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git checkout production
+git merge myfix 
+git push origin production
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now merge hotfix back into master branch.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git checkout master
+git merge myfix # master branch now all happy with hotfix
+
+# run tests again before push since master != production
+git put origin master 
+
+git checkout myfeat
+git stash apply # get my stashed changes back
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;back to work. As my friend Arthur would say &amp;#39;mo-ney&amp;#39;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>iPad2 / iOS5 / Home Sharing</title>
+   <link href="http://mark.nadigs.net//ios/2012/03/01/ipad2-ios5-home-sharing/"/>
+   <updated>2012-03-01T20:44:27-07:00</updated>
+   <id>http://mark.nadigs.net/ios/2012/03/01/ipad2-ios5-home-sharing</id>
+   <content type="html">&lt;p&gt;I just want to listen to my music on my iPad in the house... I don&amp;#39;t want to use iCloud and Google Music via Safari doesn&amp;#39;t work well - keeps stopping when the iPad goes dark. Reading up, it seems that prior to iOS5 there was an iPod app on the iPad. This has  now been replaced with Music. Now, how to get home sharing to work. I was surprised how hard this was to find.&lt;/p&gt;
+
+&lt;p&gt;First, on Mac w/ iTunes, go into Advanced and enable home sharing with your apple id.&lt;/p&gt;
+
+&lt;p&gt;Second, on you iPad configure Home Sharing via:&lt;/p&gt;
+
+&lt;p&gt;Settings -&amp;gt; Music -&amp;gt; Home Sharing and enter your apple id again.&lt;/p&gt;
+
+&lt;p&gt;Now, in the Music app on the iPad, select More (bottom right) and Shared -&amp;gt; your Mac.&lt;/p&gt;
+
+&lt;p&gt;iPad doc for iOS5&lt;/p&gt;
+
+&lt;p&gt;http://manuals.info.apple.com/en&lt;em&gt;US/ipad&lt;/em&gt;user_guide.pdf&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Going live with www.kona.com</title>
+   <link href="http://mark.nadigs.net//work/2012/03/01/going-live-with-www-kona-com/"/>
+   <updated>2012-03-01T08:24:12-07:00</updated>
+   <id>http://mark.nadigs.net/work/2012/03/01/going-live-with-www-kona-com</id>
+   <content type="html">&lt;p&gt;It has been a wild ride so far and am very please to see the fruit of all of our hard work now  live for everyone to see. http://www.kona.com . It&amp;#39;s still in beta, but it&amp;#39;s rock solid and ready to make it more delightful for anyone to get things done, together.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Configure WP to use gmail</title>
+   <link href="http://mark.nadigs.net//wordpress/2012/02/28/configure-wp-to-use-gmail/"/>
+   <updated>2012-02-28T22:17:49-07:00</updated>
+   <id>http://mark.nadigs.net/wordpress/2012/02/28/configure-wp-to-use-gmail</id>
+   <content type="html">&lt;p&gt;Nadigs.net email is delegated to google apps. By default, WP uses whatever PHP is configured for which is an smtp server on localhost. Thankfully, there&amp;#39;s a plugin for WP that lets use bypass PHP&amp;#39;s mail() and go directly to google&amp;#39;s smtp service: &lt;a href=&quot;http://wordpress.org/extend/plugins/wp-mail-smtp/&quot;&gt;http://wordpress.org/extend/plugins/wp-mail-smtp/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Installing WordPress</title>
+   <link href="http://mark.nadigs.net//wordpress/2012/02/28/installing-wordpress/"/>
+   <updated>2012-02-28T22:10:05-07:00</updated>
+   <id>http://mark.nadigs.net/wordpress/2012/02/28/installing-wordpress</id>
+   <content type="html">&lt;p&gt;Well, if you&amp;#39;re reading this it means I was successful :)&lt;/p&gt;
+
+&lt;p&gt;My goal was to install WordPress for multiple blogs. Thankfully 3.x includes a Network feature that supports &lt;em&gt;n&lt;/em&gt; blogs and can be based on either sub-domains  (markblog.nadigs.net) or sub-directories (blog.nadigs.net/Mark). My first attempt was the later, but with the added twist of installing WP in a sub-directory to begin with; e.g. www.nadigs.net/blogs/Mark. This seems to be a supported config, and I got primary network site to load, but kept getting 404s on the subsidiary blogs. I think the web.config url rewriting wasn&amp;#39;t quite right. So, I scrapped that 1hr of work and decided it was probably best to just host the blog on its own sub-domain and use folders under that.&lt;/p&gt;
+
+&lt;p&gt;Basically following this was a breeze: &lt;a href=&quot;http://codex.wordpress.org/Installing_WordPress&quot;&gt;http://codex.wordpress.org/Installing_WordPress&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And this post was helpful in configuring the network feature (though, don&amp;#39;t copy the web.config from here, it has a typeo, use the one from wp&amp;#39;s page that comes up when you enable) &lt;a href=&quot;http://lauragentry.com/blog/2010/07/30/how-to-create-a-wordpress-3-0-multisite-network-on-a-windows-server-using-sub-directories/#comment-40662&quot;&gt;http://lauragentry.com/blog/2010/07/30/how-to-create-a-wordpress-3-0-multisite-network-on-a-windows-server-using-sub-directories/#comment-40662&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So, this is my first blog.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Adding gmail/cal to iPad</title>
+   <link href="http://mark.nadigs.net//ipad/2012/02/20/adding-gmailcal-to-ipad/"/>
+   <updated>2012-02-20T09:46:50-07:00</updated>
+   <id>http://mark.nadigs.net/ipad/2012/02/20/adding-gmailcal-to-ipad</id>
+   <content type="html">&lt;p&gt;Getting Started&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Tap the Settings on your iPad&amp;#39;s home screen.&lt;/li&gt;
+&lt;li&gt;Tap Mail, Contacts, Calendars.&lt;/li&gt;
+&lt;li&gt;Tap Add Account....&lt;/li&gt;
+&lt;li&gt;Select Microsoft Exchange.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Enter Your Account Info
+5. In the Email field, enter your full Google Account email address.
+If you use an @googlemail.com address, you may see an &amp;quot;Unable to verify certificate&amp;quot; warning.
+6. Leave the Domain field blank.
+7. Enter your full Google Account email address as the Username and your Google Account password.
+8. Tap Next at the top of the screen. Choose Cancel if the Unable to Verify Certificate dialog appears.
+9. Enter m.google.com in the new Server field.
+10. Tap Next at the top of the screen again.
+11. Choose the Google Calendar services to sync.
+To delete all the existing Calendars on your iPad, uncheck the &amp;quot;Keep on my iPhone&amp;quot; option.
+12. Synchronization will begin automatically if you have Push enabled on your device. Wait seconds to start a sync for the default calendar.&lt;/p&gt;
+
+&lt;p&gt;Enable Google multiple calendars
+* Tap Settings &amp;gt; Safari &amp;gt; turn OFF Javascript.
+* Open the Safari browser to http://m.google.com on your iPad.
+* Click on Google Apps user? at the bottom of the screen.
+* Enter your domain name (e.g., YourDomain.com).
+* Click the “Sync” icon in your domain area.
+* Sign in if required.
+* Select all the calendars you want to sync up. Save.
+* Tap Settings &amp;gt; Safari &amp;gt; turn ON Javascript.
+* There will be a new “Calendars” button in the top left of the Calendar app on your iPad.&lt;/p&gt;
+
+&lt;p&gt;http://apple-ipad-tablet-help.blogspot.com/2010/03/how-to-sync-google-calendar-with-ipad.html&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; iPad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/20/2012 11:39 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OSx screen capture</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/02/09/osx-screen-capture/"/>
+   <updated>2012-02-09T09:14:34-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/02/09/osx-screen-capture</id>
+   <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;To capture the entire desktop, press Command-Shift-3. The screen shot will be automatically saved as a PNG file on your desktop.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;To copy the entire desktop, press Command-Control-Shift-3. The screen shot will be placed on your clipboard for you to paste into another program.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;To capture a portion of the desktop, press Command-Shift-4. A cross-hair cursor will appear and you can click and drag to select the area you wish to capture. When you release the mouse button, the screen shot will be automatically saved as a PNG file on your desktop. (The file is saved as PDF in Mac OS 10.3 and earlier.)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;To capture a specific application window, press Command-Shift-4, then press the Spacebar. The cursor will change to a camera, and you can move it around the screen. As you move the cursor over an application window, the window will be highlighted. The entire window does not need to be visible for you to capture it. When you have the cursor over a window you want to capture, just click the mouse button and the screen shot will be saved as a PNG file on your desktop. (The file is saved as PDF in Mac OS 10.3 and earlier.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Add Control to the two shortcuts above to place the screen shot on the clipboard instead of saving it to the desktop&lt;/p&gt;
+
+&lt;p&gt;http://graphicssoft.about.com/od/screencapturemac/ht/macscreenshot.htm&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/9/2012 11:13 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OSx Lion app opens last open docs - annoying</title>
+   <link href="http://mark.nadigs.net//os%20x/2012/01/19/osx-lion-app-opens-last-open-docs-annoying/"/>
+   <updated>2012-01-19T08:34:12-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2012/01/19/osx-lion-app-opens-last-open-docs-annoying</id>
+   <content type="html">&lt;p&gt;&amp;#39;f you quit applications with windows still open on your screen, select this checkbox to have the same windows reopen automatically the next time you start the app.&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;To disable:&lt;/p&gt;
+
+&lt;p&gt;System Preferences -&amp;gt; General -&amp;gt; Restore windows when quitting and re-opening apps&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 1/19/2012 9:46 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Second menu bar in OSx</title>
+   <link href="http://mark.nadigs.net//os%20x/2011/12/08/second-menu-bar-in-osx/"/>
+   <updated>2011-12-08T07:48:17-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2011/12/08/second-menu-bar-in-osx</id>
+   <content type="html">&lt;p&gt;Handy when running multi-monitor
+&lt;a href=&quot;http://www.macupdate.com/app/mac/33264/secondbar&quot;&gt;http://www.macupdate.com/app/mac/33264/secondbar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 12/8/2011 9:47 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OSx Lion can't connect to Windows Shares (SMB) - redux</title>
+   <link href="http://mark.nadigs.net//os%20x/2011/11/15/osx-lion-cant-connect-to-windows-shares-smb-redux/"/>
+   <updated>2011-11-15T21:26:16-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2011/11/15/osx-lion-cant-connect-to-windows-shares-smb-redux</id>
+   <content type="html">&lt;p&gt;In my earlier blog post, outlined approach for mounting an SMB share in Lion (OSx):  &lt;/p&gt;
+
+&lt;p&gt;http://home.deltek.com/personal/marknadig/Blog/Lists/Posts/Post.aspx?ID=187  &lt;/p&gt;
+
+&lt;p&gt;Yesterday, I changed my windows network arround - and dorked someting... just changed the homegroup, but that dorks shares, and... anyway. Now, using the approach from the earlier post, I was getting &amp;#39;mount_smbfs: server connection failed: Cannot allocate memory&amp;#39;. Thankfully, intertubes provided the answer:  &lt;/p&gt;
+
+&lt;p&gt;Change  &lt;/p&gt;
+
+&lt;p&gt;HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters\Size  &lt;/p&gt;
+
+&lt;p&gt;to 3 on the host &amp;#39;server&amp;#39; (another windows 7 machine).  &lt;/p&gt;
+
+&lt;p&gt;http://alan.lamielle.net/2009/09/03/windows-7-nonpaged-pool-srv-error-2017&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11/15/2011 11:23 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>VirtualBox resize partition</title>
+   <link href="http://mark.nadigs.net//virtualization/2011/10/27/virtualbox-resize-partition/"/>
+   <updated>2011-10-27T15:35:18-06:00</updated>
+   <id>http://mark.nadigs.net/virtualization/2011/10/27/virtualbox-resize-partition</id>
+   <content type="html">&lt;p&gt;Best tip is to just create a large (300GB) dynamically sized disk doesn&amp;#39;t take up 300GB, it will just grow that large. So, it is best to pick a large size up front. I made the mistake of being too conservative with a XP VMDK and needed to resize it.  &lt;/p&gt;
+
+&lt;p&gt;Summary:  &lt;/p&gt;
+
+&lt;p&gt;Create new disk (Settings: Storage) with large, dynamic size.  &lt;/p&gt;
+
+&lt;p&gt;vboxmanage clonehd  old.vmdk new.vmdk --existing  &lt;/p&gt;
+
+&lt;p&gt;change VM to use new vmdk as primary  &lt;/p&gt;
+
+&lt;p&gt;open host and tell it to use new space.  &lt;/p&gt;
+
+&lt;p&gt;http://justintung.wordpress.com/2011/01/06/resize-and-expand-a-virtualbox-hard-drive-and-media-made-easy/  &lt;/p&gt;
+
+&lt;p&gt;Captured copy of article here  &lt;/p&gt;
+
+&lt;p&gt;http://home.deltek.com/personal/marknadig/Blog/Lists/Photos/ResizeVMDK.pdf&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Virtualization&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/27/2011 5:31 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OSx Lion can't connect to Windows Shares (SMB)</title>
+   <link href="http://mark.nadigs.net//os%20x/2011/10/22/osx-lion-cant-connect-to-windows-shares-smb/"/>
+   <updated>2011-10-22T11:29:20-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2011/10/22/osx-lion-cant-connect-to-windows-shares-smb</id>
+   <content type="html">&lt;p&gt;Not sure if it&amp;#39;s been like this all along with Lion, or just after an update. However, all of a sudden, I can no longer access my windows shares on my home network.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Launch Terminal  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Create a folder, for my test I created a desktop folder  &lt;/p&gt;
+
+&lt;p&gt;mkdir ~/Desktop/MyMedia  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Command Line Format to mount the SMB share:  &lt;/p&gt;
+
+&lt;p&gt;mount -t smbfs //Username@ServerOrIP/Media ~/Desktop/MyMedia  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A prompt will ask for your password  &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;source: https://discussions.apple.com/thread/3196311?start=60&amp;amp;tstart=0&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/22/2011 1:23 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AVI codec for Mac</title>
+   <link href="http://mark.nadigs.net//os%20x/2011/10/04/avi-codec-for-mac/"/>
+   <updated>2011-10-04T10:22:46-06:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2011/10/04/avi-codec-for-mac</id>
+   <content type="html">&lt;p&gt;This is the swiss army knife of quicktime components
+OSS 
+http://perian.org/ &lt;/p&gt;
+
+&lt;p&gt;-- UPDATE -- had some avi&amp;#39;s I had encoded that wouldn&amp;#39;t play sound with these codecs. Thankfully VLC player has a mac version. Played just fine...
+http://www.videolan.org/vlc/download-macosx.html&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/4/2011 12:21 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>VirtualBox disk deframenting</title>
+   <link href="http://mark.nadigs.net//virtualization/2011/07/15/virtualbox-disk-deframenting/"/>
+   <updated>2011-07-15T08:32:40-06:00</updated>
+   <id>http://mark.nadigs.net/virtualization/2011/07/15/virtualbox-disk-deframenting</id>
+   <content type="html">&lt;p&gt;Assuming an windows image, first run defragger:  &lt;/p&gt;
+
+&lt;p&gt;http://www.mydefrag.com/  &lt;/p&gt;
+
+&lt;p&gt;Zero freespace w/ sdelete available from http://technet.microsoft.com/en-us/sysinternals/bb897443.aspx  &lt;/p&gt;
+
+&lt;p&gt;sdelete -c   &lt;/p&gt;
+
+&lt;p&gt;From command/terminal:  &lt;/p&gt;
+
+&lt;p&gt;VBoxManage modifyhd diskname.vdi --compact  &lt;/p&gt;
+
+&lt;p&gt;Thanks:
+http://www.processworks.de/blog/2010/07/how-to-shrink-a-virtualbox-vdi-disk-image-to-the-required-size/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Virtualization&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 7/15/2011 10:27 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Regex Hero... no, not you... the site... ;)</title>
+   <link href="http://mark.nadigs.net//coding/2011/05/11/regex-hero-no-not-you-the-site/"/>
+   <updated>2011-05-11T06:48:13-06:00</updated>
+   <id>http://mark.nadigs.net/coding/2011/05/11/regex-hero-no-not-you-the-site</id>
+   <content type="html">&lt;p&gt;http://regexhero.net/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Coding&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 5/11/2011 8:47 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>P2V</title>
+   <link href="http://mark.nadigs.net//virtualization/2011/03/01/p2v/"/>
+   <updated>2011-03-01T09:25:41-07:00</updated>
+   <id>http://mark.nadigs.net/virtualization/2011/03/01/p2v</id>
+   <content type="html">&lt;p&gt;Found free utility from MS to migrate a machine to a vm (physical to virtual - p2v).&lt;/p&gt;
+
+&lt;p&gt;http://technet.microsoft.com/en-us/sysinternals/ee656415.aspx&lt;/p&gt;
+
+&lt;p&gt;VMWare has their free Converter as well:
+http://www.vmware.com/products/converter/&lt;/p&gt;
+
+&lt;p&gt;Remember, it&amp;#39;s as if you dropped your hard drive into another computer. So, windows activation may complain.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Virtualization&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 3/1/2011 11:22 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>mount windows share</title>
+   <link href="http://mark.nadigs.net//os%20x/2011/02/23/mount-windows-share/"/>
+   <updated>2011-02-23T07:29:34-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2011/02/23/mount-windows-share</id>
+   <content type="html">&lt;p&gt;From Finder, Go: Connect to Server. smb://servername to connect.&lt;/p&gt;
+
+&lt;p&gt;http://lifehacker.com/#!247148/how-to-mount-a-windows-shared-folder-on-your-mac&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/23/2011 9:28 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>mail</title>
+   <link href="http://mark.nadigs.net//os%20x/2011/02/21/mail/"/>
+   <updated>2011-02-21T08:36:08-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2011/02/21/mail</id>
+   <content type="html">&lt;p&gt;Mail 4 automatically marks emails as read as soon as you touch them, scroll past or whatever. Based on google results, seems this has been a pain point for some time. Thankfully I found an add-on http://christianserving.org/project/truepreview that solves this. Made my day. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/21/2011 10:31 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>repave osx</title>
+   <link href="http://mark.nadigs.net//os%20x/2011/02/19/repave-osx/"/>
+   <updated>2011-02-19T22:40:02-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2011/02/19/repave-osx</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.wikihow.com/Reinstall-Mac-OS-X&quot;&gt;http://www.wikihow.com/Reinstall-Mac-OS-X&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Notable - by default snow leopard does an &amp;quot;Archive and Install&amp;quot;. You must use Disk Utilities to wipe the HD first. Also, once done and updates installed, run Repair Permissions from Finder -&amp;gt; Disk Utilities&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/21/2011 11:08 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>More Android Love</title>
+   <link href="http://mark.nadigs.net//android/2011/02/18/more-android-love/"/>
+   <updated>2011-02-18T12:55:42-07:00</updated>
+   <id>http://mark.nadigs.net/android/2011/02/18/more-android-love</id>
+   <content type="html">&lt;p&gt;Local wifi wants $9.99 a day. So, I thought I&amp;#39;d try tethering my Android phone like I did &lt;a href=&quot;/personal/marknadig/Blog/Lists/Posts/Post.aspx?ID=171&quot;&gt;before&lt;/a&gt; , but this time with a Mac. No joy. HTC doesn&amp;#39;t have a USB tethering driver for OSX. However, during my search I found instructions on how to turn my phone into a wi-fi hotspot. App Drawer-&amp;gt;WiFi - Set SSID and WPA key and boom, I&amp;#39;m surfin&amp;#39; using &amp;quot;the nation&amp;#39;s largest 4g network&amp;quot; (again) &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Android&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/18/2011 2:49 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Import OPML into Mail</title>
+   <link href="http://mark.nadigs.net//os%20x/2011/02/17/import-opml-into-mail/"/>
+   <updated>2011-02-17T09:50:45-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2011/02/17/import-opml-into-mail</id>
+   <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Export an OPML file from your feed reader.  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open Terminal and execute the following command:  &lt;/p&gt;
+
+&lt;p&gt;perl -lne &amp;#39;print $1 if /&amp;quot;(http.*?)&amp;quot;/&amp;#39; google-reader-subscriptions.xml | pbcopy  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open Apple Mail.app and do the following:  &lt;/p&gt;
+
+&lt;p&gt;Go to File » Add RSS Feeds...  &lt;/p&gt;
+
+&lt;p&gt;Choose the Specify a custom feed URL radio button  &lt;/p&gt;
+
+&lt;p&gt;Click in the text box and hit Command-V to paste the feed URLs  &lt;/p&gt;
+
+&lt;p&gt;Click the Add button   &lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;http://www.cpuug.org/index.php?topic=135.0&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/17/2011 11:49 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Auto-complete and crutches for "I'm a PC"</title>
+   <link href="http://mark.nadigs.net//os%20x/2011/02/15/auto-complete-and-crutches-for-im-a-pc/"/>
+   <updated>2011-02-15T09:30:35-07:00</updated>
+   <id>http://mark.nadigs.net/os%20x/2011/02/15/auto-complete-and-crutches-for-im-a-pc</id>
+   <content type="html">&lt;p&gt;bash auto-complete&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bash-completion.darwinports.com/&quot;&gt;http://bash-completion.darwinports.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;alias&lt;/p&gt;
+
+&lt;p&gt;pico ~/.bash_profile&lt;/p&gt;
+
+&lt;p&gt;   alias dir=&amp;#39;ls&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;   alias lsall=&amp;#39;ls -lha&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSx&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/15/2011 11:27 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Remove unwanted "Open With" entries in Explorer</title>
+   <link href="http://mark.nadigs.net//windows%207/2011/02/11/remove-unwanted-open-with-entries-in-explorer/"/>
+   <updated>2011-02-11T15:05:01-07:00</updated>
+   <id>http://mark.nadigs.net/windows%207/2011/02/11/remove-unwanted-open-with-entries-in-explorer</id>
+   <content type="html">&lt;p&gt;As you know, if you right-click any file on your computer you will gain access to a menu where, among the other options available, you will also be able to find the famous “Open with…” feature. Basically, it lets you choose , from a list of recommended applications, the one you wish to use to open your files having X extension. Now, if you don’t like this service because you think that it could cause major issue to your computer  (above all if you don’t have a clue on what application or software to use to open a certain file), I have a nice hack which will let you ** turn off certain programs and applications from the “Open With” option in your right-click menu!**&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Click &lt;strong&gt;Start.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the Search field, type &lt;strong&gt;regedit *&lt;em&gt;and press *&lt;/em&gt;Enter.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Locate the following registry folder: HKEY&lt;em&gt;CURRENT&lt;/em&gt;USER\ Software\ Microsoft\Windows\CurrentVersion \ Explorer\FileExts\&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The above registry folder contains subfolders for all the file extensions available you have in your computer such as: .sys, .txt, .doc, .zip etc.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Let’s assume that you to modify the “Open With…” option for .zip files.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Browse the FileExts folder and locate the .zip folder.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Locate and open the** OpenWithList** subfolder.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;On the right-pane you will notice some registry keys labeled with letters.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Look at them and see their descriptions. You will see that for each regitry key corresponds the name of a program under the data field. This means that the system will place  these programs in the “Open With” option and will show them once the user click  it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Let’s assume that you don’t want the system to show the Notepad program in the list of applications available.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Locate in the OpenWithList the key which has, as Data description, the name of the Notepad (Notepad.exe).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Right-click it and delete it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Restart your computer for  the change to take effect.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.webtlk.com/2010/07/13/how-to-remove-programs-from-the-open-with-option-in-windows-7-menu/&quot;&gt;http://www.webtlk.com/2010/07/13/how-to-remove-programs-from-the-open-with-option-in-windows-7-menu/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Windows 7&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/11/2011 5:04 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TextMate themes for NotePad++</title>
+   <link href="http://mark.nadigs.net//work/2011/02/11/textmate-themes-for-notepad/"/>
+   <updated>2011-02-11T14:44:53-07:00</updated>
+   <id>http://mark.nadigs.net/work/2011/02/11/textmate-themes-for-notepad</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://framework.lojcomm.com.br/tmTheme2nppStyler/&quot;&gt;http://framework.lojcomm.com.br/tmTheme2nppStyler/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/11/2011 4:44 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Multiple tabbed shells</title>
+   <link href="http://mark.nadigs.net//work/2011/02/10/multiple-tabbed-shells/"/>
+   <updated>2011-02-10T14:40:31-07:00</updated>
+   <id>http://mark.nadigs.net/work/2011/02/10/multiple-tabbed-shells</id>
+   <content type="html">&lt;p&gt;Saw a friend on a mac that had multiple shells open, but in a single tabbed window. Went looking and think I found my new favorite toy for the command line.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;http://sourceforge.net/projects/console/&lt;/a&gt;&lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Open source baby! &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;:)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/10/2011 4:38 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Switch audio device on the fly</title>
+   <link href="http://mark.nadigs.net//windows%207/2011/02/10/switch-audio-device-on-the-fly/"/>
+   <updated>2011-02-10T14:36:34-07:00</updated>
+   <id>http://mark.nadigs.net/windows%207/2011/02/10/switch-audio-device-on-the-fly</id>
+   <content type="html">&lt;p&gt;Today the wife asked how the kids could easily switch between the external usb speakers and the usb headset for audio. Well, it&amp;#39;s about 5 clicks in windows 7 - from control panel... don&amp;#39;t want the kids in there. Found this today.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.contriving.net/2010/10/02/easier-switching-of-sound-devices-in-windows-with-soundswitch-3-0dev1/&quot;&gt;http://blog.contriving.net/2010/10/02/easier-switching-of-sound-devices-in-windows-with-soundswitch-3-0dev1/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/therms/soundswitch/downloads&quot;&gt;https://github.com/therms/soundswitch/downloads&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Lets you easily switch between audio devices. (open source AutoLT script)&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;[correction - in Windows 7, right click on speaker icon -&amp;gt; Playback Devices and then set default. But the tray tool makes it easier]  LMK if there are easier ways to do this.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Windows 7&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 2/10/2011 4:33 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android to the rescue</title>
+   <link href="http://mark.nadigs.net//android/2011/01/28/android-to-the-rescue/"/>
+   <updated>2011-01-28T14:45:50-07:00</updated>
+   <id>http://mark.nadigs.net/android/2011/01/28/android-to-the-rescue</id>
+   <content type="html">&lt;p&gt;Comcast connection died this afternoon. I was going to try to manage my communications via email through my mytouch. But then I realized I could tether!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/broken_image.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m writing this post &amp;quot;on the nation&amp;#39;s fastest 4g network&amp;quot; J&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Android&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 1/28/2011 4:45 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>I'm on the bandwagon</title>
+   <link href="http://mark.nadigs.net//android/2011/01/08/im-on-the-bandwagon/"/>
+   <updated>2011-01-08T10:44:38-07:00</updated>
+   <id>http://mark.nadigs.net/android/2011/01/08/im-on-the-bandwagon</id>
+   <content type="html">&lt;p&gt;Ok, I finally gave up my &amp;quot;smartphone&amp;quot;, the TMO DASH flashed w/ latest WMO 6.5 ROM and jumped on the &amp;#39;droid bandwagon w/ a TMO myTouch 4g. My initial impression was that of being overwhelmed. The bloatware that comes pre-installed reminds me of my first e-machine ;)  &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;First order of business was to get my outlook contacts, calendar and tasks synced to my phone. I&amp;#39;m used to my phone reminding me ... &amp;quot;hey, you have a meeting in 15 minutes&amp;quot;. It is not as critical now that I work from home, but still handy. My first research seemed to indicate the best I could do is export my contacts from outlook and import them into gmail and install a plugin from google to sync my calendar. No help for tasks either. However, after conferring w/ Tom V (also &amp;#39;droided) he clued me into just adding my exchange account and violoa, it just works (for contacts/calendar - still no joy for tasks).&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;The second critical app for me has been &lt;a href=&quot;http://passwordsafe.sourceforge.net/&quot;&gt;PasswordSafe&lt;/a&gt; which is an open source password keeper. Believe it or not, I have 357 items in there... Thankfully, I found an open source port of this for &amp;#39;droid &lt;a href=&quot;https://sourceforge.net/apps/mediawiki/passwdsafe/index.php?title=Main_Page&quot;&gt;PasswdSafe&lt;/a&gt; also on SF. Note: Seems there are a lot of suspiciously similarly named apps/projects both in markeplace and sourceforge. I&amp;#39;d only trust the JeffHarris one linked above. After installing and confirming it worked, I decided it was time to put my money where my app was... So, I donated a little cash to both projects. I really rely on this app heavily, so it is money well spent.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Turns out PasswdSafe can integrate with dropbox as well. I&amp;#39;ll have to check that out when I get back from vacation. For now, I&amp;#39;ll just copy the pw file to my SD card. &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;d better go pack. Early flight in the morning.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Android&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 1/8/2011 12:32 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Oracle backup and restore with IMPDp/EXPDp</title>
+   <link href="http://mark.nadigs.net//oracle/2010/12/16/oracle-backup-and-restore-with-impdpexpdp/"/>
+   <updated>2010-12-16T10:23:23-07:00</updated>
+   <id>http://mark.nadigs.net/oracle/2010/12/16/oracle-backup-and-restore-with-impdpexpdp</id>
+   <content type="html">&lt;p&gt;The word on the street is that all of these types of operations should be done from the SYSTEM user. &lt;/p&gt;
+
+&lt;h2&gt;EXPDp&lt;/h2&gt;
+
+&lt;p&gt;EXPDP SYSTEM/Password1@HQ1DBDEV4 SCHEMAS=PMCompassDemo DIRECTORY=BACKUP_DIR DUMPFILE=PMCompassDemo.dmp &lt;/p&gt;
+
+&lt;p&gt;This can be run from any machine with Oracle tools installed. The @HQ1DBDEV4 specifies a different machine to connect to when not local. This will create a PMCompassDemo.dmp on e:\Backups on HQ1DBDEV4. &lt;/p&gt;
+
+&lt;h2&gt;IMPDp&lt;/h2&gt;
+
+&lt;p&gt;IMPDP SYSTEM/Password1@HQ1DBDEV4 REMAP&lt;em&gt;SCHEMA=PMCompassDemo:PMCompassDemoMark DIRECTORY=BACKUP&lt;/em&gt;DIR DUMPFILE=PMCompassDemo.dmp LOGFILE=dmp.log &lt;/p&gt;
+
+&lt;p&gt;This includes the REMAP_SCHEMA to restore the PMCompassDemo schema into the PMCompassDemoMark schema. &lt;/p&gt;
+
+&lt;p&gt;If any warnings or errors appear, open SQLDeveloper and recompile any views/procedures that threw warnings. Also, the DeltekPackage is unique per user in Oracle. Since we have many dbs/users on the same server you will need to re-create the DeltekPackage. Open FW&lt;em&gt;Procedures&lt;/em&gt;Oracle.sql and run the FW_Deltekpackage portion. &lt;/p&gt;
+
+&lt;h2&gt;DIRECTORY&lt;/h2&gt;
+
+&lt;p&gt;Oracle needs to know where to put the dump (.dmp) file. By default 10g and higher ship with a directory &amp;#39;DATA&lt;em&gt;PUMP&lt;/em&gt;DIR&amp;#39;. &lt;/p&gt;
+
+&lt;p&gt;SELECT directory&lt;em&gt;path
+            FROM
+            dba&lt;/em&gt;directories
+            WHERE
+            directory&lt;em&gt;name = &amp;#39;DATA&lt;/em&gt;PUMP_DIR&amp;#39;; &lt;/p&gt;
+
+&lt;p&gt;Alternatively, you can set up additional directories. Here&amp;#39;s how: &lt;/p&gt;
+
+&lt;p&gt;CREATE directory TEMP_DIR AS &amp;#39;c:\users\MARKNA~1\AppData\Local\Temp&amp;#39;; &lt;br&gt;
+GRANT READ, WRITE ON directory dmpdir TO PMCompassDemo;  &lt;/p&gt;
+
+&lt;p&gt;Note: SYSTEM does not need explicit permission to the folder. &lt;/p&gt;
+
+&lt;p&gt; 
+ &lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s the whole process, creating a local copy of PMCompassDemo from HQ1DBDEV4. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From local command pompt run:&lt;br&gt;
+EXPDP SYSTEM/Password1@HQ1DBDEV4 SCHEMAS=PMCompassDemo DIRECTORY=BACKUP_DIR DUMPFILE=PMCompassDemo.dmp&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Zip e:\backups\PMCompassDemo.dmp from HQ1DBDEV4 &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Copy zip to local %TEMP% folder and extract. This assumes the TEMP_DIR directory has been set up. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;From SQLDeveloper logged into local SYSTEM&lt;br&gt;
+DROP TABLESPACE PMCompassDemo INCLUDING CONTENTS AND DATAFILES;&lt;br&gt;
+/   &lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;CREATE TABLESPACE PMCompassDemo&lt;br&gt;
+DATAFILE &amp;#39;C:\ORACLEXE\ORADATA\XE\PMCompassDemo.dbf&amp;#39;&lt;br&gt;
+SIZE 32m&lt;br&gt;
+AUTOEXTEND ON&lt;br&gt;
+NEXT 32m&lt;br&gt;
+MAXSIZE 2048m;&lt;br&gt;
+/   &lt;/p&gt;
+
+&lt;p&gt;DROP USER PMCompassDemo CASCADE;&lt;br&gt;
+/&lt;br&gt;
+CREATE USER PMCompassDemo IDENTIFIED BY PMCompassDemo&lt;br&gt;
+DEFAULT TABLESPACE PMCompassDemo&lt;br&gt;
+QUOTA UNLIMITED ON PMCompassDemo&lt;br&gt;
+TEMPORARY TABLESPACE Temp;&lt;br&gt;
+GRANT CONNECT, RESOURCE, CREATE SESSION TO PMCompassDemo;&lt;br&gt;
+GRANT CREATE VIEW TO PMCompassDemo;&lt;br&gt;
+GRANT CREATE TRIGGER TO PMCompassDemo;&lt;br&gt;
+GRANT CREATE ANY CONTEXT TO PMCompassDemo;&lt;br&gt;
+/&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From local command prompt run:&lt;br&gt;
+IMPDP SYSTEM/Password1 REMAP&lt;em&gt;SCHEMA=PMCompassDemo:PMCompassDemo DIRECTORY=TEMP&lt;/em&gt;DIR DUMPFILE=PMCompassDemo.dmp LOGFILE=dmp.log&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;From SQLDeveloper connect to local PMCompassDemo and run FW&lt;em&gt;DeltekPackage. Open Procedures and recompile CAM&lt;/em&gt;INSERTWSTDCTVIEW, CAM&lt;em&gt;SETCONTEXTINFO, CAM&lt;/em&gt;UNROTATECOLUMN. &lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;FW_DeltekPackage&lt;/h2&gt;
+
+&lt;p&gt;Note: For reference only, please pull latest from FW&lt;em&gt;Procedures&lt;/em&gt;Oracle.sql TFS. &lt;/p&gt;
+
+&lt;p&gt;CREATE OR replace PACKAGE deltekpackage&lt;/p&gt;
+
+&lt;p&gt;AS&lt;/p&gt;
+
+&lt;p&gt;  PROCEDURE setsessionvalue(&lt;/p&gt;
+
+&lt;p&gt;    varname  IN &lt;em&gt;VARCHAR2&lt;/em&gt;,&lt;/p&gt;
+
+&lt;p&gt;    varvalue IN &lt;em&gt;VARCHAR2&lt;/em&gt;);&lt;/p&gt;
+
+&lt;p&gt;END deltekpackage;&lt;/p&gt;
+
+&lt;p&gt;/&lt;/p&gt;
+
+&lt;p&gt;DECLARE&lt;/p&gt;
+
+&lt;p&gt;    v&lt;em&gt;contextname &lt;/em&gt;VARCHAR2_(50);&lt;/p&gt;
+
+&lt;p&gt;    v&lt;em&gt;sqlstr      &lt;/em&gt;LONG_;&lt;/p&gt;
+
+&lt;p&gt;BEGIN&lt;/p&gt;
+
+&lt;p&gt;    SELECT dbms&lt;em&gt;random.&lt;strong&gt;String&lt;/strong&gt;(&amp;#39;A&amp;#39;, 5)
+            INTO
+            v&lt;/em&gt;contextname
+            FROM   dual;&lt;/p&gt;
+
+&lt;p&gt;    v_sqlstr := &amp;#39;create or replace package body DeltekPackage as&amp;#39; ||&lt;br&gt;
+    &amp;#39; procedure SetSessionValue(varName in varchar2,varValue in varchar2) is&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;                || &amp;#39; begin dbms&lt;em&gt;session.set&lt;/em&gt;context(&amp;#39;&amp;#39;DeltekContext_&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;                || v_contextname&lt;/p&gt;
+
+&lt;p&gt;                || &amp;#39;&amp;#39;&amp;#39;, varName, varValue);&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;                || &amp;#39; end SetSessionValue; end DeltekPackage;&amp;#39;;&lt;/p&gt;
+
+&lt;p&gt;    EXECUTE IMMEDIATE v_sqlstr;&lt;/p&gt;
+
+&lt;p&gt;    v&lt;em&gt;sqlstr := &amp;#39;create or replace context DeltekContext&lt;/em&gt;&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;                || v_contextname&lt;/p&gt;
+
+&lt;p&gt;                || &amp;#39; using DeltekPackage&amp;#39;;&lt;/p&gt;
+
+&lt;p&gt;    EXECUTE IMMEDIATE v_sqlstr;&lt;/p&gt;
+
+&lt;p&gt;END;&lt;/p&gt;
+
+&lt;p&gt;/ &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Oracle&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 12/16/2010 12:23 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Visual Studio showing all projects are checked out!??</title>
+   <link href="http://mark.nadigs.net//tfs/2010/12/07/visual-studio-showing-all-projects-are-checked-out/"/>
+   <updated>2010-12-07T17:23:03-07:00</updated>
+   <id>http://mark.nadigs.net/tfs/2010/12/07/visual-studio-showing-all-projects-are-checked-out</id>
+   <content type="html">&lt;p&gt;Since last week, Visual Studio started showing that all the projects in my solution were checked out by someone else, or somewhere else. Opening Source Control Explorer confirmed they weren&amp;#39;t. Turns out this is a known bug:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blogs.infosupport.com/blogs/marcelv/archive/2007/12/03/Team-Foundation-Server-2008-shows-incorrect-version-control-status-in-team-explorer-.aspx&quot;&gt;http://blogs.infosupport.com/blogs/marcelv/archive/2007/12/03/Team-Foundation-Server-2008-shows-incorrect-version-control-status-in-team-explorer-.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;I had a shelveset that had all the projects checked out (for VS2010 migration) and this was tripping up VS/TFS.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; TFS&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 12/7/2010 7:20 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Process Explorer v14</title>
+   <link href="http://mark.nadigs.net//work/2010/11/17/process-explorer-v14/"/>
+   <updated>2010-11-17T09:47:47-07:00</updated>
+   <id>http://mark.nadigs.net/work/2010/11/17/process-explorer-v14</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://technet.microsoft.com/sysinternals/bb896653&quot;&gt;Process Explorer v14:&lt;/a&gt; This major update to Process Explorer adds a slew of enhancements and new functionality including network and disk monitoring, an improved multi-tab system information dialog, additional memory statistics, a new column that shows aggregate CPU usage for a tree of processes, improved DLL scanning performance and accuracy, command-lines in process tree tooltips, support for more than 64 CPU systems, and more.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11/17/2010 11:45 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Build error when publishing clickonce after build machine name changes</title>
+   <link href="http://mark.nadigs.net//vs2010/2010/11/16/build-error-when-publishing-clickonce-after-build-machine-name-changes/"/>
+   <updated>2010-11-16T15:19:58-07:00</updated>
+   <id>http://mark.nadigs.net/vs2010/2010/11/16/build-error-when-publishing-clickonce-after-build-machine-name-changes</id>
+   <content type="html">&lt;p&gt;I am testing out building VS2010 projects on a new build VM which is just a copy of the real build vm, the equivelant of &amp;quot;changed the name of my build machine.&amp;quot; The Publish Clickonce step failed with &lt;/p&gt;
+
+&lt;p&gt;error MSB3482: An error occurred while signing: Keyset does not exist ...&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Found this helpful &lt;a href=&quot;http://itdevcorner.blogspot.com/2008/10/keyset-does-not-exist.html&quot;&gt;blog post&lt;/a&gt; that described how to resolve this, by removing the signing cert from the current user&amp;#39;s Certificates-&amp;gt;Personal-&amp;gt;Certificates:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Open Microsoft Management Console (MMC) by click on Start --&amp;gt; Run  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; Type &amp;quot;MMC.exe&amp;quot; in the text box window (without quotes).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; Click OK. A MMC window will appear.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; Click Console in the new MMC you created, and then click Add/Remove Snap-in.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; In the new window, click Add.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; Highlight the Certificates snap-in, and then click Add.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; Choose the &amp;quot;My User Account&amp;quot; option and click Next.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; Click Close, and then click OK.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;  Open the Certificates (Current User) snap-in and navigate to Personal, and then Certificates. You will see the list of  ertificates installed. If you can not find the one that you&amp;#39;re looking for then it means it does not exist.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; In the certificate list right click on the certificate you used to sign the manifest and select Delete&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; Try to re-publish your .Net project.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; VS2010&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11/16/2010 5:03 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Building VS2008 test project with VS2010</title>
+   <link href="http://mark.nadigs.net//vs2008/2010/11/10/building-vs2008-test-project-with-vs2010/"/>
+   <updated>2010-11-10T11:24:58-07:00</updated>
+   <id>http://mark.nadigs.net/vs2008/2010/11/10/building-vs2008-test-project-with-vs2010</id>
+   <content type="html">&lt;p&gt;First error trying to build a VS2010 test project targeting .NET 3.5 and I ran into this error:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt; Could not load referenced assembly &amp;quot;C:\Windows\Microsoft.Net\assembly\GAC&lt;/em&gt;MSIL\Microsoft.VisualStudio.QualityTools.UnitTestFramework\v4.0&lt;em&gt;10.0.0.0&lt;/em&gt;_b03f5f7f11d50a3a\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll&amp;quot;.  Caught a BadImageFormatException saying &amp;quot;Could not load file or assembly&amp;quot; _&lt;/p&gt;
+
+&lt;p&gt;Turns out this is a known issue w/ MSBUILD 4.0 on x64:&lt;br&gt;
+&lt;a href=&quot;http://blogs.msdn.com/b/madhurig/archive/2009/11/25/building-vs2008-projects-with-tfs-build-2010.aspx&quot;&gt;http://blogs.msdn.com/b/madhurig/archive/2009/11/25/building-vs2008-projects-with-tfs-build-2010.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To workaround I changed the reference to the 9.0 image (VS2008)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; VS2008&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11/10/2010 12:57 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Case insensitive in SQLDeveloper</title>
+   <link href="http://mark.nadigs.net//oracle/2010/11/02/case-insensitive-in-sqldeveloper/"/>
+   <updated>2010-11-02T12:58:08-06:00</updated>
+   <id>http://mark.nadigs.net/oracle/2010/11/02/case-insensitive-in-sqldeveloper</id>
+   <content type="html">&lt;p&gt;Rather than typing &lt;/p&gt;
+
+&lt;p&gt;ALTER SESSION SET NLS&lt;em&gt;COMP = LINGUISTIC;&lt;br&gt;
+ALTER SESSION SET NLS&lt;/em&gt;SORT = BINARY_CI;&lt;/p&gt;
+
+&lt;p&gt;For every new worksheet in SQLDeveloper, you can set this as the default under Preferences: Database: NLS for both Sort and Comparison:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/broken_image.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Oracle&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11/2/2010 2:58 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>VS2010 common problems and some solutions</title>
+   <link href="http://mark.nadigs.net//vs2010/2010/10/20/vs2010-common-problems-and-some-solutions/"/>
+   <updated>2010-10-20T10:01:01-06:00</updated>
+   <id>http://mark.nadigs.net/vs2010/2010/10/20/vs2010-common-problems-and-some-solutions</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.ginktage.com/2010/10/caught-up-with-bugs-in-my-favourite-ide-visual-studio-2010/&quot;&gt;http://www.ginktage.com/2010/10/caught-up-with-bugs-in-my-favourite-ide-visual-studio-2010/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;For later, when we&amp;#39;re on Vs2010&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; VS2010&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/20/2010 12:00 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Speed up VS2008</title>
+   <link href="http://mark.nadigs.net//vs2008/2010/10/20/speed-up-vs2008/"/>
+   <updated>2010-10-20T09:55:18-06:00</updated>
+   <id>http://mark.nadigs.net/vs2008/2010/10/20/speed-up-vs2008</id>
+   <content type="html">&lt;p&gt;Tools: Options &lt;/p&gt;
+
+&lt;p&gt;Environment - General: uncheck Animate environment tools. &lt;/p&gt;
+
+&lt;p&gt;Text Editor – XAML – Misc – check Always open documents in full XAML view. This disables Cider. &lt;/p&gt;
+
+&lt;p&gt;Text Editor – uncheck Track changes which &amp;quot;When selected, the code editor&amp;#39;s selection margin displays a vertical yellow line to mark code recently changed, and vertical green lines next to unchanged code.&amp;quot; &lt;/p&gt;
+
+&lt;p&gt;Projects and Solutions – uncheck Track Active Item in Solution Explorer and use. Note, I suggest you add this macro and set a menu command to run it so you can on-demand sync Solution Explorer&lt;br&gt;
+Imports System&lt;br&gt;
+Imports EnvDTE&lt;br&gt;
+Imports EnvDTE80&lt;br&gt;
+Imports EnvDTE90&lt;br&gt;
+Imports System.Diagnostics&lt;br&gt;
+Public Module Module1&lt;br&gt;
+Sub ToggleSolutionExplorerTracking()&lt;br&gt;
+   Dim seTrackingProperty As [Property]   &lt;br&gt;
+   seTrackingProperty = DTE.Properties(&amp;quot;Environment&amp;quot;, &amp;quot;ProjectsAndSolution&amp;quot;).Item(&amp;quot;TrackFileSelectionInExplorer&amp;quot;)&lt;br&gt;
+   If seTrackingProperty.Value  True Then&lt;br&gt;
+      seTrackingProperty.Value = True&lt;br&gt;
+      seTrackingProperty.Value = False&lt;br&gt;
+   End If&lt;br&gt;
+End Sub&lt;br&gt;
+End Module&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; VS2008&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/20/2010 11:55 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Identify and recompile invalid objects in Oracle</title>
+   <link href="http://mark.nadigs.net//oracle/2010/10/15/identify-and-recompile-invalid-objects-in-oracle/"/>
+   <updated>2010-10-15T10:40:16-06:00</updated>
+   <id>http://mark.nadigs.net/oracle/2010/10/15/identify-and-recompile-invalid-objects-in-oracle</id>
+   <content type="html">&lt;p&gt;One at at time:&lt;br&gt;
+ALTER VIEW CAM_PROGRAM COMPILE; &lt;/p&gt;
+
+&lt;p&gt;etc.  &lt;/p&gt;
+
+&lt;p&gt;Script to find all and recompile: &lt;/p&gt;
+
+&lt;p&gt;SET SERVEROUTPUT ON SIZE 1000000&lt;br&gt;
+BEGIN&lt;br&gt;
+FOR cur&lt;em&gt;rec IN (SELECT owner, object&lt;/em&gt;name, object&lt;em&gt;type FROM dba&lt;/em&gt;objects&lt;br&gt;
+                WHERE object&lt;em&gt;type IN (&amp;#39;PROCEDURE&amp;#39;, &amp;#39;FUNCTION&amp;#39;, &amp;#39;VIEW&amp;#39;, &amp;#39;TRIGGER&amp;#39;)&lt;br&gt;
+                  AND status != &amp;#39;VALID&amp;#39;)&lt;br&gt;
+LOOP&lt;br&gt;
+BEGIN&lt;br&gt;
+   EXECUTE IMMEDIATE &amp;#39;ALTER &amp;#39; || cur&lt;/em&gt;rec.object&lt;em&gt;type || &amp;#39; &amp;quot;&amp;#39; || cur&lt;/em&gt;rec.owner || &amp;#39;&amp;quot;.&amp;quot;&amp;#39; || cur&lt;em&gt;rec.object&lt;/em&gt;name || &amp;#39;&amp;quot; COMPILE&amp;#39;; &lt;/p&gt;
+
+&lt;p&gt;   EXCEPTION&lt;br&gt;
+   WHEN OTHERS THEN&lt;br&gt;
+      DBMS&lt;em&gt;OUTPUT.put&lt;/em&gt;line(cur&lt;em&gt;rec.object&lt;/em&gt;type || &amp;#39; : &amp;#39; || cur&lt;em&gt;rec.owner || &amp;#39; : &amp;#39; || cur&lt;/em&gt;rec.object_name);&lt;br&gt;
+END;&lt;br&gt;
+END LOOP;&lt;br&gt;
+END;&lt;br&gt;
+/   &lt;/p&gt;
+
+&lt;p&gt;   &lt;/p&gt;
+
+&lt;p&gt;source: &lt;a href=&quot;http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php&quot;&gt;http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Oracle&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/15/2010 12:34 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Toad autocomplete tablename</title>
+   <link href="http://mark.nadigs.net//oracle/2010/10/14/toad-autocomplete-tablename/"/>
+   <updated>2010-10-14T12:46:50-06:00</updated>
+   <id>http://mark.nadigs.net/oracle/2010/10/14/toad-autocomplete-tablename</id>
+   <content type="html">&lt;p&gt;When typing a query in the editor, hit Ctrl+.  (control period) to display a dropdown of possible table name matches.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;still looking for a definitive list of these types of shortcuts for Toad.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Oracle&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/14/2010 2:45 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to kill sessions manually</title>
+   <link href="http://mark.nadigs.net//oracle/2010/10/12/how-to-kill-sessions-manually/"/>
+   <updated>2010-10-12T16:48:25-06:00</updated>
+   <id>http://mark.nadigs.net/oracle/2010/10/12/how-to-kill-sessions-manually</id>
+   <content type="html">&lt;p&gt;Query to get SID and SERIAL#:&lt;br&gt;
+SELECT sid, serial#, username FROM v$session  &lt;/p&gt;
+
+&lt;blockquote&gt;
+
+&gt; 
+&gt; Optionally filter WHERE username=....
+&gt; 
+&gt; &lt;/blockquote&gt;
+
+&lt;p&gt;Once you found the one to kill:&lt;br&gt;
+ALTER SYSTEM KILL SESSION &amp;#39;&lt;em&gt;[sid]&lt;/em&gt;,&lt;em&gt;[serial#]&lt;/em&gt;&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;Generate kills for all connections for a given user: SELECT &amp;#39;alter system kill session &amp;#39;&amp;#39;&amp;#39; || sid || &amp;#39;,&amp;#39; || serial# || &amp;#39;&amp;#39;&amp;#39;;&amp;#39; FROM v$session WHERE Username = &amp;#39;MAKODEMO&amp;#39;;  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Oracle&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/12/2010 6:46 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Copy workspace mappings from one machine to another</title>
+   <link href="http://mark.nadigs.net//tfs/2010/10/08/copy-workspace-mappings-from-one-machine-to-another/"/>
+   <updated>2010-10-08T15:02:17-06:00</updated>
+   <id>http://mark.nadigs.net/tfs/2010/10/08/copy-workspace-mappings-from-one-machine-to-another</id>
+   <content type="html">&lt;p&gt;From a command prompt:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;tf workspace /s:http://tfs:8080 WorkspaceName;DOMAIN\YourUserName&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Then the workspace dialog will pop up and they can select all mappings (Ctrl+A) then copy them (Ctrl+C), then edit mappings in their workspaces by pasting the new mappings over the old ones.&lt;/p&gt;
+
+&lt;p&gt;source: &lt;a href=&quot;http://blogs.msdn.com/b/mohamedg/archive/2009/04/13/how-to-copy-workspace-mappings.aspx&quot;&gt;http://blogs.msdn.com/b/mohamedg/archive/2009/04/13/how-to-copy-workspace-mappings.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; TFS&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/8/2010 5:01 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>VirtualPC on Windows 7 Home</title>
+   <link href="http://mark.nadigs.net//virtualization/2010/10/04/virtualpc-on-windows-7-home/"/>
+   <updated>2010-10-04T10:18:15-06:00</updated>
+   <id>http://mark.nadigs.net/virtualization/2010/10/04/virtualpc-on-windows-7-home</id>
+   <content type="html">&lt;p&gt;If you go to the official Virtual PC website (&lt;a href=&quot;http://www.microsoft.com/virtualpc&quot;&gt;http://www.microsoft.com/virtualpc&lt;/a&gt;) and indicate that you are running Windows 7 Home – you will be (correctly) informed that you are not eligible to run Windows &lt;em&gt;XP Mode&lt;/em&gt;. This is desceptive since you should still be able to download and run just Virtual PC as this blog post indicates : &lt;a href=&quot;http://blogs.msdn.com/b/virtual_pc_guy/archive/2010/07/07/installing-windows-virtual-pc-on-windows-7-home-editions.aspx&quot;&gt;http://blogs.msdn.com/b/virtual&lt;em&gt;pc&lt;/em&gt;guy/archive/2010/07/07/installing-windows-virtual-pc-on-windows-7-home-editions.aspx&lt;/a&gt;. You can download Virtual PC for Windows 7 directly from &lt;a href=&quot;http://www.microsoft.com/downloads/details.aspx?FamilyID=2B6D5C18-1441-47EA-8309-2545B08E11DD&quot;&gt;http://www.microsoft.com/downloads/details.aspx?FamilyID=2B6D5C18-1441-47EA-8309-2545B08E11DD&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Or, just install the also free &lt;a href=&quot;http://www.vmware.com/products/player/&quot;&gt;VMWare Player&lt;/a&gt; 3.1 which all reports inidicate runs XP faster with more options.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Virtualization&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 10/4/2010 12:14 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Unanticiated problem working from coffee shop #1</title>
+   <link href="http://mark.nadigs.net//work/2010/09/28/unanticiated-problem-working-from-coffee-shop-1/"/>
+   <updated>2010-09-28T08:20:00-06:00</updated>
+   <id>http://mark.nadigs.net/work/2010/09/28/unanticiated-problem-working-from-coffee-shop-1</id>
+   <content type="html">&lt;p&gt;The gal with the Mac next to me who bathed in something flowery... going to be sick.. ack...&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 9/28/2010 10:19 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>VS2008 break on exception inside try/catch</title>
+   <link href="http://mark.nadigs.net//work/2010/09/23/vs2008-break-on-exception-inside-trycatch/"/>
+   <updated>2010-09-23T16:29:42-06:00</updated>
+   <id>http://mark.nadigs.net/work/2010/09/23/vs2008-break-on-exception-inside-trycatch</id>
+   <content type="html">&lt;p&gt;(I always forget this... writing down where I won&amp;#39;t)&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Ctrl-Alt-E to bring up the exceptions window and tick the &lt;strong&gt;Thrown&lt;/strong&gt; checkbox on Common Language Runtime Exceptions&lt;/p&gt;
+
+&lt;p&gt;That will stop the execution, open the source code where the exception was thrown, and tell you with a message window what error it is, pointing at the line it was thrown.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 9/23/2010 6:28 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>IE9 and Office Project Web Access</title>
+   <link href="http://mark.nadigs.net//beta/2010/09/21/ie9-and-office-project-web-access/"/>
+   <updated>2010-09-21T19:12:13-06:00</updated>
+   <id>http://mark.nadigs.net/beta/2010/09/21/ie9-and-office-project-web-access</id>
+   <content type="html">&lt;p&gt;I had to re-&lt;a href=&quot;/personal/marknadig/Blog/Lists/Posts/Post.aspx?ID=152&quot;&gt;uninstall IE9&lt;/a&gt; when I found that Office Project Web Access failed to display any of my tasks. My fallback was to use Chrome for any beta issue I ran into, but PWA only works with IE. Google-foo was failing me... no hits so far. Many hits on unhappy IE9 users. To be expected since beta and everyone loves to hate M$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Beta&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 9/21/2010 9:08 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to uninstall IE9 beta (Windows 7)</title>
+   <link href="http://mark.nadigs.net//beta/2010/09/20/how-to-uninstall-ie9-beta-windows-7/"/>
+   <updated>2010-09-20T09:34:35-06:00</updated>
+   <id>http://mark.nadigs.net/beta/2010/09/20/how-to-uninstall-ie9-beta-windows-7</id>
+   <content type="html">&lt;p&gt;IE9 Installs as a system update, so can be uninstalled from Uninstall update cp menu.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Open Control Panel-&amp;gt; Uninstall a program and click View installed updates (upper left). This opens a listing of Windows updates that have been applied. Under the Microsoft Windows group, find Windows Internet Explorer 9, right-click and uninstall.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Beta&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 9/20/2010 11:30 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>¡Bueno!</title>
+   <link href="http://mark.nadigs.net//2010/09/16/bueno/"/>
+   <updated>2010-09-16T15:40:19-06:00</updated>
+   <id>http://mark.nadigs.net/2010/09/16/bueno</id>
+   <content type="html">&lt;p&gt;Alt 0161 ¡&lt;/p&gt;
+
+&lt;p&gt;Alt 0191 ¿&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 9/16/2010 5:40 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Backup/restore Oracle</title>
+   <link href="http://mark.nadigs.net//oracle/2010/09/16/backuprestore-oracle/"/>
+   <updated>2010-09-16T10:53:21-06:00</updated>
+   <id>http://mark.nadigs.net/oracle/2010/09/16/backuprestore-oracle</id>
+   <content type="html">&lt;p&gt;I have XE installed locally and wanted to pull a backup from Oracle on another server. From a command-line: &lt;/p&gt;
+
+&lt;p&gt;CD c:\oraclexe\app\oracle\product\10.2.0\server\BIN&lt;br&gt;
+EXP PMCompassDemo/PMCompassDemo@FTCDEVDB7 OWNER=PMCompassDemo FILE=%temp%\PMCompassDemo.dmp STATISTICS=none&lt;/p&gt;
+
+&lt;p&gt;This pulls down the backup to my temp folder. Note: This was very slow, so I found it must faster to RDP into FTCDevDB7 and run it &amp;#39;local&amp;#39; then zip and copy the dmp. The @ syntax uses the name from TNSNames. &lt;/p&gt;
+
+&lt;p&gt;To restore, first drop and recreate the tablespace and user: &lt;/p&gt;
+
+&lt;p&gt;DROP TABLESPACE PMCompassDemo INCLUDING CONTENTS AND DATAFILES;&lt;br&gt;
+/ &lt;/p&gt;
+
+&lt;p&gt;CREATE TABLESPACE PMCompassDemo&lt;br&gt;
+  DATAFILE &amp;#39;C:\ORACLEXE\ORADATA\XE\PMCompassDemo.dbf&amp;#39;&lt;br&gt;
+  SIZE 32m&lt;br&gt;
+  AUTOEXTEND ON&lt;br&gt;
+  NEXT 32m&lt;br&gt;
+  MAXSIZE 2048m;&lt;br&gt;
+/&lt;/p&gt;
+
+&lt;p&gt;DROP USER PMCompassDemo CASCADE;&lt;br&gt;
+/&lt;/p&gt;
+
+&lt;p&gt;CREATE USER PMCompassDemo IDENTIFIED BY PMCompassDemo&lt;br&gt;
+DEFAULT TABLESPACE PMCompassDemo&lt;br&gt;
+QUOTA UNLIMITED ON PMCompassDemo&lt;br&gt;
+TEMPORARY TABLESPACE Temp;&lt;br&gt;
+GRANT CONNECT, RESOURCE, CREATE SESSION TO PMCompassDemo;&lt;br&gt;
+GRANT CREATE VIEW TO PMCompassDemo;&lt;br&gt;
+GRANT CREATE TRIGGER TO PMCompassDemo;&lt;br&gt;
+/ &lt;/p&gt;
+
+&lt;p&gt;Now, ready to import: &lt;/p&gt;
+
+&lt;p&gt;IMP PMCompassDemo/PMCompassDemo@XE FILE=%temp%\PMCompassDemo.dmp FROMUSER=PMCompassDemo TOUSER=PMCompassDemo &lt;/p&gt;
+
+&lt;p&gt;Note: Often some of the views will fail on importing. Re-running IMP will resolve or this &lt;a href=&quot;/personal/marknadig/Blog/Lists/Posts/ViewPost.aspx?ID=160&quot;&gt;recompile trick&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks Tim/Dave for helping me with this syntax. &lt;/p&gt;
+
+&lt;p&gt;EXP HELP=YES to get help.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Oracle&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 9/16/2010 1:30 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>CLIP.EXE – copy text from command line to clipboard</title>
+   <link href="http://mark.nadigs.net//windows%207/2010/09/10/clip-exe-copy-text-from-command-line-to-clipboard/"/>
+   <updated>2010-09-10T13:24:37-06:00</updated>
+   <id>http://mark.nadigs.net/windows%207/2010/09/10/clip-exe-copy-text-from-command-line-to-clipboard</id>
+   <content type="html">&lt;p&gt;Copy Output from Command Line Applications to the Clipboard&lt;/p&gt;
+
+&lt;p&gt;To copy text from a command to the clipboard, we&amp;#39;ll just pipe it into the clip command, like this:&lt;/p&gt;
+
+&lt;p&gt;| clip&lt;/p&gt;
+
+&lt;p&gt;For example, if you wanted to output from the echo command into the clipboard, you could do this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/personal/marknadig/Blog/Lists/Photos/091010_1924_CLIPEXEcopy1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also use redirection to send a text file directly into the clip utility, like this:&lt;/p&gt;
+
+&lt;p&gt;clip &amp;lt; filename.txt&lt;/p&gt;
+
+&lt;p&gt;In this example I&amp;#39;m gonna put the contents of the single.php file onto the clipboard:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/personal/marknadig/Blog/Lists/Photos/091010_1924_CLIPEXEcopy2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, you could also use the type command and then pipe it to the clipboard like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/personal/marknadig/Blog/Lists/Photos/091010_1924_CLIPEXEcopy3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;(source &lt;a href=&quot;http://www.howtogeek.com/howto/28473/how-to-copy-output-text-from-the-command-line-to-the-windows-clipboard/&quot;&gt;howtogeek&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Windows 7&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 9/10/2010 3:24 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Clear clickonce cache, the 3rd way</title>
+   <link href="http://mark.nadigs.net//work/2010/09/07/clear-clickonce-cache-the-3rd-way/"/>
+   <updated>2010-09-07T12:23:56-06:00</updated>
+   <id>http://mark.nadigs.net/work/2010/09/07/clear-clickonce-cache-the-3rd-way</id>
+   <content type="html">&lt;p&gt;I stumbled across this alternate way to clear the clickonce cache in the comments in this &lt;a href=&quot;http://bombayboy.wordpress.com/2006/07/03/clear-clickonce-cache/&quot;&gt;old blog post&lt;/a&gt;. From a command prompt:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;rundll32 dfshim CleanOnlineAppCache&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;I usually run mage -cc from a &lt;em&gt;visual studio command prompt&lt;/em&gt;. However, not all QC/design folk have VS.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Since migrating to Windows 7 I&amp;#39;ve purged the memory of the specific folder where clickonce is stored since this differs from XP. The first two approaches are more resilient.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 9/7/2010 2:20 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Windows Update</title>
+   <link href="http://mark.nadigs.net//windows%207/2010/08/10/windows-update/"/>
+   <updated>2010-08-10T10:21:29-06:00</updated>
+   <id>http://mark.nadigs.net/windows%207/2010/08/10/windows-update</id>
+   <content type="html">&lt;p&gt;Group policy prevents updates from being installed automatically. So, I periodically like to scan for update myself for my Windows 7 64-bit since it is not officially supported by IT.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;I created a schedule task to check for updates: wuauclt /ShowWUAutoScan&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Note: Most articles I&amp;#39;ve read suggest wuauclt /detectnow however, I didn&amp;#39;t have any luck with that.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;List of switches &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.msfn.org/board/topic/143031-windows-update-wuapp-switches-are-there-any/&quot;&gt;http://www.msfn.org/board/topic/143031-windows-update-wuapp-switches-are-there-any/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://technet.microsoft.com/en-us/library/cc720477(WS.10&quot;&gt;http://technet.microsoft.com/en-us/library/cc720477(WS.10).aspx&lt;/a&gt;.aspx)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Windows 7&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 8/10/2010 12:15 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Windows 7 Home Pro - no RDP</title>
+   <link href="http://mark.nadigs.net//windows%207/2010/08/06/windows-7-home-pro-no-rdp/"/>
+   <updated>2010-08-06T15:07:23-06:00</updated>
+   <id>http://mark.nadigs.net/windows%207/2010/08/06/windows-7-home-pro-no-rdp</id>
+   <content type="html">&lt;p&gt;Seems like everyone knew, except me. Windows 7 Home Professional doesn&amp;#39;t allow incoming RDP connections. I found this out after repaving my XP Pro box that sits in the basement... RDP is a definite must.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;My google research showed there are a couple places where you can download a patch that unlocks this ability in W7HP. But, like I&amp;#39;m gonna do that...&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;The next choice was UltraVNC. I&amp;#39;ve used VNC in the past and it works reasonably. The issue I found was most of the FAQs on how to install had disable UAC as step 1... again, not my first choice.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Then, I found a reference to Live Mesh supported a remote desktop feature. On digging, turns out Live Mesh is being deprecated for a new Live Synch available &lt;a href=&quot;http://explore.live.com/windows-live-essentials-beta&quot;&gt;here&lt;/a&gt;.  So, I installed this on the box and now can remote in fine.  As can anyone else on the &amp;#39;net with an account ... hmmm...&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Windows 7&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 8/6/2010 5:03 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to undelete in TFS</title>
+   <link href="http://mark.nadigs.net//tfs/2010/07/28/how-to-undelete-in-tfs/"/>
+   <updated>2010-07-28T17:04:43-06:00</updated>
+   <id>http://mark.nadigs.net/tfs/2010/07/28/how-to-undelete-in-tfs</id>
+   <content type="html">&lt;p&gt;In Visual Studio, go to Tools, Options, Source Control, Team Foundation Server and check the &amp;quot;Show deleted items in Source Control Explorer&amp;quot; box.  Then browse in Source Control Explorer to the place where the file was located. It should now be visible. Right-click and select Undelete.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; TFS&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 7/28/2010 7:03 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>SmartPaster  for Visual Studio 2008</title>
+   <link href="http://mark.nadigs.net//coding/2010/07/27/smartpaster-for-visual-studio-2008/"/>
+   <updated>2010-07-27T20:42:53-06:00</updated>
+   <id>http://mark.nadigs.net/coding/2010/07/27/smartpaster-for-visual-studio-2008</id>
+   <content type="html">&lt;p&gt;I can&amp;#39;t believe I haven&amp;#39;t stumbled across this yet. This handy addin &lt;a href=&quot;http://weblogs.asp.net/alex_papadimoulis/archive/2004/05/25/Smart-Paster-1.1-Add-In---StringBuilder-and-Better-C_2300_-Handling.aspx&quot;&gt;Smart Paster&lt;/a&gt; allows pasting as a comment, string, stringbuilder, etc. (Source code available too)&lt;br&gt;
+&lt;a href=&quot;http://earljon.files.wordpress.com/2009/04/copy-paster.gif&quot;&gt;&lt;img src=&quot;/personal/marknadig/Blog/Lists/Photos/072810_0242_SmartPaster1.gif&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To install VS 2008 Addin: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Extract the zip file, for Smart Paster, binaries are located in &lt;strong&gt;SmartPaster2008sln\SmartPaster2008 Solution\SmartPaster2008\bin&lt;/strong&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Copy/Paste the files in /bin folder going to your &lt;strong&gt;C:\Users\Documents\Visual Studio 2008\Addins&lt;/strong&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Fire up your VS2008 IDE and verify/check your AddIn if it&amp;#39;s installed via &lt;strong&gt;Tools/Addin Manager&lt;/strong&gt;: &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://earljon.files.wordpress.com/2009/04/copy-paster-addin.jpg&quot;&gt;&lt;img src=&quot;/personal/marknadig/Blog/Lists/Photos/072810_0242_SmartPaster2.jpg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s an excellent detailed article on the tool: &lt;a href=&quot;http://en.csharp-online.net/Visual_Studio_Hacks%E2%80%94Hack_7:_Make_Pasting_into_Visual_Studio_Easier&quot;&gt;Visual Studio Hacks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Coding&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 7/27/2010 10:42 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>System.ComponentModel.DefaultValueAttribute</title>
+   <link href="http://mark.nadigs.net//coding/2010/07/22/system-componentmodel-defaultvalueattribute/"/>
+   <updated>2010-07-22T15:38:51-06:00</updated>
+   <id>http://mark.nadigs.net/coding/2010/07/22/system-componentmodel-defaultvalueattribute</id>
+   <content type="html">&lt;p&gt;I ran into a couple snags today on how to define default values for some properties. Specifically how can I specify the default is &lt;strong&gt;Nothing&lt;/strong&gt; (in this case, for a String type property)? &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;DefaultValue( CStr(Nothing))&lt;/p&gt;
+
+&lt;p&gt;DefaultValue( DirectCast(Nothing, String))&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;My second problem was how to specify a default for a property with an enumerated type? I tried &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;DefaultValue( LookupViewType.Standard)  &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;but it still serialized this. The correct syntax is:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;DefaultValue( GetType( LookupViewType), &amp;quot;Standard&amp;quot;)&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Coding&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 7/22/2010 5:23 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Find unused resource strings</title>
+   <link href="http://mark.nadigs.net//work/2010/07/22/find-unused-resource-strings/"/>
+   <updated>2010-07-22T13:44:03-06:00</updated>
+   <id>http://mark.nadigs.net/work/2010/07/22/find-unused-resource-strings</id>
+   <content type="html">&lt;p&gt;This handy tip lets the compiler warning you of any unused resource string references. Credit this &lt;a href=&quot;http://social.msdn.microsoft.com/Forums/en-US/csharpide/thread/a833e7fb-d18f-44c3-a1f1-dd9bb00abeec&quot;&gt;blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Resources.Designer.cs file:  &lt;/p&gt;
+
+&lt;p&gt;(1) Turn on Code Analysis warning CA1811&lt;br&gt;
+(2) In your Resources.Designer.CS file comment out the following lines:&lt;br&gt;
+     [global:: System.CodeDom.Compiler.GeneratedCodeAttribute( ...&lt;br&gt;
+     &lt;a href=&quot;3&quot;&gt;global:: System.Runtime.CompilerServices.CompilerGeneratedAttribute()&lt;/a&gt; Change the class to a static class by putting the word &amp;quot;static&amp;quot; in front of &amp;quot;class&amp;quot;:&lt;br&gt;
+     internal static class Resources {&lt;br&gt;
+(4) Comment out the default constructor.&lt;br&gt;
+(5) Compile your program. Now you should be warned about any unused resources.&lt;br&gt;
+(6) Remove your unused resources. (Changing any resources will regenerate the Resources.Designer.cs file.)  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 7/22/2010 3:42 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Uninstalling the hard way</title>
+   <link href="http://mark.nadigs.net//work/2010/07/14/uninstalling-the-hard-way/"/>
+   <updated>2010-07-14T17:19:05-06:00</updated>
+   <id>http://mark.nadigs.net/work/2010/07/14/uninstalling-the-hard-way</id>
+   <content type="html">&lt;p&gt;As I was trying to clean up my XP &amp;quot;home server&amp;quot;, I noticed SQL Server Express 2005 was still installed from back when I had my own mail server. Opening Add/Remove programs, I was surprised to find no Remove option:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/broken_image.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;This was a bit disconcerting… Thankfully you can find everything on the web and this old &lt;a href=&quot;http://blogs.msdn.com/b/astebner/archive/2005/07/01/434814.aspx&quot;&gt;blog post&lt;/a&gt; from 2005 walked me through running &lt;a href=&quot;http://cid-27e6a35d1a492af7.skydrive.live.com/self.aspx/Blog%7C_Tools/msiinv.zip&quot;&gt;MSIINV&lt;/a&gt; to get the product GUID and manually uninstalling from a command-line; e.g.&lt;/p&gt;
+
+&lt;p&gt;msiexec /x {2AFFFDD7-ED85-4A90-8C52-5DA9EBDC9B8F}&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 7/14/2010 7:19 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Keyboard junkie nirvana (MS)</title>
+   <link href="http://mark.nadigs.net//work/2010/06/11/keyboard-junkie-nirvana-ms/"/>
+   <updated>2010-06-11T13:29:28-06:00</updated>
+   <id>http://mark.nadigs.net/work/2010/06/11/keyboard-junkie-nirvana-ms</id>
+   <content type="html">&lt;p&gt;I googled upon a page with links to hotkeys for MS products:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.microsoft.com/enable/products/keyboard.aspx&quot;&gt;http://www.microsoft.com/enable/products/keyboard.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 6/11/2010 3:27 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>IIS killing worker process during debugging</title>
+   <link href="http://mark.nadigs.net//windows%207/2010/05/25/iis-killing-worker-process-during-debugging/"/>
+   <updated>2010-05-25T09:13:47-06:00</updated>
+   <id>http://mark.nadigs.net/windows%207/2010/05/25/iis-killing-worker-process-during-debugging</id>
+   <content type="html">&lt;p&gt;Windows 7 runs IIS 7.5 and introduces a few changes in debugging. One issue that comes up is if your code hit some breakpoint and if you leave the program in &amp;#39;break&amp;#39; mode for more than 90 seconds, Visual Studio shows the following message:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2010-05-25-iis-killing-worker-process-during-debugging1.png&quot;&gt;&lt;img src=&quot;/images/2010-05-25-iis-killing-worker-process-during-debugging1.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As help indicates you can either set Ping Enabled=False or increase the Ping Maximum Response Time from the default of 90s:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;[Open &lt;strong&gt;Internet Information Services (IIS) Manager&lt;/strong&gt;. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;From the server tree (the item with the name as the server name), choose &lt;strong&gt;Application Pools&lt;/strong&gt;. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Choose the Application Pool corresponding to your testing IIS website (typically DefaultAppPool) &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click &lt;strong&gt;Advanced Settings&lt;/strong&gt;. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;From the &lt;strong&gt;Process Model&lt;/strong&gt; node, change the the &lt;strong&gt;Ping Enabled&lt;/strong&gt; property to &lt;em&gt;False&lt;/em&gt;**
+                &lt;strong&gt;or increase **Ping Maximum Response Time (seconds)&lt;/strong&gt; (900s = 15 min). &lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/broken_image.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The server keeps pinging the worker process and waits for a response. When in debugging mode, the worker process is effectively suspended, which results in the ping not being responded.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Windows 7&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 5/25/2010 11:13 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>T61 Bluetooth Radio and Windows 7</title>
+   <link href="http://mark.nadigs.net//windows%207/2010/05/25/t61-bluetooth-radio-and-windows-7/"/>
+   <updated>2010-05-25T08:30:37-06:00</updated>
+   <id>http://mark.nadigs.net/windows%207/2010/05/25/t61-bluetooth-radio-and-windows-7</id>
+   <content type="html">&lt;p&gt;Run c:\program files\lenovo\hotkey\tpfnf5.exe to toggle radios.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://forums.lenovo.com/t5/T61-and-prior-T-series-ThinkPad/Bluetooth-radio-defaults-to-Off-state/m-p/169391;jsessionid=BDE85ADCD309FEC70BF444383795414D&quot;&gt;http://forums.lenovo.com/t5/T61-and-prior-T-series-ThinkPad/Bluetooth-radio-defaults-to-Off-state/m-p/169391;jsessionid=BDE85ADCD309FEC70BF444383795414D&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Windows 7&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 5/25/2010 10:29 AM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Print email without header/footer</title>
+   <link href="http://mark.nadigs.net//work/2010/05/21/print-email-without-headerfooter/"/>
+   <updated>2010-05-21T10:32:20-06:00</updated>
+   <id>http://mark.nadigs.net/work/2010/05/21/print-email-without-headerfooter</id>
+   <content type="html">&lt;p&gt;I&amp;#39;ve often been frusted with printing emails from Outlook, specifically when I don&amp;#39;t want the header info (from/to/date). For example, printing a receipt email to me. Today I found that within Oultook 2007 you can select View in Browser from Actions in the Ribbon. This opens the email in the browser and provides a cleaner way to print.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 5/21/2010 12:18 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ISO mount, burn, etc.  - FREE - Windows * (xp, Vista, 7 etc.)</title>
+   <link href="http://mark.nadigs.net//work/2009/08/14/iso-mount-burn-etc-free-windows-xp-vista-7-etc/"/>
+   <updated>2009-08-14T17:08:48-06:00</updated>
+   <id>http://mark.nadigs.net/work/2009/08/14/iso-mount-burn-etc-free-windows-xp-vista-7-etc</id>
+   <content type="html">&lt;p&gt;Windows 7 has built in &amp;quot;burn disk image&amp;quot; capability. Just right-click on the ISO and select &amp;quot;burn...&amp;quot;. Note: If you&amp;#39;ve registered any other program with an ISO extension, you may have lost this as I did. See HKCR\Windows.IsoFile\Shell\Burn for path and parms to IsoBurn.exe in Windows 7.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;For other versions of Windows use this to burn&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.imgburn.com/&quot;&gt;http://www.imgburn.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://isorecorder.alexfeinman.com/isorecorder.htm&quot;&gt;http://isorecorder.alexfeinman.com/isorecorder.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;For mounting&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.poweriso.com/index.htm&quot;&gt;http://www.poweriso.com/index.htm&lt;/a&gt;  (PowerISO is freeware so there shouldn’t be any problem. Its only limitations is the screen that asks you to register it and a limit of 300Mb when creating or editing files. Mounting files doesn’t come with limitations however.)&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.slysoft.com/en/download.html&quot;&gt;http://www.slysoft.com/en/download.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.magiciso.com/tutorials/miso-magicdisc-overview.htm&quot;&gt;http://www.magiciso.com/tutorials/miso-magicdisc-overview.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Or UltraISO (paid)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 8/14/2009 7:07 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Visual Studio Regex addin (now for 2008)</title>
+   <link href="http://mark.nadigs.net//work/2009/05/26/visual-studio-regex-addin-now-for-2008/"/>
+   <updated>2009-05-26T13:10:01-06:00</updated>
+   <id>http://mark.nadigs.net/work/2009/05/26/visual-studio-regex-addin-now-for-2008</id>
+   <content type="html">&lt;p&gt;Visual Studio&amp;#39;s regex implementation is non-standard. Thankfully, there&amp;#39;s an open source add-in for VS2008 that allows you to use &amp;quot;standard&amp;quot; regular expressions found &lt;a href=&quot;http://www.codeproject.com/KB/macros/VS2008RegexAddIn.aspx&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;“Why do I care?” Here’s a very useful example of why regex is so cool: Say you wanted to replace all calls to a function, like IsNothing(…) and replace it with a native sytnax … Is Nothing  (and Not IsNothing(…) with … IsNot Nothing)&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;You can just use this search string (set ignore pattern whitepace):&lt;/p&gt;
+
+&lt;p&gt;(?Not(?:\s))?IsNothing((?(?&amp;gt;[^()]+|((?)|)(?))*(?(number)(?!))))&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Expanded:&lt;br&gt;
+(?Not(?:\s))?&lt;br&gt;
+IsNothing((?&lt;br&gt;
+    (?&amp;gt;&lt;br&gt;
+        [^()]+&lt;br&gt;
+        |    ( (?)&lt;br&gt;
+        |    ) (?)&lt;br&gt;
+    )*&lt;br&gt;
+    (?(number)(?!))&lt;br&gt;
+    )&lt;br&gt;
+)&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;With this replace string:&lt;br&gt;
+${inner} Is${prefix} Nothing  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Work&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; 5/26/2009 3:05 PM&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

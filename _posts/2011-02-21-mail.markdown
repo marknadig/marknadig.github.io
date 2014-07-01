@@ -1,0 +1,26 @@
+---
+author: marknadig
+comments: true
+date: 2011-02-21 15:36:08+00:00
+layout: post
+slug: mail
+title: mail
+wordpress_id: 31
+categories:
+- OS X
+---
+
+Mail 4 automatically marks emails as read as soon as you touch them, scroll past or whatever. Based on google results, seems this has been a pain point for some time. Thankfully I found an add-on http://christianserving.org/project/truepreview that solves this. Made my day. 
+
+
+
+
+**Category:** OSx
+
+
+
+
+**Published:** 2/21/2011 10:31 AM
+
+
+

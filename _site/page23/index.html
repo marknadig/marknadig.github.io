@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Mark's Blog &middot; Why not
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Mark's Blog</a>
+          <small>Why not</small>
+        </h3>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/oracle/2010/10/15/identify-and-recompile-invalid-objects-in-oracle/">
+        Identify and recompile invalid objects in Oracle
+      </a>
+    </h1>
+
+    <span class="post-date">15 Oct 2010</span>
+
+    <p>One at at time:<br>
+ALTER VIEW CAM_PROGRAM COMPILE; </p>
+
+<p>etc.  </p>
+
+<p>Script to find all and recompile: </p>
+
+<p>SET SERVEROUTPUT ON SIZE 1000000<br>
+BEGIN<br>
+FOR cur<em>rec IN (SELECT owner, object</em>name, object<em>type FROM dba</em>objects<br>
+                WHERE object<em>type IN (&#39;PROCEDURE&#39;, &#39;FUNCTION&#39;, &#39;VIEW&#39;, &#39;TRIGGER&#39;)<br>
+                  AND status != &#39;VALID&#39;)<br>
+LOOP<br>
+BEGIN<br>
+   EXECUTE IMMEDIATE &#39;ALTER &#39; || cur</em>rec.object<em>type || &#39; &quot;&#39; || cur</em>rec.owner || &#39;&quot;.&quot;&#39; || cur<em>rec.object</em>name || &#39;&quot; COMPILE&#39;; </p>
+
+<p>   EXCEPTION<br>
+   WHEN OTHERS THEN<br>
+      DBMS<em>OUTPUT.put</em>line(cur<em>rec.object</em>type || &#39; : &#39; || cur<em>rec.owner || &#39; : &#39; || cur</em>rec.object_name);<br>
+END;<br>
+END LOOP;<br>
+END;<br>
+/   </p>
+
+<p>   </p>
+
+<p>source: <a href="http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php">http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php</a></p>
+
+<p><strong>Category:</strong> Oracle</p>
+
+<p><strong>Published:</strong> 10/15/2010 12:34 PM</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/oracle/2010/10/14/toad-autocomplete-tablename/">
+        Toad autocomplete tablename
+      </a>
+    </h1>
+
+    <span class="post-date">14 Oct 2010</span>
+
+    <p>When typing a query in the editor, hit Ctrl+.  (control period) to display a dropdown of possible table name matches.</p>
+
+<p> </p>
+
+<p>still looking for a definitive list of these types of shortcuts for Toad.</p>
+
+<p><strong>Category:</strong> Oracle</p>
+
+<p><strong>Published:</strong> 10/14/2010 2:45 PM</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/oracle/2010/10/12/how-to-kill-sessions-manually/">
+        How to kill sessions manually
+      </a>
+    </h1>
+
+    <span class="post-date">12 Oct 2010</span>
+
+    <p>Query to get SID and SERIAL#:<br>
+SELECT sid, serial#, username FROM v$session  </p>
+
+<blockquote>
+
+> 
+> Optionally filter WHERE username=....
+> 
+> </blockquote>
+
+<p>Once you found the one to kill:<br>
+ALTER SYSTEM KILL SESSION &#39;<em>[sid]</em>,<em>[serial#]</em>&#39;</p>
+
+<p>Generate kills for all connections for a given user: SELECT &#39;alter system kill session &#39;&#39;&#39; || sid || &#39;,&#39; || serial# || &#39;&#39;&#39;;&#39; FROM v$session WHERE Username = &#39;MAKODEMO&#39;;  </p>
+
+<p><strong>Category:</strong> Oracle</p>
+
+<p><strong>Published:</strong> 10/12/2010 6:46 PM</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/tfs/2010/10/08/copy-workspace-mappings-from-one-machine-to-another/">
+        Copy workspace mappings from one machine to another
+      </a>
+    </h1>
+
+    <span class="post-date">08 Oct 2010</span>
+
+    <p>From a command prompt:</p>
+
+<p><strong>tf workspace /s:http://tfs:8080 WorkspaceName;DOMAIN\YourUserName</strong></p>
+
+<p>Then the workspace dialog will pop up and they can select all mappings (Ctrl+A) then copy them (Ctrl+C), then edit mappings in their workspaces by pasting the new mappings over the old ones.</p>
+
+<p>source: <a href="http://blogs.msdn.com/b/mohamedg/archive/2009/04/13/how-to-copy-workspace-mappings.aspx">http://blogs.msdn.com/b/mohamedg/archive/2009/04/13/how-to-copy-workspace-mappings.aspx</a></p>
+
+<p><strong>Category:</strong> TFS</p>
+
+<p><strong>Published:</strong> 10/8/2010 5:01 PM</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/virtualization/2010/10/04/virtualpc-on-windows-7-home/">
+        VirtualPC on Windows 7 Home
+      </a>
+    </h1>
+
+    <span class="post-date">04 Oct 2010</span>
+
+    <p>If you go to the official Virtual PC website (<a href="http://www.microsoft.com/virtualpc">http://www.microsoft.com/virtualpc</a>) and indicate that you are running Windows 7 Home – you will be (correctly) informed that you are not eligible to run Windows <em>XP Mode</em>. This is desceptive since you should still be able to download and run just Virtual PC as this blog post indicates : <a href="http://blogs.msdn.com/b/virtual_pc_guy/archive/2010/07/07/installing-windows-virtual-pc-on-windows-7-home-editions.aspx">http://blogs.msdn.com/b/virtual<em>pc</em>guy/archive/2010/07/07/installing-windows-virtual-pc-on-windows-7-home-editions.aspx</a>. You can download Virtual PC for Windows 7 directly from <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=2B6D5C18-1441-47EA-8309-2545B08E11DD">http://www.microsoft.com/downloads/details.aspx?FamilyID=2B6D5C18-1441-47EA-8309-2545B08E11DD</a>.</p>
+
+<p> </p>
+
+<p>Or, just install the also free <a href="http://www.vmware.com/products/player/">VMWare Player</a> 3.1 which all reports inidicate runs XP faster with more options.</p>
+
+<p> </p>
+
+<p><strong>Category:</strong> Virtualization</p>
+
+<p><strong>Published:</strong> 10/4/2010 12:14 PM</p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page24">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page22">Newer</a>
+    
+  
+</div>
+
+
+      
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'marknadig';
+
+  // disqus uses disqus_identifier by default, but  will use disqus_url if not defined
+  
+    // var disqus_identifier = 'http://mark.nadigs.net/page23/';
+    var disqus_url = 'http://mark.nadigs.net/page23/';
+  
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<!--<script type="text/javascript">-->
+  <!--var disqus_shortname = 'marknadig';-->
+  <!---->
+    <!--(function () {-->
+      <!---->
+        <!--var countScript = document.createElement('script');-->
+        <!--countScript.type = 'text/javascript';-->
+        <!--countScript.async = true;-->
+        <!--countScript.src = 'http://' + disqus_shortname + '.disqus.com/count.js';-->
+        <!--(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(countScript);-->
+      <!--}());-->
+<!--</script>-->
+
+
+      <div class="footer">
+        <p>
+          &copy; 2014. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

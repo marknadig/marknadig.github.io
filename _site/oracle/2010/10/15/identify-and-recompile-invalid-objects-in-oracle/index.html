@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Identify and recompile invalid objects in Oracle &middot; Mark's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Mark's Blog</a>
+          <small>Why not</small>
+        </h3>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Identify and recompile invalid objects in Oracle</h1>
+  <span class="post-date">15 Oct 2010</span>
+  <p>One at at time:<br>
+ALTER VIEW CAM_PROGRAM COMPILE; </p>
+
+<p>etc.  </p>
+
+<p>Script to find all and recompile: </p>
+
+<p>SET SERVEROUTPUT ON SIZE 1000000<br>
+BEGIN<br>
+FOR cur<em>rec IN (SELECT owner, object</em>name, object<em>type FROM dba</em>objects<br>
+                WHERE object<em>type IN (&#39;PROCEDURE&#39;, &#39;FUNCTION&#39;, &#39;VIEW&#39;, &#39;TRIGGER&#39;)<br>
+                  AND status != &#39;VALID&#39;)<br>
+LOOP<br>
+BEGIN<br>
+   EXECUTE IMMEDIATE &#39;ALTER &#39; || cur</em>rec.object<em>type || &#39; &quot;&#39; || cur</em>rec.owner || &#39;&quot;.&quot;&#39; || cur<em>rec.object</em>name || &#39;&quot; COMPILE&#39;; </p>
+
+<p>   EXCEPTION<br>
+   WHEN OTHERS THEN<br>
+      DBMS<em>OUTPUT.put</em>line(cur<em>rec.object</em>type || &#39; : &#39; || cur<em>rec.owner || &#39; : &#39; || cur</em>rec.object_name);<br>
+END;<br>
+END LOOP;<br>
+END;<br>
+/   </p>
+
+<p>   </p>
+
+<p>source: <a href="http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php">http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php</a></p>
+
+<p><strong>Category:</strong> Oracle</p>
+
+<p><strong>Published:</strong> 10/15/2010 12:34 PM</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="//2014/03/31/building-your-first-gem/">
+            Building your first gem
+            <small>31 Mar 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="//zsh/2014/01/28/zsh-no-matches-found/">
+            zsh: no matches found:...
+            <small>28 Jan 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="//2014/01/17/osx-terminal-tips/">
+            OSX Terminal Tips
+            <small>17 Jan 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'marknadig';
+
+  // disqus uses disqus_identifier by default, but  will use disqus_url if not defined
+  
+    var disqus_url = 'http://blog.nadigs.net/mark/oracle/2010/10/15/identify-and-recompile-invalid-objects-in-oracle/';
+  
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<!--<script type="text/javascript">-->
+  <!--var disqus_shortname = 'marknadig';-->
+  <!---->
+    <!---->
+    <!--// var disqus_developer = 1;-->
+    <!---->
+      <!--var disqus_identifier = 'http://blog.nadigs.net/mark/oracle/2010/10/15/identify-and-recompile-invalid-objects-in-oracle/';-->
+    <!---->
+    <!--var disqus_url = 'http://mark.nadigs.net/oracle/2010/10/15/identify-and-recompile-invalid-objects-in-oracle/';-->
+    <!--var disqus_script = 'embed.js';-->
+    <!---->
+    <!--(function () {-->
+      <!---->
+        <!--var embedScript = document.createElement('script');-->
+        <!--embedScript.type = 'text/javascript';-->
+        <!--embedScript.async = true;-->
+        <!--embedScript.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';-->
+        <!--(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(embedScript);-->
+        <!---->
+        <!--var countScript = document.createElement('script');-->
+        <!--countScript.type = 'text/javascript';-->
+        <!--countScript.async = true;-->
+        <!--countScript.src = 'http://' + disqus_shortname + '.disqus.com/count.js';-->
+        <!--(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(countScript);-->
+      <!--}());-->
+<!--</script>-->
+
+
+      <div class="footer">
+        <p>
+          &copy; 2014. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

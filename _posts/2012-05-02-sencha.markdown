@@ -1,0 +1,39 @@
+---
+author: marknadig
+comments: true
+date: 2012-05-02 16:11:30+00:00
+layout: post
+slug: sencha
+title: 'Sencha '
+wordpress_id: 134
+categories:
+- Mobile
+---
+
+Built my first Sencha app by following the [video](http://vimeo.com/37974749) and online [tutorial](http://docs.sencha.com/touch/2-0/#!/guide/first_app). The app lists my recent blog posts and allows clicking to view. Sencha allows this html 5 app to run int he browser as well as package natively for IOS and Android.
+
+Source available: [https://github.com/digger69/SenchaGS](https://github.com/digger69/SenchaGS)
+
+
+##### Building
+
+
+_Build production 26'23"_
+
+    
+     sencha app build production
+
+
+Note: Web app should have 'add to home' when browsed.
+
+_Build native 29'00"_
+see packager.json for applicationName, version,
+
+    
+     sencha app build native
+
+
+since the packager.json has platform: "IOSSimulator" will open for that. Changing that to "IOS" will build native IOS app.
+
+_Android 32'54"_
+First download [Android SDK](http://developer.android.com/sdk/installing.html). Unzip and run 'android' from folder to download additional SDK dependencies.

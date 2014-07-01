@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Mark's Blog &middot; Why not
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Mark's Blog</a>
+          <small>Why not</small>
+        </h3>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/git/2012/07/10/git-add-remote/">
+        git add remote
+      </a>
+    </h1>
+
+    <span class="post-date">10 Jul 2012</span>
+
+    <p>A few times I&#39;ve cloned a github repo and while local started tinkering. Now, I want to save my changes, but I can&#39;t push them up to origin. So, first I fork the repo and add my fork as a remote. I can now push my changes up there.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git remote add [name] [uri]
+e.g.
+ git remote add github git@github.com:digger69/pusher-phonegap-android.git
+</code></pre></div>
+<p>Then do this to pull down the branches from the new remote</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git fetch
+</code></pre></div>
+<p>And you can now push here</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git push github master
+</code></pre></div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/git/2012/07/09/visualize-git-repo-history/">
+        Visualize GIT repo history
+      </a>
+    </h1>
+
+    <span class="post-date">09 Jul 2012</span>
+
+    <p>Very cool OSS  that will create a slick visualization of the history of your git repo:</p>
+
+<p><a href="http://code.google.com/p/gource/">http://code.google.com/p/gource/</a></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/android/2012/07/09/createupdate-sd-card-for-android-avd/">
+        Create/update SD card for Android AVD
+      </a>
+    </h1>
+
+    <span class="post-date">09 Jul 2012</span>
+
+    <p>In an earlier <a href="http://blog.nadigs.net/mark/2012/06/25/getting-photos-into-the-gallery-on-android-avd/">post</a> I described how to create and copy files to a virtual SD card. I found another good article on how to easily create and copy files to a virtual SD card for Android AVDs. <a href="http://www.tylerfrankenstein.com/create-android-emulator-sd-card-and-write-data-to-it">http://www.tylerfrankenstein.com/create-android-emulator-sd-card-and-write-data-to-it</a></p>
+
+<p>Skinny:</p>
+
+<p>Create SD card</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">tools/mksdcard 100MB mysdcard.iso
+</code></pre></div>
+<p>Attach SD card to an AVD and launch tools/ddms and the AVD. From DDMS select Device -&gt; File Explorer.</p>
+
+<p>DDMS is also the handy tool I blogged about for <a href="http://blog.nadigs.net/mark/2012/05/05/grabbing-an-android-screenshot/">grabbing a screenshot from Android</a>.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/coding/2012/06/27/sublime-text-2-preferences/">
+        Sublime Text 2 preferences
+      </a>
+    </h1>
+
+    <span class="post-date">27 Jun 2012</span>
+
+    <p>Preferences.sublime-settings</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">{
+ &quot;save_on_focus_lost&quot;: true,
+ &quot;tab_size&quot;: 2,
+ &quot;translate_tabs_to_spaces&quot;: true
+}
+</code></pre></div>
+<p>Default (OSX).sublime-keymap</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">[
+// open anything
+{ &quot;keys&quot;: [&quot;super+shift+n&quot;], &quot;command&quot;: &quot;show_overlay&quot;, &quot;args&quot;: {&quot;overlay&quot;: &quot;goto&quot;, &quot;show_files&quot;: true}}, 
+// reveal in sidebar
+{ &quot;keys&quot;: [&quot;alt+f1&quot;], &quot;command&quot;: &quot;reveal_in_side_bar&quot; }, 
+// goto line
+{ &quot;keys&quot;: [&quot;super+l&quot;], &quot;command&quot;: &quot;show_overlay&quot;, &quot;args&quot;: {&quot;overlay&quot;: &quot;goto&quot;, &quot;text&quot;: &quot;:&quot;} }
+]
+</code></pre></div>
+<p>more</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/android/2012/06/25/getting-photos-into-the-gallery-on-android-avd/">
+        Getting photos into the gallery on Android AVD
+      </a>
+    </h1>
+
+    <span class="post-date">25 Jun 2012</span>
+
+    <p>From android sdk&#39;s tools folder run:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">android
+</code></pre></div>
+<p>From Tools menu, Manage AVDs. Select the AVD and click Edit the AVD. to include a 100mb sd card image.</p>
+
+<p>[caption id=&quot;attachment_195&quot; align=&quot;alignnone&quot; width=&quot;199&quot; caption=&quot;AVD Edit&quot;]<a href="http://blog.nadigs.net/mark/files/2012/06/Screen-Shot-2012-06-25-at-5.50.10-PM.png"><img src="http://blog.nadigs.net/mark/files/2012/06/Screen-Shot-2012-06-25-at-5.50.10-PM-199x300.png" alt=""></a>[/caption]</p>
+
+<p>Note: Go ahead and bump RAM up to 1gb while you&#39;re in here.</p>
+
+<p>Launch the emulator and run this AVD</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">emulator @myavd
+</code></pre></div>
+<p>Now there are a couple ways to mount the SD card once the emulator is running. <a href="http://androidforums.com/developer-101/463412-how-access-files-avd-sd-card.html">http://androidforums.com/developer-101/463412-how-access-files-avd-sd-card.html</a>, however I found that the SDK allowed me to :
+1. shell into the AVD using adb (which is in platform-tools, not tools).</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">adb shell
+</code></pre></div>
+<ol>
+<li><p>Make the appropriate folder</p>
+
+<p>mkdir sdcard/Pictures
+exit</p></li>
+<li><p>Copy a picture from my local file sytem over.</p>
+
+<p>./adb push ~/Pictures/IMAG0381.jpg sdcard/Pictures</p></li>
+</ol>
+
+<p>There may have been a way to copy the file over w/ shelling in, but this is another helpful tidbit.</p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page12">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page10">Newer</a>
+    
+  
+</div>
+
+
+      
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'marknadig';
+
+  // disqus uses disqus_identifier by default, but  will use disqus_url if not defined
+  
+    // var disqus_identifier = 'http://mark.nadigs.net/page11/';
+    var disqus_url = 'http://mark.nadigs.net/page11/';
+  
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<!--<script type="text/javascript">-->
+  <!--var disqus_shortname = 'marknadig';-->
+  <!---->
+    <!--(function () {-->
+      <!---->
+        <!--var countScript = document.createElement('script');-->
+        <!--countScript.type = 'text/javascript';-->
+        <!--countScript.async = true;-->
+        <!--countScript.src = 'http://' + disqus_shortname + '.disqus.com/count.js';-->
+        <!--(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(countScript);-->
+      <!--}());-->
+<!--</script>-->
+
+
+      <div class="footer">
+        <p>
+          &copy; 2014. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
