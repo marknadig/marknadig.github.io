@@ -25,8 +25,3 @@ ALTER SYSTEM KILL SESSION '_[sid]_,_[serial#]_'
 
 Generate kills for all connections for a given user: SELECT 'alter system kill session ''' || sid || ',' || serial# || ''';' FROM v$session WHERE Username = 'MAKODEMO';
 
-
-**Category:** Oracle
-
-**Published:** 10/12/2010 6:46 PM
-

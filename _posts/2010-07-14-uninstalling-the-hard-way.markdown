@@ -21,8 +21,3 @@ This was a bit disconcerting… Thankfully you can find everything on the web an
 
 
 msiexec /x {2AFFFDD7-ED85-4A90-8C52-5DA9EBDC9B8F}
-
-**Category:** Work
-
-**Published:** 7/14/2010 7:19 PM
-

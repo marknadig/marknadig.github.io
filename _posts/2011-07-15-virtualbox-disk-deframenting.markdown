@@ -31,8 +31,3 @@ VBoxManage modifyhd diskname.vdi --compact
 Thanks:
 http://www.processworks.de/blog/2010/07/how-to-shrink-a-virtualbox-vdi-disk-image-to-the-required-size/
 
-
-**Category:** Virtualization
-
-**Published:** 7/15/2011 10:27 AM
-

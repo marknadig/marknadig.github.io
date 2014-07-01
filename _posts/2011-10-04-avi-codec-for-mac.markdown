@@ -16,8 +16,3 @@ http://perian.org/
 
 -- UPDATE -- had some avi's I had encoded that wouldn't play sound with these codecs. Thankfully VLC player has a mac version. Played just fine...
 http://www.videolan.org/vlc/download-macosx.html
-
-**Category:** OSx
-
-**Published:** 10/4/2011 12:21 PM
-

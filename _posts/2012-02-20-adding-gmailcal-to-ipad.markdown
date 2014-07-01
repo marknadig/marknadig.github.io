@@ -43,8 +43,3 @@ Enable Google multiple calendars
 * There will be a new “Calendars” button in the top left of the Calendar app on your iPad.
 
 http://apple-ipad-tablet-help.blogspot.com/2010/03/how-to-sync-google-calendar-with-ipad.html
-
-
-**Category:** iPad
-
-**Published:** 2/20/2012 11:39 AM

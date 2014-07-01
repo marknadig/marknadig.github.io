@@ -51,8 +51,3 @@ Note: Often some of the views will fail on importing. Re-running IMP will resolv
 Thanks Tim/Dave for helping me with this syntax.
 
 EXP HELP=YES to get help.
-
-**Category:** Oracle
-
-**Published:** 9/16/2010 1:30 PM
-

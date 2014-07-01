@@ -54,8 +54,3 @@ As you know, if you right-click any file on your computer you will gain access t
   14. Restart your computer for  the change to take effect.
 
 [http://www.webtlk.com/2010/07/13/how-to-remove-programs-from-the-open-with-option-in-windows-7-menu/](http://www.webtlk.com/2010/07/13/how-to-remove-programs-from-the-open-with-option-in-windows-7-menu/)
-
-**Category:** Windows 7
-
-**Published:** 2/11/2011 5:04 PM
-

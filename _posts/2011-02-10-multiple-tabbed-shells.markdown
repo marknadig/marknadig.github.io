@@ -17,8 +17,3 @@ Saw a friend on a mac that had multiple shells open, but in a single tabbed wind
 Open source baby!
 
 :)
-
-**Category:** Work
-
-**Published:** 2/10/2011 4:38 PM
-

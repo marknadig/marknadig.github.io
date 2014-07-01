@@ -40,8 +40,3 @@ As help indicates you can either set Ping Enabled=False or increase the Ping Max
 
 The server keeps pinging the worker process and waits for a response. When in debugging mode, the worker process is effectively suspended, which results in the ping not being responded.
 
-
-**Category:** Windows 7
-
-**Published:** 5/25/2010 11:13 AM
-

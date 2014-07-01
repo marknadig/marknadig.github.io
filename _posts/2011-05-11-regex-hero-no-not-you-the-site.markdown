@@ -12,8 +12,3 @@ categories:
 
 http://regexhero.net/
 
-
-**Category:** Coding
-
-**Published:** 5/11/2011 8:47 AM
-

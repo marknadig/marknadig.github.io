@@ -48,8 +48,3 @@ Found this helpful [blog post](http://itdevcorner.blogspot.com/2008/10/keyset-do
   11.  Try to re-publish your .Net project.
   
 
-
-**Category:** VS2010
-
-**Published:** 11/16/2010 5:03 PM
-

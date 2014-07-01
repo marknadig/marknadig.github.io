@@ -12,8 +12,3 @@ categories:
 
 Handy when running multi-monitor
 [http://www.macupdate.com/app/mac/33264/secondbar](http://www.macupdate.com/app/mac/33264/secondbar)
-
-**Category:** OSx
-
-**Published:** 12/8/2011 9:47 AM
-

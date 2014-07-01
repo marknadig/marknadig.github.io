@@ -162,8 +162,3 @@ BEGIN
 END;
 			  
 / 
-
-**Category:** Oracle
-
-**Published:** 12/16/2010 12:23 PM
-

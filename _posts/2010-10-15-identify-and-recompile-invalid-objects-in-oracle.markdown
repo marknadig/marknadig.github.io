@@ -38,8 +38,3 @@ END;
    
 
 source: [http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php](http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php)
-
-**Category:** Oracle
-
-**Published:** 10/15/2010 12:34 PM
-

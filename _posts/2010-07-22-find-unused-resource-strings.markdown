@@ -25,8 +25,3 @@ Resources.Designer.cs file:
 (6) Remove your unused resources. (Changing any resources will regenerate the Resources.Designer.cs file.)  
   
 
-
-**Category:** Work
-
-**Published:** 7/22/2010 3:42 PM
-

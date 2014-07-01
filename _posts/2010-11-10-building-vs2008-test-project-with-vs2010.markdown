@@ -18,8 +18,3 @@ Turns out this is a known issue w/ MSBUILD 4.0 on x64:
 [http://blogs.msdn.com/b/madhurig/archive/2009/11/25/building-vs2008-projects-with-tfs-build-2010.aspx](http://blogs.msdn.com/b/madhurig/archive/2009/11/25/building-vs2008-projects-with-tfs-build-2010.aspx)
 
 To workaround I changed the reference to the 9.0 image (VS2008)
-
-**Category:** VS2008
-
-**Published:** 11/10/2010 12:57 PM
-

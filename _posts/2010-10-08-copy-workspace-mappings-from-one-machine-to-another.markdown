@@ -17,8 +17,3 @@ From a command prompt:
 Then the workspace dialog will pop up and they can select all mappings (Ctrl+A) then copy them (Ctrl+C), then edit mappings in their workspaces by pasting the new mappings over the old ones.
 
 source: [http://blogs.msdn.com/b/mohamedg/archive/2009/04/13/how-to-copy-workspace-mappings.aspx](http://blogs.msdn.com/b/mohamedg/archive/2009/04/13/how-to-copy-workspace-mappings.aspx)
-
-**Category:** TFS
-
-**Published:** 10/8/2010 5:01 PM
-

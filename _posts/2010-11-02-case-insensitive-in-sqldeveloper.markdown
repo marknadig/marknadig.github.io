@@ -21,8 +21,3 @@ For every new worksheet in SQLDeveloper, you can set this as the default under P
 
 
 ![](/images/broken_image.jpg)
-
-**Category:** Oracle
-
-**Published:** 11/2/2010 2:58 PM
-

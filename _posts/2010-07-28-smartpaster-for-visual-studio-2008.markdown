@@ -22,8 +22,3 @@ To install VS 2008 Addin:
 [![](/personal/marknadig/Blog/Lists/Photos/072810_0242_SmartPaster2.jpg)](http://earljon.files.wordpress.com/2009/04/copy-paster-addin.jpg)
 
 Here's an excellent detailed article on the tool: [Visual Studio Hacks](http://en.csharp-online.net/Visual_Studio_Hacks%E2%80%94Hack_7:_Make_Pasting_into_Visual_Studio_Easier).
-
-**Category:** Coding
-
-**Published:** 7/27/2010 10:42 PM
-

@@ -13,8 +13,3 @@ categories:
 Run c:\program files\lenovo\hotkey\tpfnf5.exe to toggle radios.
 
 [http://forums.lenovo.com/t5/T61-and-prior-T-series-ThinkPad/Bluetooth-radio-defaults-to-Off-state/m-p/169391;jsessionid=BDE85ADCD309FEC70BF444383795414D](http://forums.lenovo.com/t5/T61-and-prior-T-series-ThinkPad/Bluetooth-radio-defaults-to-Off-state/m-p/169391;jsessionid=BDE85ADCD309FEC70BF444383795414D)
-
-**Category:** Windows 7
-
-**Published:** 5/25/2010 10:29 AM
-

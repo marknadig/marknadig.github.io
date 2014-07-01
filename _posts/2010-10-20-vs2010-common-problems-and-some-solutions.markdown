@@ -13,8 +13,3 @@ categories:
 [http://www.ginktage.com/2010/10/caught-up-with-bugs-in-my-favourite-ide-visual-studio-2010/](http://www.ginktage.com/2010/10/caught-up-with-bugs-in-my-favourite-ide-visual-studio-2010/)
 
 For later, when we're on Vs2010
-
-**Category:** VS2010
-
-**Published:** 10/20/2010 12:00 PM
-

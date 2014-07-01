@@ -19,8 +19,3 @@ The second critical app for me has been [PasswordSafe](http://passwordsafe.sourc
 Turns out PasswdSafe can integrate with dropbox as well. I'll have to check that out when I get back from vacation. For now, I'll just copy the pw file to my SD card.
 
 I'd better go pack. Early flight in the morning.
-
-**Category:** Android
-
-**Published:** 1/8/2011 12:32 PM
-

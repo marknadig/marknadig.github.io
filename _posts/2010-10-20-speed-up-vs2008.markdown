@@ -37,8 +37,3 @@ Sub ToggleSolutionExplorerTracking()
 End Sub   
 End Module
 ```
-
-**Category:** VS2008
-
-**Published:** 10/20/2010 11:55 AM
-

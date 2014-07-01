@@ -19,8 +19,3 @@ Today the wife asked how the kids could easily switch between the external usb s
 Lets you easily switch between audio devices. (open source AutoLT script)
 
 [correction - in Windows 7, right click on speaker icon -> Playback Devices and then set default. But the tray tool makes it easier]  LMK if there are easier ways to do this.
-
-**Category:** Windows 7
-
-**Published:** 2/10/2011 4:33 PM
-

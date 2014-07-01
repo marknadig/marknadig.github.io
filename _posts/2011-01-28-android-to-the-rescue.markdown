@@ -17,8 +17,3 @@ Comcast connection died this afternoon. I was going to try to manage my communic
 	
 
 I'm writing this post "on the nation's fastest 4g network" J
-
-**Category:** Android
-
-**Published:** 1/28/2011 4:45 PM
-

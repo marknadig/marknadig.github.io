@@ -13,8 +13,3 @@ categories:
 [http://www.wikihow.com/Reinstall-Mac-OS-X](http://www.wikihow.com/Reinstall-Mac-OS-X)
 
 Notable - by default snow leopard does an "Archive and Install". You must use Disk Utilities to wipe the HD first. Also, once done and updates installed, run Repair Permissions from Finder -> Disk Utilities
-
-**Category:** OSx
-
-**Published:** 2/21/2011 11:08 AM
-

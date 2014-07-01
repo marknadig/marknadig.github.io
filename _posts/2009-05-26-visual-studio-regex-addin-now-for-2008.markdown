@@ -16,9 +16,10 @@ Visual Studio's regex implementation is non-standard. Thankfully, there's an ope
 
 You can just use this search string (set ignore pattern whitepace):
 
-(?Not(?:\s))?IsNothing\((?(?>[^()]+|\((?)|\)(?))*(?(number)(?!)))\)
+`(?Not(?:\s))?IsNothing\((?(?>[^()]+|\((?)|\)(?))*(?(number)(?!)))\)`
 
 Expanded:
+```
 (?Not(?:\s))?  
 IsNothing\((?  
     (?>  
@@ -29,12 +30,8 @@ IsNothing\((?
     (?(number)(?!))  
     )  
 \)
+```
 
 With this replace string:
-${inner} Is${prefix} Nothing  
-
-
-**Category:** Work
-
-**Published:** 5/26/2009 3:05 PM
+`${inner} Is${prefix} Nothing`
 

@@ -13,8 +13,3 @@ categories:
 From Finder, Go: Connect to Server. smb://servername to connect.
 
 http://lifehacker.com/#!247148/how-to-mount-a-windows-shared-folder-on-your-mac
-
-**Category:** OSx
-
-**Published:** 2/23/2011 9:28 AM
-

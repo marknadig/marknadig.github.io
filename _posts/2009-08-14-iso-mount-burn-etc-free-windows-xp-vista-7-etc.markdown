@@ -27,8 +27,3 @@ For mounting
 [http://www.magiciso.com/tutorials/miso-magicdisc-overview.htm](http://www.magiciso.com/tutorials/miso-magicdisc-overview.htm)
 
 Or UltraISO (paid)
-
-**Category:** Work
-
-**Published:** 8/14/2009 7:07 PM
-

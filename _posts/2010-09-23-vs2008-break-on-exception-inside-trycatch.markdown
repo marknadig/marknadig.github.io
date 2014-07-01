@@ -15,8 +15,3 @@ categories:
 Ctrl-Alt-E to bring up the exceptions window and tick the **Thrown** checkbox on Common Language Runtime Exceptions
 
 That will stop the execution, open the source code where the exception was thrown, and tell you with a message window what error it is, pointing at the line it was thrown.
-
-**Category:** Work
-
-**Published:** 9/23/2010 6:28 PM
-

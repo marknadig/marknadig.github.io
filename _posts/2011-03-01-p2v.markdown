@@ -19,8 +19,3 @@ http://www.vmware.com/products/converter/
 
 Remember, it's as if you dropped your hard drive into another computer. So, windows activation may complain.
 
-
-**Category:** Virtualization
-
-**Published:** 3/1/2011 11:22 AM
-

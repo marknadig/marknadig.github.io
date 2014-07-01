@@ -11,8 +11,3 @@ categories:
 ---
 
 The gal with the Mac next to me who bathed in something flowery... going to be sick.. ack...
-
-**Category:** Work
-
-**Published:** 9/28/2010 10:19 AM
-

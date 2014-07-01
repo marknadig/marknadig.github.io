@@ -52,8 +52,3 @@ You should now be able to navigate to [http://localhost/MakoClient](http://local
 
 As you make code changes, copy the affected dlls back into ZIP. Run **mage –cc **to from a command prompt to clear clickonce cache.
 
-
-**Category:** Windows 7
-
-**Published:** 8/12/2010 6:45 PM
-
