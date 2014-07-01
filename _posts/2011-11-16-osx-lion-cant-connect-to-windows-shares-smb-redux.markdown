@@ -30,15 +30,7 @@ to 3 on the host 'server' (another windows 7 machine).
 
 http://alan.lamielle.net/2009/09/03/windows-7-nonpaged-pool-srv-error-2017
 
-
-
-
 **Category:** OSx
 
-
-
-
 **Published:** 11/15/2011 11:23 PM
-
-
 

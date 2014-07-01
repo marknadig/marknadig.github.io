@@ -12,15 +12,7 @@ categories:
 
 Local wifi wants $9.99 a day. So, I thought I'd try tethering my Android phone like I did [before](/personal/marknadig/Blog/Lists/Posts/Post.aspx?ID=171) , but this time with a Mac. No joy. HTC doesn't have a USB tethering driver for OSX. However, during my search I found instructions on how to turn my phone into a wi-fi hotspot. App Drawer->WiFi - Set SSID and WPA key and boom, I'm surfin' using "the nation's largest 4g network" (again) 
 
-
-
-
 **Category:** Android
 
-
-
-
 **Published:** 2/18/2011 2:49 PM
-
-
 

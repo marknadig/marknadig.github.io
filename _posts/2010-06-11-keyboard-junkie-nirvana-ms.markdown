@@ -12,25 +12,9 @@ categories:
 
 I googled upon a page with links to hotkeys for MS products:
 
-
-
-
 [http://www.microsoft.com/enable/products/keyboard.aspx](http://www.microsoft.com/enable/products/keyboard.aspx)
-
-
-
-
- 
-
-
-
 
 **Category:** Work
 
-
-
-
 **Published:** 6/11/2010 3:27 PM
-
-
 

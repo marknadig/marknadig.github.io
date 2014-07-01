@@ -13,8 +13,6 @@ categories:
 **Mac OS X v10.5 or later**
 
 
-
-	
   1. Choose **System Preferences** from the **Apple** menu.
 
 	

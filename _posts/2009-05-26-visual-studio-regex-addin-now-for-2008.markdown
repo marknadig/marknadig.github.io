@@ -10,45 +10,15 @@ categories:
 - Work
 ---
 
-
-
-
 Visual Studio's regex implementation is non-standard. Thankfully, there's an open source add-in for VS2008 that allows you to use "standard" regular expressions found [here](http://www.codeproject.com/KB/macros/VS2008RegexAddIn.aspx).
-
-
-
-
- 
-
-
-
 
 “Why do I care?” Here’s a very useful example of why regex is so cool: Say you wanted to replace all calls to a function, like IsNothing(…) and replace it with a native sytnax … Is Nothing  (and Not IsNothing(…) with … IsNot Nothing)
 
-
-
-
- 
-
-
-
-
 You can just use this search string (set ignore pattern whitepace):
-
-
-
 
 (?Not(?:\s))?IsNothing\((?(?>[^()]+|\((?)|\)(?))*(?(number)(?!)))\)
 
-
-
-
- 
-
-
-
-
-Expanded:  
+Expanded:
 (?Not(?:\s))?  
 IsNothing\((?  
     (?>  
@@ -60,27 +30,11 @@ IsNothing\((?
     )  
 \)
 
-
-
-
- 
-
-
-
-
-With this replace string:  
+With this replace string:
 ${inner} Is${prefix} Nothing  
-
-
-
 
 
 **Category:** Work
 
-
-
-
 **Published:** 5/26/2009 3:05 PM
-
-
 

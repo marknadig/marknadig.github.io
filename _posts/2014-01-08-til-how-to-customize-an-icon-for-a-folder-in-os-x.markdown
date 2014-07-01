@@ -13,8 +13,6 @@ categories:
 I recently downloaded a number of ebooks that to my desktop and threw them all in a folder 'books'. I wondered how hard it would be customize the icon. Turns out it is super simple.
 
 
-
-	
   1. Copy image (using preview)
 
 	

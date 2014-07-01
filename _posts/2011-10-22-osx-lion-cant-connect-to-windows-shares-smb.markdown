@@ -29,15 +29,7 @@ Not sure if it's been like this all along with Lion, or just after an update. Ho
 
 source: https://discussions.apple.com/thread/3196311?start=60&tstart=0
 
-
-
-
 **Category:** OSx
 
-
-
-
 **Published:** 10/22/2011 1:23 PM
-
-
 

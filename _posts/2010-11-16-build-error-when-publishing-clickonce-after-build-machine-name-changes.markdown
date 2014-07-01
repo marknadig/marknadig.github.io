@@ -12,32 +12,11 @@ categories:
 
 I am testing out building VS2010 projects on a new build VM which is just a copy of the real build vm, the equivelant of "changed the name of my build machine." The Publish Clickonce step failed with 
 
-
-
-
 error MSB3482: An error occurred while signing: Keyset does not exist ...
-
-
-
-
- 
-
-
-
 
 Found this helpful [blog post](http://itdevcorner.blogspot.com/2008/10/keyset-does-not-exist.html) that described how to resolve this, by removing the signing cert from the current user's Certificates->Personal->Certificates:
 
-
-
-
-
-
-
-
-
-  1. Open Microsoft Management Console (MMC) by click on Start --> Run  
-
-
+  1. Open Microsoft Management Console (MMC) by click on Start --> Run
 
   2.  Type "MMC.exe" in the text box window (without quotes).
 
@@ -70,15 +49,7 @@ Found this helpful [blog post](http://itdevcorner.blogspot.com/2008/10/keyset-do
   
 
 
-
-
-
 **Category:** VS2010
 
-
-
-
 **Published:** 11/16/2010 5:03 PM
-
-
 

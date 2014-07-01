@@ -12,45 +12,17 @@ categories:
 
 bash auto-complete
 
-
-
-
 [http://bash-completion.darwinports.com/](http://bash-completion.darwinports.com/)
-
-
-
-
- 
-
-
-
 
 alias
 
-
-
-
 pico ~/.bash_profile
-
-
-
 
    alias dir='ls'
 
-
-
-
    alias lsall='ls -lha'
-
-
-
 
 **Category:** OSx
 
-
-
-
 **Published:** 2/15/2011 11:27 AM
-
-
 

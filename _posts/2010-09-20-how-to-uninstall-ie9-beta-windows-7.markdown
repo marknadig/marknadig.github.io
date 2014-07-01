@@ -10,35 +10,11 @@ categories:
 - Beta
 ---
 
-
-
-
 IE9 Installs as a system update, so can be uninstalled from Uninstall update cp menu.
-
-
-
-
- 
-
-
-
 
 Open Control Panel-> Uninstall a program and click View installed updates (upper left). This opens a listing of Windows updates that have been applied. Under the Microsoft Windows group, find Windows Internet Explorer 9, right-click and uninstall.
 
-
-
-
- 
-
-
-
-
 **Category:** Beta
 
-
-
-
 **Published:** 9/20/2010 11:30 AM
-
-
 

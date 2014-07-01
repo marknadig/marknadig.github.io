@@ -13,8 +13,6 @@ categories:
 Salient points:
 
 
-
-	
   1. Download [SDK](http://developer.android.com/index.html), unzip install platforms.
 
 	

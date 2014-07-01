@@ -12,11 +12,6 @@ categories:
 
 As you know, if you right-click any file on your computer you will gain access to a menu where, among the other options available, you will also be able to find the famous “Open with…” feature. Basically, it lets you choose , from a list of recommended applications, the one you wish to use to open your files having X extension. Now, if you don’t like this service because you think that it could cause major issue to your computer  (above all if you don’t have a clue on what application or software to use to open a certain file), I have a nice hack which will let you ** turn off certain programs and applications from the “Open With” option in your right-click menu!**
 
-
-
-
-
-
   1. Click **Start.**
 
 
@@ -58,19 +53,9 @@ As you know, if you right-click any file on your computer you will gain access t
 
   14. Restart your computer for  the change to take effect.
 
-
-
 [http://www.webtlk.com/2010/07/13/how-to-remove-programs-from-the-open-with-option-in-windows-7-menu/](http://www.webtlk.com/2010/07/13/how-to-remove-programs-from-the-open-with-option-in-windows-7-menu/)
-
-
-
 
 **Category:** Windows 7
 
-
-
-
 **Published:** 2/11/2011 5:04 PM
-
-
 

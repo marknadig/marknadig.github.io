@@ -13,8 +13,6 @@ categories:
 Just set up 'blog.nadigs.net' and I'm already anticipating people getting it wrong as "blogs.nadigs.net". I haven't ever set this up before, but it was easy-peasy.
 
 
-
-	
   1. Add A record in DNS for blogs.nadigs.net going to my same IP.
 
 	

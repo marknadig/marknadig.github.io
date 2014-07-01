@@ -13,16 +13,10 @@ categories:
 Getting Started
 
 
-
-
-
 1. Tap the Settings on your iPad's home screen.
 2. Tap Mail, Contacts, Calendars.
 3. Tap Add Account....
 4. Select Microsoft Exchange.
-
-
-
 
 
 Enter Your Account Info
@@ -52,8 +46,5 @@ http://apple-ipad-tablet-help.blogspot.com/2010/03/how-to-sync-google-calendar-w
 
 
 **Category:** iPad
-
-
-
 
 **Published:** 2/20/2012 11:39 AM

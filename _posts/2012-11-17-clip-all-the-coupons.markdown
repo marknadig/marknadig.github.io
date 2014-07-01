@@ -31,5 +31,3 @@ Alternate selector:
     
     $(".lt-offer-list-item").not(".lt-clipped").find(".lt-add-offer-link").each(function(one, two) { two.click()})
 
-
-

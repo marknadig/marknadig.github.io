@@ -33,15 +33,7 @@ Add Control to the two shortcuts above to place the screen shot on the clipboard
 http://graphicssoft.about.com/od/screencapturemac/ht/macscreenshot.htm
 
 
-
-
-
 **Category:** OSx
 
-
-
-
 **Published:** 2/9/2012 11:13 AM
-
-
 

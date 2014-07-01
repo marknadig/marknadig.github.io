@@ -16,15 +16,7 @@ To disable:
 
 System Preferences -> General -> Restore windows when quitting and re-opening apps
 
-
-
-
 **Category:** OSx
 
-
-
-
 **Published:** 1/19/2012 9:46 AM
-
-
 

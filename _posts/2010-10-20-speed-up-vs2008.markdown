@@ -10,31 +10,18 @@ categories:
 - VS2008
 ---
 
+Tools: Options
 
+Environment - General: uncheck Animate environment tools.
 
+Text Editor – XAML – Misc – check Always open documents in full XAML view. This disables Cider.
 
-Tools: Options 
+Text Editor – uncheck Track changes which "When selected, the code editor's selection margin displays a vertical yellow line to mark code recently changed, and vertical green lines next to unchanged code."
 
+Projects and Solutions – uncheck Track Active Item in Solution Explorer and use. Note, I suggest you add this macro and set a menu command to run it so you can on-demand sync Solution Explorer
 
-
-
-Environment - General: uncheck Animate environment tools. 
-
-
-
-
-Text Editor – XAML – Misc – check Always open documents in full XAML view. This disables Cider. 
-
-
-
-
-Text Editor – uncheck Track changes which "When selected, the code editor's selection margin displays a vertical yellow line to mark code recently changed, and vertical green lines next to unchanged code." 
-
-
-
-
-Projects and Solutions – uncheck Track Active Item in Solution Explorer and use. Note, I suggest you add this macro and set a menu command to run it so you can on-demand sync Solution Explorer  
-Imports System   
+```
+Imports System
 Imports EnvDTE   
 Imports EnvDTE80   
 Imports EnvDTE90   
@@ -49,16 +36,9 @@ Sub ToggleSolutionExplorerTracking()
    End If   
 End Sub   
 End Module
-
-
-
+```
 
 **Category:** VS2008
 
-
-
-
 **Published:** 10/20/2010 11:55 AM
-
-
 

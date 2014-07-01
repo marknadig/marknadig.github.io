@@ -11,9 +11,6 @@ categories:
 - Windows 7
 ---
 
-
- 
-
   1. Create a MakoClient folder under Web. Configure as Application in IIS (not just virtual dir).
 
   2. Add read permissions to local IIS user to this folder. Note: This step seemed a little tricky. Sometimes it seemed to work and others not. I would get a 401 unauthorized error when HDM tried to download the zip. Finally, I granted myself full control over that folder as well as IIS user with read access and it still would flake out. Then, I found that I was updating the zip in the MakoClient folder which seemed to wonk the permissions. If I update the zip in Web\Client and then copy over to MakoClient it is fine.
@@ -56,15 +53,7 @@ You should now be able to navigate to [http://localhost/MakoClient](http://local
 As you make code changes, copy the affected dlls back into ZIP. Run **mage –cc **to from a command prompt to clear clickonce cache.
 
 
-
-
-
 **Category:** Windows 7
 
-
-
-
 **Published:** 8/12/2010 6:45 PM
-
-
 

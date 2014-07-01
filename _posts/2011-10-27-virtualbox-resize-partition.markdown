@@ -35,15 +35,7 @@ Captured copy of article here
 http://home.deltek.com/personal/marknadig/Blog/Lists/Photos/ResizeVMDK.pdf
 
 
-
-
-
 **Category:** Virtualization
 
-
-
-
 **Published:** 10/27/2011 5:31 PM
-
-
 

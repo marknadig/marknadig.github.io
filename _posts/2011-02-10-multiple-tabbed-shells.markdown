@@ -12,45 +12,13 @@ categories:
 
 Saw a friend on a mac that had multiple shells open, but in a single tabbed window. Went looking and think I found my new favorite toy for the command line.
 
-
-
-
- 
-
-
-
-
 [http://sourceforge.net/projects/console/](http://sourceforge.net/projects/console/)[](http://sourceforge.net/projects/console/)
 
-
-
-
- 
-
-
-
-
-Open source baby! 
-
-
-
-
- 
-
-
-
+Open source baby!
 
 :)
 
-
-
-
 **Category:** Work
 
-
-
-
 **Published:** 2/10/2011 4:38 PM
-
-
 

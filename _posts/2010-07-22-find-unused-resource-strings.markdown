@@ -12,15 +12,7 @@ categories:
 
 This handy tip lets the compiler warning you of any unused resource string references. Credit this [blog](http://social.msdn.microsoft.com/Forums/en-US/csharpide/thread/a833e7fb-d18f-44c3-a1f1-dd9bb00abeec).
 
-
-
-
- 
-
-
-
-
-Resources.Designer.cs file:  
+Resources.Designer.cs file:
   
 (1) Turn on Code Analysis warning CA1811  
 (2) In your Resources.Designer.CS file comment out the following lines:  
@@ -34,15 +26,7 @@ Resources.Designer.cs file:
   
 
 
-
-
-
 **Category:** Work
 
-
-
-
 **Published:** 7/22/2010 3:42 PM
-
-
 

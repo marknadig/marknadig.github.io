@@ -13,7 +13,7 @@ categories:
 As I was trying to clean up my XP "home server", I noticed SQL Server Express 2005 was still installed from back when I had my own mail server. Opening Add/Remove programs, I was surprised to find no Remove option:
 
 
-![](/images/broken_image.png)
+![](/images/broken_image.jpg)
 
  
 
@@ -22,15 +22,7 @@ This was a bit disconcerting… Thankfully you can find everything on the web an
 
 msiexec /x {2AFFFDD7-ED85-4A90-8C52-5DA9EBDC9B8F}
 
-
-
-
 **Category:** Work
 
-
-
-
 **Published:** 7/14/2010 7:19 PM
-
-
 

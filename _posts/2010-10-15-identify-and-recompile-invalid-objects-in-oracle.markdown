@@ -10,26 +10,14 @@ categories:
 - Oracle
 ---
 
-
-
-
-One at at time:  
+One at at time:
 ALTER VIEW CAM_PROGRAM COMPILE; 
-
-
-
 
 etc.  
 
+Script to find all and recompile:
 
-
-
-Script to find all and recompile: 
-
-
-
-
-SET SERVEROUTPUT ON SIZE 1000000   
+SET SERVEROUTPUT ON SIZE 1000000
 BEGIN   
 FOR cur_rec IN (SELECT owner, object_name, object_type FROM dba_objects   
                 WHERE object_type IN ('PROCEDURE', 'FUNCTION', 'VIEW', 'TRIGGER')   
@@ -38,10 +26,7 @@ LOOP
 BEGIN   
    EXECUTE IMMEDIATE 'ALTER ' || cur_rec.object_type || ' "' || cur_rec.owner || '"."' || cur_rec.object_name || '" COMPILE'; 
 
-
-
-
-   EXCEPTION   
+   EXCEPTION
    WHEN OTHERS THEN   
       DBMS_OUTPUT.put_line(cur_rec.object_type || ' : ' || cur_rec.owner || ' : ' || cur_rec.object_name);   
 END;   
@@ -50,28 +35,11 @@ END;
 /   
 
 
-
-
-
-
-
-
    
-
-
-
 
 source: [http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php](http://www.oracle-base.com/articles/misc/RecompilingInvalidSchemaObjects.php)
 
-
-
-
 **Category:** Oracle
 
-
-
-
 **Published:** 10/15/2010 12:34 PM
-
-
 

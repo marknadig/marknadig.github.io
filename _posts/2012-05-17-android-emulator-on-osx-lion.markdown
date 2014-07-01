@@ -37,11 +37,6 @@ Launch emulator for given **_NAME_** device:
     ./android list avd
 
 
-
-
-
-
-
 Start ddms before you launch the emulator to attach.
 
 

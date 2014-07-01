@@ -17,18 +17,8 @@ SublimeText
     
     git config --global core.editor "subl -w -n"
 
-
-
-
-
-
 TextMate
 
     
     git config --global core.editor "mate -w"
-
-
-
-
-
 

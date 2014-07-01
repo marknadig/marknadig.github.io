@@ -45,15 +45,7 @@ Of course, you could also use the type command and then pipe it to the clipboard
 
 (source [howtogeek](http://www.howtogeek.com/howto/28473/how-to-copy-output-text-from-the-command-line-to-the-windows-clipboard/))
 
-
-
-
 **Category:** Windows 7
 
-
-
-
 **Published:** 9/10/2010 3:24 PM
-
-
 

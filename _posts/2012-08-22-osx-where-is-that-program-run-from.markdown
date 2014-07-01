@@ -16,11 +16,7 @@ from bash
     which <program>
 
 
-
-    
     e.g.
 
 
-
-    
     which git

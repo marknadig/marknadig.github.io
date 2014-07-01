@@ -19,7 +19,7 @@ Windows 7 runs IIS 7.5 and introduces a few changes in debugging. One issue that
 As help indicates you can either set Ping Enabled=False or increase the Ping Maximum Response Time from the default of 90s:
 
 
-  1. [Open **Internet Information Services (IIS) Manager**. 
+  1. Open **Internet Information Services (IIS) Manager**.
 
 
   2. From the server tree (the item with the name as the server name), choose **Application Pools**. 
@@ -35,21 +35,13 @@ As help indicates you can either set Ping Enabled=False or increase the Ping Max
 					**or increase **Ping Maximum Response Time (seconds)** (900s = 15 min). 
 
 
-![](/images/broken_image.png)
+![](/images/broken_image.jpg)
 
 
 The server keeps pinging the worker process and waits for a response. When in debugging mode, the worker process is effectively suspended, which results in the ping not being responded.
 
 
-
-
-
 **Category:** Windows 7
 
-
-
-
 **Published:** 5/25/2010 11:13 AM
-
-
 

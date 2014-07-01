@@ -9,11 +9,6 @@ title: Collaborating
 wordpress_id: 73
 ---
 
-
-
-
-
-
 Fort Collins / Loveland Mako Summit
 
 Doug, Aileen & Hardik
@@ -23,13 +18,5 @@ Doug, Aileen & Hardik
 Jay, Caulene and Doug – in the "timeout" room :)
 
 ![](/personal/marknadig/Blog/Lists/Photos/061110_2019_Collaborati2.jpg)
-
-
-
-
-
-
-
-
 
 **Published:** 6/11/2010 4:19 PM

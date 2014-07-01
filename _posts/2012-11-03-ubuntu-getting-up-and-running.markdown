@@ -26,9 +26,6 @@ The root problem was described here [http://code.google.com/p/chromium/issue/d]
     $ sudo apt-get install libcurl3   # or whatever is missing
     $ sudo apt-get -f install  # will resume installing the rest
 
-
-
-
 ### **Dropbox**
 
 
@@ -48,12 +45,7 @@ The root problem was described here [http://code.google.com/p/chromium/issue/d]
     E: passwordsafe: dir-or-file-in-tmp tmp/pwsafe.png
 
 
-
-    
     So, running from terminal revealed what dependencies were missing and installed from thre.
-
-
-
 
 ### **Skype**
 

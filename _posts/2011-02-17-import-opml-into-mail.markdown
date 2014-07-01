@@ -30,15 +30,7 @@ categories:
 
 http://www.cpuug.org/index.php?topic=135.0
 
-
-
-
 **Category:** OSx
 
-
-
-
 **Published:** 2/17/2011 11:49 AM
-
-
 
