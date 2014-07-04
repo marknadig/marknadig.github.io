@@ -1,0 +1,21 @@
+---
+author: marknadig
+comments: true
+date: 2011-03-01 16:25:41+00:00
+layout: post
+slug: p2v
+title: P2V
+wordpress_id: 28
+categories:
+- Virtualization
+---
+
+Found free utility from MS to migrate a machine to a vm (physical to virtual - p2v).
+
+http://technet.microsoft.com/en-us/sysinternals/ee656415.aspx
+
+VMWare has their free Converter as well:
+http://www.vmware.com/products/converter/
+
+Remember, it's as if you dropped your hard drive into another computer. So, windows activation may complain.
+

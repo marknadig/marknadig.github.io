@@ -1,0 +1,39 @@
+---
+author: marknadig
+comments: true
+date: 2010-10-20 15:55:18+00:00
+layout: post
+slug: speed-up-vs2008
+title: Speed up VS2008
+wordpress_id: 52
+categories:
+- VS2008
+---
+
+Tools: Options
+
+Environment - General: uncheck Animate environment tools.
+
+Text Editor – XAML – Misc – check Always open documents in full XAML view. This disables Cider.
+
+Text Editor – uncheck Track changes which "When selected, the code editor's selection margin displays a vertical yellow line to mark code recently changed, and vertical green lines next to unchanged code."
+
+Projects and Solutions – uncheck Track Active Item in Solution Explorer and use. Note, I suggest you add this macro and set a menu command to run it so you can on-demand sync Solution Explorer
+
+```
+Imports System
+Imports EnvDTE   
+Imports EnvDTE80   
+Imports EnvDTE90   
+Imports System.Diagnostics   
+Public Module Module1   
+Sub ToggleSolutionExplorerTracking()   
+   Dim seTrackingProperty As [Property]      
+   seTrackingProperty = DTE.Properties("Environment", "ProjectsAndSolution").Item("TrackFileSelectionInExplorer")   
+   If seTrackingProperty.Value  True Then   
+      seTrackingProperty.Value = True   
+      seTrackingProperty.Value = False   
+   End If   
+End Sub   
+End Module
+```
