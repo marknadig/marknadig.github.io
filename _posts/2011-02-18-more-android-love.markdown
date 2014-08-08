@@ -6,7 +6,7 @@ layout: post
 slug: more-android-love
 title: More Android Love
 wordpress_id: 32
-categories:
+tags:
 - Android
 ---
 
