@@ -6,7 +6,7 @@ layout: post
 slug: diffmerge-as-git-mergetool
 title: DiffMerge as git mergetool
 wordpress_id: 225
-categories:
+tags:
 - git
 ---
 

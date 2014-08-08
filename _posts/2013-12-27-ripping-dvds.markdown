@@ -6,7 +6,7 @@ layout: post
 slug: ripping-dvds
 title: Ripping DVDs
 wordpress_id: 663
-categories:
+tags:
 - DVD
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: print-email-without-headerfooter
 title: Print email without header/footer
 wordpress_id: 77
-categories:
+tags:
 - Work
 ---
 

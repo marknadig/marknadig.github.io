@@ -6,7 +6,7 @@ layout: post
 slug: osx-lion-cant-connect-to-windows-shares-smb-redux
 title: OSx Lion can't connect to Windows Shares (SMB) - redux
 wordpress_id: 22
-categories:
+tags:
 - OS X
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: going-live-with-www-kona-com
 title: Going live with www.kona.com
 wordpress_id: 11
-categories:
+tags:
 - Work
 ---
 

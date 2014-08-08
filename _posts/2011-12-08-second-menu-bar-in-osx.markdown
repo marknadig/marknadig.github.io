@@ -6,7 +6,7 @@ layout: post
 slug: second-menu-bar-in-osx
 title: Second menu bar in OSx
 wordpress_id: 21
-categories:
+tags:
 - OS X
 ---
 

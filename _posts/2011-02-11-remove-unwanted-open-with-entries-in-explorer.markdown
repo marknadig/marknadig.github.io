@@ -6,7 +6,7 @@ layout: post
 slug: remove-unwanted-open-with-entries-in-explorer
 title: Remove unwanted "Open With" entries in Explorer
 wordpress_id: 35
-categories:
+tags:
 - Windows 7
 ---
 

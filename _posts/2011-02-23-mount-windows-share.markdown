@@ -6,7 +6,7 @@ layout: post
 slug: mount-windows-share
 title: mount windows share
 wordpress_id: 29
-categories:
+tags:
 - OS X
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: osx-where-is-that-program-run-from
 title: OSx Where is that program run from?
 wordpress_id: 228
-categories:
+tags:
 - OS X
 ---
 

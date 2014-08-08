@@ -6,7 +6,7 @@ layout: post
 slug: git-cherry-pick-from-remote-branch
 title: Git cherry pick from remote branch
 wordpress_id: 659
-categories:
+tags:
 - git
 ---
 

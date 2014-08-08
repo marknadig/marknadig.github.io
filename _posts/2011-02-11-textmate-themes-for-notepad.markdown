@@ -6,7 +6,7 @@ layout: post
 slug: textmate-themes-for-notepad
 title: TextMate themes for NotePad++
 wordpress_id: 36
-categories:
+tags:
 - Work
 ---
 

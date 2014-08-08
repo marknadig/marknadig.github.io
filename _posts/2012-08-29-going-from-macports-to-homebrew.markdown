@@ -6,7 +6,7 @@ layout: post
 slug: going-from-macports-to-homebrew
 title: Going from MacPorts to Homebrew
 wordpress_id: 232
-categories:
+tags:
 - OS X
 ---
 

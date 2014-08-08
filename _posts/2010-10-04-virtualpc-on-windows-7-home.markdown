@@ -6,7 +6,7 @@ layout: post
 slug: virtualpc-on-windows-7-home
 title: VirtualPC on Windows 7 Home
 wordpress_id: 55
-categories:
+tags:
 - Virtualization
 ---
 

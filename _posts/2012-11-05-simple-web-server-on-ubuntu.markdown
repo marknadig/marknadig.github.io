@@ -6,7 +6,7 @@ layout: post
 slug: simple-web-server-on-ubuntu
 title: Simple web server on ubuntu
 wordpress_id: 262
-categories:
+tags:
 - ubuntu
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: repave-osx
 title: repave osx
 wordpress_id: 30
-categories:
+tags:
 - OS X
 ---
 

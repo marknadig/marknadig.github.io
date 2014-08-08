@@ -6,7 +6,7 @@ layout: post
 slug: osx-pipe-output-to-clipboard
 title: OSx pipe output to clipboard
 wordpress_id: 112
-categories:
+tags:
 - OS X
 ---
 

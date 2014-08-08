@@ -6,7 +6,7 @@ layout: post
 slug: visual-studio-regex-addin-now-for-2008
 title: Visual Studio Regex addin (now for 2008)
 wordpress_id: 62
-categories:
+tags:
 - Work
 ---
 

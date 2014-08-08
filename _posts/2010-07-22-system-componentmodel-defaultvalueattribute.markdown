@@ -6,7 +6,7 @@ layout: post
 slug: system-componentmodel-defaultvalueattribute
 title: System.ComponentModel.DefaultValueAttribute
 wordpress_id: 70
-categories:
+tags:
 - Coding
 ---
 

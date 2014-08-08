@@ -6,7 +6,7 @@ layout: post
 slug: configure-git-editor-to-use-textmate-or-sublimetext
 title: Configure git editor to use TextMate or SublimeText
 wordpress_id: 162
-categories:
+tags:
 - git
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: stop-terminal-from-opening-in-last-folder-osx-lion
 title: 'Stop terminal from opening in last folder - OSx Lion '
 wordpress_id: 118
-categories:
+tags:
 - OS X
 ---
 

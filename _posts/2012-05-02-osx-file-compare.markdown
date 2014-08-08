@@ -6,7 +6,7 @@ layout: post
 slug: osx-file-compare
 title: OSx file compare
 wordpress_id: 129
-categories:
+tags:
 - Coding
 - OS X
 ---

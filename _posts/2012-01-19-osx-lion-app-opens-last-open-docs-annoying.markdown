@@ -6,7 +6,7 @@ layout: post
 slug: osx-lion-app-opens-last-open-docs-annoying
 title: OSx Lion app opens last open docs - annoying
 wordpress_id: 20
-categories:
+tags:
 - OS X
 ---
 

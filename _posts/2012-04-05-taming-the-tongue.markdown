@@ -6,7 +6,7 @@ layout: post
 slug: taming-the-tongue
 title: Taming the tongue
 wordpress_id: 121
-categories:
+tags:
 - Bible
 ---
 

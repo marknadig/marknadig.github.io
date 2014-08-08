@@ -6,7 +6,7 @@ layout: post
 slug: how-to-kill-sessions-manually
 title: How to kill sessions manually
 wordpress_id: 48
-categories:
+tags:
 - Oracle
 ---
 

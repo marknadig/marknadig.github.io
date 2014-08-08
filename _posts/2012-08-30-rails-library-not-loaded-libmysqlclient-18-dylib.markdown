@@ -6,7 +6,7 @@ layout: post
 slug: rails-library-not-loaded-libmysqlclient-18-dylib
 title: 'Rails - Library not loaded: libmysqlclient.18.dylib'
 wordpress_id: 238
-categories:
+tags:
 - OS X
 - Ruby on Rails
 ---

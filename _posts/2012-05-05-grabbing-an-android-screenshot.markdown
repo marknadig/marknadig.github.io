@@ -6,7 +6,7 @@ layout: post
 slug: grabbing-an-android-screenshot
 title: Grabbing an Android screenshot
 wordpress_id: 141
-categories:
+tags:
 - Android
 ---
 

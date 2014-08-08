@@ -6,7 +6,7 @@ layout: post
 slug: backuprestore-oracle
 title: Backup/restore Oracle
 wordpress_id: 43
-categories:
+tags:
 - Oracle
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: case-insensitive-in-sqldeveloper
 title: Case insensitive in SQLDeveloper
 wordpress_id: 50
-categories:
+tags:
 - Oracle
 ---
 

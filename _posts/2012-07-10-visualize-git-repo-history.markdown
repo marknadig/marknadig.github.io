@@ -6,7 +6,7 @@ layout: post
 slug: visualize-git-repo-history
 title: Visualize GIT repo history
 wordpress_id: 213
-categories:
+tags:
 - git
 ---
 

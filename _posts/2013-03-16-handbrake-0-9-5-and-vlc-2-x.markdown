@@ -6,7 +6,7 @@ layout: post
 slug: handbrake-0-9-5-and-vlc-2-x
 title: Handbrake 0.9.5 and VLC 2.x
 wordpress_id: 344
-categories:
+tags:
 - OS X
 ---
 

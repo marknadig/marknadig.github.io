@@ -7,7 +7,7 @@ published: false
 slug: publishing-mako-clickonce-locally-on-windows-7
 title: Publishing Mako ClickOnce locally on Windows 7
 wordpress_id: 64
-categories:
+tags:
 - Windows 7
 ---
 

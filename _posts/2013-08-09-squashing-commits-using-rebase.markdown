@@ -6,7 +6,7 @@ layout: post
 slug: squashing-commits-using-rebase
 title: Squashing commits using rebase
 wordpress_id: 502
-categories:
+tags:
 - git
 ---
 

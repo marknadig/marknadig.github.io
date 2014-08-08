@@ -6,7 +6,7 @@ layout: post
 slug: vs2010-common-problems-and-some-solutions
 title: VS2010 common problems and some solutions
 wordpress_id: 51
-categories:
+tags:
 - VS2010
 ---
 

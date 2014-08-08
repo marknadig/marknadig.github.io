@@ -6,7 +6,7 @@ layout: post
 slug: clear-clickonce-cache-the-3rd-way
 title: Clear clickonce cache, the 3rd way
 wordpress_id: 63
-categories:
+tags:
 - Work
 ---
 

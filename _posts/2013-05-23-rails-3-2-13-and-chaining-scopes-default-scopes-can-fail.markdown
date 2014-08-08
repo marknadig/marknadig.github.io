@@ -6,7 +6,7 @@ layout: post
 slug: rails-3-2-13-and-chaining-scopes-default-scopes-can-fail
 title: 'Rails 3.2.13 and default scopes fail '
 wordpress_id: 485
-categories:
+tags:
 - Ruby on Rails
 ---
 

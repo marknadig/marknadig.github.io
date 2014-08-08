@@ -6,7 +6,7 @@ layout: post
 slug: chkdsk-r-wouldnt-on-reboot
 title: chkdsk /R wouldn't on reboot
 wordpress_id: 638
-categories:
+tags:
 - Windows 7
 ---
 

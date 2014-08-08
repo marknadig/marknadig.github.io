@@ -6,7 +6,7 @@ layout: post
 slug: audio-wont-over-airplay
 title: Audio won't over airplay
 wordpress_id: 646
-categories:
+tags:
 - OS X
 ---
 

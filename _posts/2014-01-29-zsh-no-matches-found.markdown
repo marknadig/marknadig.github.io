@@ -6,7 +6,7 @@ layout: post
 slug: zsh-no-matches-found
 title: 'zsh: no matches found:...'
 wordpress_id: 705
-categories:
+tags:
 - zsh
 ---
 

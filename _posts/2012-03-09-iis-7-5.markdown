@@ -6,7 +6,7 @@ layout: post
 slug: iis-7-5
 title: IIS 7.5 - redirect
 wordpress_id: 99
-categories:
+tags:
 - IIS
 ---
 

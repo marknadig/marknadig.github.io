@@ -6,7 +6,7 @@ layout: post
 slug: global-gitignore-for-ide-specific-ignores
 title: Global .gitignore for IDE specific exclusions
 wordpress_id: 332
-categories:
+tags:
 - git
 ---
 

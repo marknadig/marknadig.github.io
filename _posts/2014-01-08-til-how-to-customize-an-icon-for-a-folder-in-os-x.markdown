@@ -6,7 +6,7 @@ layout: post
 slug: til-how-to-customize-an-icon-for-a-folder-in-os-x
 title: TIL how to customize an icon for a folder in OS X
 wordpress_id: 675
-categories:
+tags:
 - OS X
 ---
 

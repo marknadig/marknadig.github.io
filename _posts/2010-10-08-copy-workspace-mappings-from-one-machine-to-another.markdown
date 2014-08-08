@@ -6,7 +6,7 @@ layout: post
 slug: copy-workspace-mappings-from-one-machine-to-another
 title: Copy workspace mappings from one machine to another
 wordpress_id: 54
-categories:
+tags:
 - TFS
 ---
 

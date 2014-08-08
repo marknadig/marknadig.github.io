@@ -6,7 +6,7 @@ layout: post
 slug: osx-and-dns
 title: OSx and DNS
 wordpress_id: 289
-categories:
+tags:
 - OS X
 ---
 

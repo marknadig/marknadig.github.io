@@ -6,7 +6,7 @@ layout: post
 slug: git-branching-rocks
 title: git branching rocks
 wordpress_id: 81
-categories:
+tags:
 - git
 ---
 

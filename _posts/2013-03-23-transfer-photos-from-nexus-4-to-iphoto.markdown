@@ -6,7 +6,7 @@ layout: post
 slug: transfer-photos-from-nexus-4-to-iphoto
 title: Transfer photos from Nexus 4 to iPhoto
 wordpress_id: 347
-categories:
+tags:
 - Android
 - Mobile
 ---

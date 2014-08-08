@@ -6,7 +6,7 @@ layout: post
 slug: iis-killing-worker-process-during-debugging
 title: IIS killing worker process during debugging
 wordpress_id: 75
-categories:
+tags:
 - Windows 7
 ---
 

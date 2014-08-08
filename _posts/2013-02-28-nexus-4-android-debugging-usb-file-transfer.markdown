@@ -6,7 +6,7 @@ layout: post
 slug: nexus-4-android-debugging-usb-file-transfer
 title: Nexus 4 - Android debugging, USB file transfer
 wordpress_id: 327
-categories:
+tags:
 - Android
 ---
 

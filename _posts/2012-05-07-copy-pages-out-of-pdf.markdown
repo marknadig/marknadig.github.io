@@ -6,7 +6,7 @@ layout: post
 slug: copy-pages-out-of-pdf
 title: Copy pages out of PDF
 wordpress_id: 145
-categories:
+tags:
 - OS X
 ---
 

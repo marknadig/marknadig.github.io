@@ -6,7 +6,7 @@ layout: post
 slug: debugging-webview-for-ios
 title: Debugging webview for iOS
 wordpress_id: 279
-categories:
+tags:
 - iOS
 - Mobile
 ---

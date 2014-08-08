@@ -6,7 +6,7 @@ layout: post
 slug: share-windows-7-printer-w-osx
 title: Share Windows 7 printer w/ OSx
 wordpress_id: 297
-categories:
+tags:
 - OS X
 ---
 

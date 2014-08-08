@@ -6,7 +6,7 @@ layout: post
 slug: running-the-ios-simulator
 title: Running the iOS simulator
 wordpress_id: 186
-categories:
+tags:
 - iOS
 ---
 

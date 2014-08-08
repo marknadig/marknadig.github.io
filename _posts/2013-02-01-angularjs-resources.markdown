@@ -6,7 +6,7 @@ layout: post
 slug: angularjs-resources
 title: AngularJS resources
 wordpress_id: 323
-categories:
+tags:
 - AngularJS
 ---
 

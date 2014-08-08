@@ -6,7 +6,7 @@ layout: post
 slug: rails-and-cross-origin-resource-sharing-cors
 title: Rails and cross origin resource sharing (CORS)
 wordpress_id: 246
-categories:
+tags:
 - Ruby on Rails
 ---
 

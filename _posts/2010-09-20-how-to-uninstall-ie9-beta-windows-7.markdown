@@ -6,7 +6,7 @@ layout: post
 slug: how-to-uninstall-ie9-beta-windows-7
 title: How to uninstall IE9 beta (Windows 7)
 wordpress_id: 59
-categories:
+tags:
 - Beta
 ---
 

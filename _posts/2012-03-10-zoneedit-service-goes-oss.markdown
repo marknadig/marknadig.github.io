@@ -6,7 +6,7 @@ layout: post
 slug: zoneedit-service-goes-oss
 title: ZoneEdit Service goes OSS
 wordpress_id: 108
-categories:
+tags:
 - Coding
 ---
 

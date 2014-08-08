@@ -6,7 +6,7 @@ layout: post
 slug: t61-bluetooth-radio-and-windows-7
 title: T61 Bluetooth Radio and Windows 7
 wordpress_id: 76
-categories:
+tags:
 - Windows 7
 ---
 

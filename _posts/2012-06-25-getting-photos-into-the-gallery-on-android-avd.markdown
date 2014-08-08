@@ -6,7 +6,7 @@ layout: post
 slug: getting-photos-into-the-gallery-on-android-avd
 title: Getting photos into the gallery on Android AVD
 wordpress_id: 193
-categories:
+tags:
 - Android
 ---
 

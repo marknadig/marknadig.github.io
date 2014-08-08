@@ -6,7 +6,7 @@ layout: post
 slug: how-to-undelete-in-tfs
 title: How to undelete in TFS
 wordpress_id: 67
-categories:
+tags:
 - TFS
 ---
 

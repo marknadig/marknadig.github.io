@@ -6,7 +6,7 @@ layout: post
 slug: osx-lion-cant-connect-to-windows-shares-smb
 title: OSx Lion can't connect to Windows Shares (SMB)
 wordpress_id: 24
-categories:
+tags:
 - OS X
 ---
 

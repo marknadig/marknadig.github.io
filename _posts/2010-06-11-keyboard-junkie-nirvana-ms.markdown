@@ -6,7 +6,7 @@ layout: post
 slug: keyboard-junkie-nirvana-ms
 title: Keyboard junkie nirvana (MS)
 wordpress_id: 74
-categories:
+tags:
 - Work
 ---
 

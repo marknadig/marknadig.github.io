@@ -6,7 +6,7 @@ layout: post
 slug: build-error-when-publishing-clickonce-after-build-machine-name-changes
 title: Build error when publishing clickonce after build machine name changes
 wordpress_id: 46
-categories:
+tags:
 - VS2010
 ---
 

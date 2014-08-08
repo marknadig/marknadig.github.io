@@ -6,7 +6,7 @@ layout: post
 slug: how-to-disable-chromes-cross-site-origin-policy-for-dev
 title: How to disable Chrome's cross site origin policy (for dev)
 wordpress_id: 243
-categories:
+tags:
 - Chrome
 - OS X
 ---

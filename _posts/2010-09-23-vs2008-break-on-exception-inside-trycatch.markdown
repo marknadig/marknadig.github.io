@@ -6,7 +6,7 @@ layout: post
 slug: vs2008-break-on-exception-inside-trycatch
 title: VS2008 break on exception inside try/catch
 wordpress_id: 57
-categories:
+tags:
 - Work
 ---
 

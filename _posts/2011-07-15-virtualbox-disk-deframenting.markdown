@@ -6,7 +6,7 @@ layout: post
 slug: virtualbox-disk-deframenting
 title: VirtualBox disk deframenting
 wordpress_id: 26
-categories:
+tags:
 - Virtualization
 ---
 

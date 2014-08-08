@@ -6,7 +6,7 @@ layout: post
 slug: chromecast-and-cisco-e3000-problem-fix
 title: Chromecast and Cisco E3000 problem fix
 wordpress_id: 636
-categories:
+tags:
 - Chrome
 ---
 

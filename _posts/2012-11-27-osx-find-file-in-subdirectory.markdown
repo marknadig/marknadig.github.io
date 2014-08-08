@@ -6,7 +6,7 @@ layout: post
 slug: osx-find-file-in-subdirectory
 title: OSx find file in subdirectory
 wordpress_id: 283
-categories:
+tags:
 - OS X
 ---
 

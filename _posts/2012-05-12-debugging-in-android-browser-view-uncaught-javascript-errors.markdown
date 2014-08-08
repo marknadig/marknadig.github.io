@@ -6,7 +6,7 @@ layout: post
 slug: debugging-in-android-browser-view-uncaught-javascript-errors
 title: Debugging in android browser - view uncaught javascript errors
 wordpress_id: 154
-categories:
+tags:
 - Android
 ---
 

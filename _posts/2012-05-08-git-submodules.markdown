@@ -6,7 +6,7 @@ layout: post
 slug: git-submodules
 title: git submodules
 wordpress_id: 151
-categories:
+tags:
 - git
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: mail
 title: mail
 wordpress_id: 31
-categories:
+tags:
 - OS X
 ---
 

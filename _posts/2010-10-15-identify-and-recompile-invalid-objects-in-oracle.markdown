@@ -6,7 +6,7 @@ layout: post
 slug: identify-and-recompile-invalid-objects-in-oracle
 title: Identify and recompile invalid objects in Oracle
 wordpress_id: 49
-categories:
+tags:
 - Oracle
 ---
 

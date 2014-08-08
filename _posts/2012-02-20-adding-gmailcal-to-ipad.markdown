@@ -6,7 +6,7 @@ layout: post
 slug: adding-gmailcal-to-ipad
 title: Adding gmail/cal to iPad
 wordpress_id: 18
-categories:
+tags:
 - iPad
 ---
 

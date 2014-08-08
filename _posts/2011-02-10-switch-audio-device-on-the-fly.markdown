@@ -6,7 +6,7 @@ layout: post
 slug: switch-audio-device-on-the-fly
 title: Switch audio device on the fly
 wordpress_id: 37
-categories:
+tags:
 - Windows 7
 ---
 

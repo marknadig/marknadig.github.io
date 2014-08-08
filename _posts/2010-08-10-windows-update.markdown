@@ -6,7 +6,7 @@ layout: post
 slug: windows-update
 title: Windows Update
 wordpress_id: 65
-categories:
+tags:
 - Windows 7
 ---
 

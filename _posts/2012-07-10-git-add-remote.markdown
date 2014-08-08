@@ -6,7 +6,7 @@ layout: post
 slug: git-add-remote
 title: git add remote
 wordpress_id: 220
-categories:
+tags:
 - git
 ---
 

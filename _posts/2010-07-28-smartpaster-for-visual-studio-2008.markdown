@@ -6,7 +6,7 @@ layout: post
 slug: smartpaster-for-visual-studio-2008
 title: SmartPaster  for Visual Studio 2008
 wordpress_id: 68
-categories:
+tags:
 - Coding
 ---
 

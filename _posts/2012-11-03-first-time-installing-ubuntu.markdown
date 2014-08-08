@@ -6,7 +6,7 @@ layout: post
 slug: first-time-installing-ubuntu
 title: First time installing ubuntu
 wordpress_id: 254
-categories:
+tags:
 - ubuntu
 ---
 

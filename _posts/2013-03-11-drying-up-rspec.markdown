@@ -6,7 +6,7 @@ layout: post
 slug: drying-up-rspec
 title: DRYing up RSpec
 wordpress_id: 340
-categories:
+tags:
 - Ruby on Rails
 - testing
 ---

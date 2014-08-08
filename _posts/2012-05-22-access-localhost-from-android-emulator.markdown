@@ -6,7 +6,7 @@ layout: post
 slug: access-localhost-from-android-emulator
 title: Access localhost from Android emulator
 wordpress_id: 190
-categories:
+tags:
 - Android
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: sms-from-gmail
 title: SMS from gmail
 wordpress_id: 269
-categories:
+tags:
 - Mobile
 ---
 

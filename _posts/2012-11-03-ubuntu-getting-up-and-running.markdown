@@ -6,7 +6,7 @@ layout: post
 slug: ubuntu-getting-up-and-running
 title: Ubuntu - getting up and running
 wordpress_id: 260
-categories:
+tags:
 - ubuntu
 ---
 

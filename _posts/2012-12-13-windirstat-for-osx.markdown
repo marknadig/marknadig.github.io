@@ -6,7 +6,7 @@ layout: post
 slug: windirstat-for-osx
 title: WinDirStat for OSx
 wordpress_id: 302
-categories:
+tags:
 - OS X
 ---
 

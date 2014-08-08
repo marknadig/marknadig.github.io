@@ -6,7 +6,7 @@ layout: post
 slug: speed-up-vs2008
 title: Speed up VS2008
 wordpress_id: 52
-categories:
+tags:
 - VS2008
 ---
 

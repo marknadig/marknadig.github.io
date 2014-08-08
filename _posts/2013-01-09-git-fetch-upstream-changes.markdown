@@ -6,7 +6,7 @@ layout: post
 slug: git-fetch-upstream-changes
 title: Git fetch upstream changes
 wordpress_id: 317
-categories:
+tags:
 - git
 - OSS
 ---

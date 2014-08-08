@@ -6,7 +6,7 @@ layout: post
 slug: multiple-tabbed-shells
 title: Multiple tabbed shells
 wordpress_id: 38
-categories:
+tags:
 - Work
 ---
 

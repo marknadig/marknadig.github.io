@@ -6,7 +6,7 @@ layout: post
 slug: import-opml-into-mail
 title: Import OPML into Mail
 wordpress_id: 33
-categories:
+tags:
 - OS X
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: ubuntu-13-on-virtualbox-4-2-slow
 title: Ubuntu 13 on VirtualBox 4.2 slow
 wordpress_id: 651
-categories:
+tags:
 - ubuntu
 - Virtualization
 ---

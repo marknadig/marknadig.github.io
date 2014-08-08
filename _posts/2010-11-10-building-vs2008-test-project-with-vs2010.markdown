@@ -6,7 +6,7 @@ layout: post
 slug: building-vs2008-test-project-with-vs2010
 title: Building VS2008 test project with VS2010
 wordpress_id: 47
-categories:
+tags:
 - VS2008
 ---
 

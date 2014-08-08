@@ -6,7 +6,7 @@ layout: post
 slug: auto-complete-and-crutches-for-im-a-pc
 title: Auto-complete and crutches for "I'm a PC"
 wordpress_id: 34
-categories:
+tags:
 - OS X
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: clip-exe-copy-text-from-command-line-to-clipboard
 title: CLIP.EXE – copy text from command line to clipboard
 wordpress_id: 61
-categories:
+tags:
 - Windows 7
 ---
 

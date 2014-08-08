@@ -6,7 +6,7 @@ layout: post
 slug: how-to-change-default-printer-settings-os-x
 title: How to change default printer settings OS X
 wordpress_id: 656
-categories:
+tags:
 - OS X
 ---
 

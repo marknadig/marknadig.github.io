@@ -6,7 +6,7 @@ layout: post
 slug: im-on-the-bandwagon
 title: I'm on the bandwagon
 wordpress_id: 40
-categories:
+tags:
 - Android
 ---
 

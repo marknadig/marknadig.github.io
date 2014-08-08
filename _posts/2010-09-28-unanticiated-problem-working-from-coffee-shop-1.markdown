@@ -6,7 +6,7 @@ layout: post
 slug: unanticiated-problem-working-from-coffee-shop-1
 title: 'Unanticiated problem working from coffee shop #1'
 wordpress_id: 56
-categories:
+tags:
 - Work
 ---
 

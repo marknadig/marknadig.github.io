@@ -6,7 +6,7 @@ layout: post
 slug: left-outer-join-with-arel
 title: LEFT OUTER JOIN with ARel
 wordpress_id: 272
-categories:
+tags:
 - Ruby on Rails
 ---
 

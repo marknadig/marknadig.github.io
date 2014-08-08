@@ -6,7 +6,7 @@ layout: post
 slug: batch-rename-files-in-os-x
 title: batch rename files in OS X
 wordpress_id: 642
-categories:
+tags:
 - OS X
 ---
 

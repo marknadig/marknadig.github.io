@@ -6,7 +6,7 @@ layout: post
 slug: simple-web-server-on-osx
 title: Simple web server on OSx
 wordpress_id: 124
-categories:
+tags:
 - OS X
 ---
 

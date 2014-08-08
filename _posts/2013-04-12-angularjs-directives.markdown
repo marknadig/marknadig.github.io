@@ -6,7 +6,7 @@ layout: post
 slug: angularjs-directives
 title: AngularJS directives
 wordpress_id: 352
-categories:
+tags:
 - AngularJS
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: sublime-text-2-preferences
 title: Sublime Text 2 preferences
 wordpress_id: 202
-categories:
+tags:
 - Coding
 ---
 

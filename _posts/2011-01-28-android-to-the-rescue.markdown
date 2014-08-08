@@ -6,7 +6,7 @@ layout: post
 slug: android-to-the-rescue
 title: Android to the rescue
 wordpress_id: 39
-categories:
+tags:
 - Android
 ---
 

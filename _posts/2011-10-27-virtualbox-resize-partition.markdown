@@ -6,7 +6,7 @@ layout: post
 slug: virtualbox-resize-partition
 title: VirtualBox resize partition
 wordpress_id: 23
-categories:
+tags:
 - Virtualization
 ---
 

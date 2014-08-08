@@ -6,7 +6,7 @@ layout: post
 slug: oracle-backup-and-restore-with-impdpexpdp
 title: Oracle backup and restore with IMPDp/EXPDp
 wordpress_id: 41
-categories:
+tags:
 - Oracle
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: toad-autocomplete-tablename
 title: Toad autocomplete tablename
 wordpress_id: 53
-categories:
+tags:
 - Oracle
 ---
 

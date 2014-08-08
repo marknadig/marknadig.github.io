@@ -6,7 +6,7 @@ layout: post
 slug: wordpress-3-5-breaking-change-on-iis-7-5
 title: Wordpress 3.5 breaking change on IIS 7.5 - download failed...
 wordpress_id: 304
-categories:
+tags:
 - WordPress
 ---
 

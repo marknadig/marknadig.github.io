@@ -6,7 +6,7 @@ layout: post
 slug: visual-studio-showing-all-projects-are-checked-out
 title: Visual Studio showing all projects are checked out!??
 wordpress_id: 44
-categories:
+tags:
 - TFS
 ---
 

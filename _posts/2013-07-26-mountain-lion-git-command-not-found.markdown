@@ -6,7 +6,7 @@ layout: post
 slug: mountain-lion-git-command-not-found
 title: 'Mountain Lion - git “Command Not Found” '
 wordpress_id: 491
-categories:
+tags:
 - git
 - OS X
 ---

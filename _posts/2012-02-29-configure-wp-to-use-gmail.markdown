@@ -6,7 +6,7 @@ layout: post
 slug: configure-wp-to-use-gmail
 title: Configure WP to use gmail
 wordpress_id: 7
-categories:
+tags:
 - WordPress
 ---
 

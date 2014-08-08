@@ -6,7 +6,7 @@ layout: post
 slug: installing-wordpress
 title: Installing WordPress
 wordpress_id: 3
-categories:
+tags:
 - WordPress
 ---
 

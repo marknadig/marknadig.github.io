@@ -6,7 +6,7 @@ layout: post
 slug: ie9-and-office-project-web-access
 title: IE9 and Office Project Web Access
 wordpress_id: 58
-categories:
+tags:
 - Beta
 ---
 

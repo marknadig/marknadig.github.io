@@ -6,7 +6,7 @@ layout: post
 slug: ruby-1-9-and-ssl-error
 title: Ruby 1.9 and SSL error
 wordpress_id: 293
-categories:
+tags:
 - Ruby on Rails
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: sencha
 title: 'Sencha '
 wordpress_id: 134
-categories:
+tags:
 - Mobile
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: ruby-regex-end-of-line-character-different-depending-on-platform
 title: Ruby regex end of line character different depending on platform
 wordpress_id: 496
-categories:
+tags:
 - regex
 - Ruby
 ---

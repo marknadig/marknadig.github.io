@@ -6,7 +6,7 @@ layout: post
 slug: windows-7-home-pro-no-rdp
 title: Windows 7 Home Pro - no RDP
 wordpress_id: 66
-categories:
+tags:
 - Windows 7
 ---
 

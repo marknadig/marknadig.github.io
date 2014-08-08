@@ -6,7 +6,7 @@ layout: post
 slug: uninstalling-the-hard-way
 title: Uninstalling the hard way
 wordpress_id: 72
-categories:
+tags:
 - Work
 ---
 

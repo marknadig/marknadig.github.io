@@ -6,7 +6,7 @@ layout: post
 slug: osx-screen-capture
 title: OSx screen capture
 wordpress_id: 19
-categories:
+tags:
 - OS X
 ---
 

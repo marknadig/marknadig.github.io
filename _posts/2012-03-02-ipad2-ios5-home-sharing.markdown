@@ -6,8 +6,6 @@ layout: post
 slug: ipad2-ios5-home-sharing
 title: iPad2 / iOS5 / Home Sharing
 wordpress_id: 15
-categories:
-- iOS
 tags:
 - iOS
 ---

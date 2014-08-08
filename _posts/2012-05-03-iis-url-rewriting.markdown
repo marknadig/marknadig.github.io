@@ -6,7 +6,7 @@ layout: post
 slug: iis-url-rewriting
 title: IIS URL rewriting
 wordpress_id: 137
-categories:
+tags:
 - IIS
 ---
 

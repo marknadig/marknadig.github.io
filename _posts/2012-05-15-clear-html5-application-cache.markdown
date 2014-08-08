@@ -6,7 +6,7 @@ layout: post
 slug: clear-html5-application-cache
 title: Clear html5 application cache
 wordpress_id: 167
-categories:
+tags:
 - Chrome
 ---
 

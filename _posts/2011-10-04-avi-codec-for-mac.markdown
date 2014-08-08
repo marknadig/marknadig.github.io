@@ -6,7 +6,7 @@ layout: post
 slug: avi-codec-for-mac
 title: AVI codec for Mac
 wordpress_id: 25
-categories:
+tags:
 - OS X
 ---
 

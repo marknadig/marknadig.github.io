@@ -6,7 +6,7 @@ layout: post
 slug: kona-mobile
 title: Kona Mobile
 wordpress_id: 355
-categories:
+tags:
 - iOS
 - Mobile
 ---

@@ -6,7 +6,7 @@ layout: post
 slug: android-emulator-on-osx-lion
 title: Android emulator on OSx (Lion)
 wordpress_id: 176
-categories:
+tags:
 - Android
 ---
 

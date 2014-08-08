@@ -6,7 +6,7 @@ layout: post
 slug: createupdate-sd-card-for-android-avd
 title: Create/update SD card for Android AVD
 wordpress_id: 205
-categories:
+tags:
 - Android
 ---
 

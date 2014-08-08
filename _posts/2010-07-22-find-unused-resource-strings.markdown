@@ -6,7 +6,7 @@ layout: post
 slug: find-unused-resource-strings
 title: Find unused resource strings
 wordpress_id: 71
-categories:
+tags:
 - Work
 ---
 
