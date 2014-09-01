@@ -19,9 +19,7 @@ title: Home
   {% endfor %}
 </div>
 
-<div class='feeds'>
-    <div id='stackoverflow'></div>
-</div>
+<div class='tagcloud'></div>
 
 <div class="pagination">
   {% if paginator.next_page %}
@@ -41,9 +39,3 @@ title: Home
 </div>
 
 {% include footer.html %}
-<script src="/scripts/FeedEk.js"></script>
-<script>
-    $("#stackoverflow").FeedEk({
-        FeedUrl: "http://stackoverflow.com/feeds/user/600299"
-    })
-</script>

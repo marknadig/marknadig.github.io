@@ -1,0 +1,48 @@
+---
+author: marknadig
+comments: true
+date: 2014-09-01 16:00:00-0700
+layout: post
+slug: new-mac
+title: New Mac essentials
+---
+
+# First
+- Xcode via App Store
+- [Dropbox](http://www.dropbox.com)
+- pwSafe
+
+# Configure
+- generate [SSH key](https://help.github.com/articles/generating-ssh-keys), save off passphrase in pwSafe, and configure in github
+- `git config --global` (user.name, user.email, core.excludefile)
+
+# Download
+- [brew](http://brew.sh)
+- [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) and update .zshrc for:
+  download theme [wedisagree_nadig](https://github.com/marknadig/oh-my-zsh-themes)
+  symlink common files to profile `ln -s ~/Dropbox/Development/profile/zshrc .zshrc` and any others.
+- Google Chrome - sign in to bring over bookmarks, apps (ghostery, clear cache, batarang, js errors notifier).
+- Alfred [zip](http://www.alfredapp.com/) and change shortcut to cmd + space after changing Spotlight's to something else (F5) [FAQ](http://support.alfredapp.com/kb:cmd-space)
+
+# Development
+
+## Rails
+- redis `brew install redis`
+- MySQL & MySQLWorkBench download dmgs from [mysql.com](http://mysql.com).
+  `cp ~/Library/Application\ Support/MySQL/Workbench/connections.xml ~/Dropbox/Development/` to save connections for MySQLWB.
+- Jetbrains stable: [RubyMine](http://www.jetbrains.com/ruby/), [WebStorm](http://www.jetbrains.com/webstorm/)
+  I like to periodically export my settings from each of these to my ~/Dropbox/Development folder.
+- [RVM](http://get.rvm.io) & bundler `gem install bundler`.
+
+## Mobile
+- More Jetbrains goodness: [IntelliJ](http://www.jetbrains.com/idea/)
+- Android [SDK](http://developer.android.com/sdk)
+
+## Both
+- Node `brew install node`
+
+# Non-essential
+- [JoinMe](http://www.join.me)
+- [Skype](http://www.skype.com)
+- TweetDeck, Dash (Docs) from App Store.
+
