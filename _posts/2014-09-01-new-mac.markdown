@@ -26,6 +26,8 @@ title: New Mac essentials
 
 # Development
 
+Disable TextEdit's smartquotes.
+
 ## Rails
 - redis `brew install redis`
 - MySQL & MySQLWorkBench download dmgs from [mysql.com](http://mysql.com).
