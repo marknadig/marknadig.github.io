@@ -1,0 +1,63 @@
+$break-small: 600px;
+$break-large: 1200px;
+
+.logo {
+  background-image: url('/images/coffeeRing1.png');
+  float: right;
+  background-repeat: none;
+
+  height: 200px;
+  width: 200px;
+  -webkit-background-size: 200px;
+  background-size: 200px;
+
+  @media screen and (max-width: $break-small) {
+    height: 80px;
+    width: 80px;
+    -webkit-background-size: 80px;
+    background-size: 80px;
+  }
+  @media screen and (min-width: $break-large) {
+    height: 250px;
+    width: 250px;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+  }
+}
+
+.container {
+  max-width: 48rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.activity {
+  ul {
+    list-style: none;
+  }
+  li {
+    -webkit-background-size: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    margin-bottom: 10px;
+  }
+  .stackoverflow {
+    background-image: url('/images/stack-overflow.png');
+  }
+  .github {
+    background-image: url('/images/github.png');
+  }
+  .twitter {
+    background-image: url('/images/TwitterLogo_%2355acee.png');
+  }
+  .strava {
+    background-image: url('/images/strava.png');
+  }
+}
+
+.twitterplug {
+  padding-bottom: 1rem;
+}

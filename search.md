@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: Search
 search_omit: true
 ---
-
-<h1>Search</h1>
 
 <!-- Search form -->
 <form method="get" action="/search" data-search-form>
