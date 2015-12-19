@@ -2,14 +2,17 @@ $break-small: 600px;
 $break-large: 1200px;
 
 .logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
   background-image: url('/images/coffeeRing1.png');
-  float: right;
   background-repeat: none;
 
-  height: 200px;
-  width: 200px;
-  -webkit-background-size: 200px;
-  background-size: 200px;
+  height: 180px;
+  width: 180px;
+  -webkit-background-size: 180px;
+  background-size: 180px;
 
   @media screen and (max-width: $break-small) {
     height: 80px;
