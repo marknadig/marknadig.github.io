@@ -21,6 +21,7 @@ So, here's some things I've found that make the transition a bit better.
 [Code Compare](https://www.devart.com/codecompare/) - a better code compare   
 [File Nesting](https://visualstudiogallery.msdn.microsoft.com/3ebde8fb-26d8-4374-a0eb-1e4e2665070c) - handy for managing partials by nesting them under their 'parent' in a VS project/solution.
 [Build Monitor](https://visualstudiogallery.msdn.microsoft.com/b0c87e47-f4ee-4935-9a59-f2c81ce692ab) - Show how long builds take   
+[Web Analyzier](https://github.com/madskristensen/WebAnalyzer) - Incorporate ESLint, TSLint into Visual Studio   
 
 
 ### Windows apps:
