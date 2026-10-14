@@ -1,41 +1,52 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mark Nadig</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<meta name="description" content="Mark Nadig, software architect at Deltek.">
+<style>
+  :root { --fg:#1f2933; --muted:#667085; --accent:#0b5cad; --bg:#fafaf8; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: var(--bg); color: var(--fg);
+    font: 18px/1.6 Georgia, "Times New Roman", serif;
+  }
+  main { max-width: 34rem; padding: 2rem 1.5rem; }
+  header { display: flex; align-items: center; gap: .5rem; margin-bottom: 1.5rem; }
+  .ring { width: 110px; height: auto; margin: -.5rem 0 -.5rem -1.25rem; mix-blend-mode: multiply; opacity: .85; }
+  h1 { font-size: 2.2rem; margin: 0 0 .1rem; letter-spacing: -.01em; }
+  .role { color: var(--muted); margin: 0; font-family: system-ui, sans-serif; font-size: .95rem; }
+  p { margin: 0 0 1rem; }
+  nav { margin-top: 1.75rem; font-family: system-ui, sans-serif; font-size: .95rem; }
+  nav a { color: var(--accent); text-decoration: none; margin-right: 1.25rem; border-bottom: 1px solid transparent; }
+  nav a:hover { border-bottom-color: var(--accent); }
+  footer { margin-top: 2.5rem; font-family: system-ui, sans-serif; font-size: .8rem; color: var(--muted); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="ring" src="images/CoffeeRing.png" alt="" width="110">
+    <div>
+      <h1>Mark Nadig</h1>
+      <p class="role">Software architect at Deltek</p>
+    </div>
+  </header>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+  <p>I've been building software since the early 1990s. These days I build .NET Core web apps and modernize existing .NET systems at Deltek, carefully leveraging agentic tools.</p>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  <p>On LinkedIn, I share what I find works and what doesn't.</p>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+  <nav>
+    <a href="https://www.linkedin.com/in/mark-nadig-45353121/">LinkedIn</a>
+    <a href="https://github.com/marknadig">GitHub</a>
+  </nav>
 
-<div class='tagcloud'></div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
-
-{% include footer.html %}
+  <footer>Opinions are my own.</footer>
+</main>
+</body>
+</html>
